@@ -1,0 +1,43 @@
+.container {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: var(--ink);
+  letter-spacing: -0.5px;
+}
+
+.settingGroup {
+  margin-bottom: 24px;
+  padding: 20px;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+}
+
+.settingLabel {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.settingValue {
+  font-size: 14px;
+  color: var(--mid);
+}
+
+.note {
+  font-size: 14px;
+  color: var(--mid);
+  font-style: italic;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule);
+}

@@ -1,0 +1,446 @@
+.page {
+  --about-red: #dd3333;
+  --about-text: #000;
+  --about-muted: #111;
+  --about-header-height: 82px;
+  background: #fff;
+  color: var(--about-text);
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.78;
+  margin: -2px;
+}
+
+.hero {
+  min-height: 720px;
+  background-image: linear-gradient(rgba(17, 50, 63, 0.32), rgba(17, 50, 63, 0.32)), url('../assets/about/about-hero-desktop.jpeg');
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+}
+
+.sourceHeader {
+  align-items: center;
+  background: #fff;
+  display: flex;
+  height: var(--about-header-height);
+  justify-content: space-between;
+  padding: 0 clamp(24px, 7.1vw, 90px);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.hero .sourceHeader {
+  background: transparent;
+  position: relative;
+}
+
+.logoLink {
+  align-items: center;
+  display: inline-flex;
+  min-width: 172px;
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  height: 44px;
+  object-fit: contain;
+  width: 174px;
+}
+
+.logoIcon {
+  display: none;
+  height: 25px;
+  width: 25px;
+}
+
+.sourceNav {
+  align-items: center;
+  display: flex;
+  gap: clamp(28px, 3.2vw, 46px);
+  justify-content: flex-end;
+}
+
+.sourceNav a {
+  color: #000;
+  font-family: Cabin, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 33px 0 27px;
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.hero .sourceNav a {
+  color: #fff;
+}
+
+.sourceNav a::after {
+  background: var(--about-red);
+  bottom: 25px;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 160ms ease;
+  width: 100%;
+}
+
+.sourceNav a:hover::after,
+.sourceNav .activeNav::after {
+  transform: scaleX(1);
+}
+
+.menuButton {
+  background: transparent;
+  border: 0;
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+}
+
+.menuButton span {
+  background: currentColor;
+  display: block;
+  height: 2px;
+  width: 22px;
+}
+
+.hero .menuButton {
+  color: #fff;
+}
+
+.content {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 1085px;
+  padding: 26px 0 88px;
+}
+
+.section {
+  margin: 0 0 82px;
+}
+
+.section h2 {
+  color: #000;
+  font-family: Cabin, Roboto, Arial, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.2;
+  margin: 0 0 48px;
+}
+
+.section h3 {
+  color: #000;
+  font-family: Cabin, Roboto, Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.28;
+  margin: 0 0 22px;
+}
+
+.accentBlock {
+  border-left: 4px solid var(--about-red);
+  margin: 0 0 0;
+  padding: 0 0 0 32px;
+}
+
+.accentBlock p,
+.missionText p,
+.valueItem p {
+  color: var(--about-muted);
+  font-size: 18px;
+  line-height: 1.78;
+  margin: 0 0 25px;
+}
+
+.accentBlock p:last-child,
+.missionText p:last-child,
+.valueItem p:last-child {
+  margin-bottom: 0;
+}
+
+.downloadButton {
+  align-items: center;
+  background: var(--about-red);
+  border-radius: 200px;
+  color: #fff;
+  display: inline-flex;
+  font-family: Cabin, Roboto, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  gap: 28px;
+  line-height: 20px;
+  margin-top: 0;
+  min-height: 64px;
+  padding: 0 26px 0 54px;
+  text-decoration: none;
+}
+
+.downloadIcon {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: inline-flex;
+  font-size: 26px;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  width: 48px;
+}
+
+.visionBlock {
+  padding-top: 0;
+}
+
+.missionText {
+  margin-top: -18px;
+}
+
+.valuesSection {
+  margin-bottom: 0;
+}
+
+.valuesList {
+  display: grid;
+  gap: 22px;
+  margin: 0 0 26px;
+}
+
+.valueItem {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 18px 1fr;
+}
+
+.valueItem h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 6px;
+}
+
+.bookmark {
+  background: var(--about-red);
+  display: inline-block;
+  height: 15px;
+  margin-top: 5px;
+  position: relative;
+  width: 12px;
+}
+
+.bookmark::after {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 5px solid #fff;
+  bottom: -1px;
+  content: '';
+  left: 0;
+  position: absolute;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 76px 0 68px;
+}
+
+.footerInner {
+  display: grid;
+  gap: 90px;
+  grid-template-columns: minmax(280px, 347px) minmax(280px, 347px);
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1085px;
+}
+
+.mapColumn iframe {
+  border: 0;
+  display: block;
+  height: 400px;
+  margin-bottom: 42px;
+  width: 100%;
+}
+
+.copyright,
+.contactColumn p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.78;
+  margin: 0 0 24px;
+}
+
+.contactColumn h4 {
+  color: var(--about-red);
+  font-family: Cabin, Roboto, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.55;
+  margin: 0 0 28px;
+}
+
+.contactColumn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.linkedin {
+  align-items: center;
+  background: #fff;
+  color: #000 !important;
+  display: inline-flex;
+  font-family: Arial, sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  height: 28px;
+  justify-content: center;
+  line-height: 1;
+  margin-top: 10px;
+  width: 28px;
+}
+
+.toTop {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  bottom: 15px;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  height: 30px;
+  justify-content: center;
+  line-height: 1;
+  position: fixed;
+  right: 15px;
+  text-decoration: none;
+  width: 30px;
+  z-index: 30;
+}
+
+@media (max-width: 1180px) {
+  .content,
+  .footerInner {
+    margin-left: 46px;
+    margin-right: 46px;
+    max-width: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    background-image: linear-gradient(rgba(17, 50, 63, 0.24), rgba(17, 50, 63, 0.24)), url('../assets/about/about-hero-tablet.jpeg');
+    background-position: center top;
+    min-height: 1024px;
+  }
+
+  .sourceHeader {
+    padding: 0 46px;
+  }
+
+  .sourceNav {
+    display: none;
+  }
+
+  .menuButton {
+    color: #000;
+    display: flex;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logoIcon {
+    display: block;
+  }
+
+  .logoLink {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .page {
+    --about-header-height: 51px;
+    font-size: 18px;
+    line-height: 1.66;
+  }
+
+  .hero {
+    background-image: linear-gradient(rgba(17, 50, 63, 0.22), rgba(17, 50, 63, 0.22)), url('../assets/about/about-hero-phone.jpeg');
+    background-position: center top;
+    min-height: 649px;
+  }
+
+  .sourceHeader {
+    padding: 0 22px;
+  }
+
+  .content {
+    margin: 0 22px;
+    padding: 25px 0 58px;
+  }
+
+  .section {
+    margin-bottom: 63px;
+  }
+
+  .section h2 {
+    font-size: 28px;
+    line-height: 1.22;
+    margin-bottom: 50px;
+  }
+
+  .section h3 {
+    font-size: 21px;
+    line-height: 1.32;
+    margin-bottom: 45px;
+  }
+
+  .accentBlock {
+    padding-left: 29px;
+  }
+
+  .accentBlock p,
+  .missionText p,
+  .valueItem p {
+    font-size: 18px;
+    line-height: 1.66;
+    margin-bottom: 24px;
+  }
+
+  .downloadButton {
+    gap: 18px;
+    min-height: 60px;
+    padding: 0 12px 0 26px;
+  }
+
+  .downloadIcon {
+    height: 44px;
+    width: 44px;
+  }
+
+  .footer {
+    padding: 54px 0;
+  }
+
+  .footerInner {
+    gap: 44px;
+    grid-template-columns: 1fr;
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+
+  .mapColumn iframe {
+    height: 360px;
+  }
+}

@@ -1,0 +1,127 @@
+.layoutShell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+}
+
+.header {
+  padding: 12px 32px;
+  width: 100%;
+  border-bottom: 1px solid var(--rule);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.langBarWrap {
+  flex-shrink: 0;
+  order: 1;
+}
+
+.langBarWrap :global(.lang-bar) {
+  background: none;
+  padding: 0;
+  gap: 2px;
+}
+
+.langBarWrap :global(.lang-btn) {
+  border-color: var(--rule);
+  color: var(--mid);
+  padding: 4px 12px;
+  font-size: 10px;
+  border-radius: 4px;
+}
+
+.langBarWrap :global(.lang-btn.active) {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: white;
+}
+
+.langBarWrap :global(.lang-btn:hover) {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.langBarWrap :global(.lang-btn.active:hover) {
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  gap: 36px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--mid);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+  padding: 6px 0;
+  position: relative;
+}
+
+.navLink:hover {
+  color: var(--blue);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--blue);
+  transition: width 0.25s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.active {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.active::after {
+  width: 100%;
+}
+
+.main {
+  flex: 1;
+  padding: 2px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px 16px;
+    gap: 10px;
+  }
+  .nav {
+    gap: 20px;
+    width: 100%;
+  }
+  .langBarWrap {
+    order: 0;
+    width: 100%;
+  }
+}
