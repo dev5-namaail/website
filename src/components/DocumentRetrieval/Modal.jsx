@@ -3,6 +3,7 @@ import { T } from '../../i18n/translations';
 import { fmt } from '../../utils/calculator';
 
 
+// eslint-disable-next-line react/prop-types
 export default function Modal({ lang, isOpen, onClose, results, curSym }) {
   const t = T[lang];
   const [form, setForm] = useState({ name: '', org: '', email: '', country: '', title: '', phone: '' });

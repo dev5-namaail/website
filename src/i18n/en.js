@@ -202,6 +202,9 @@ const T = {
     'nav-retrieval': 'Document Retrieval',
     'nav-settings': 'Settings',
     'nav-about': 'About',
+    'nav-contact': 'Contact Us',
+    'nav-portfolio': 'Portfolio',
+    'nav-media-hub': 'Media Hub',
   };
 
 export default T;

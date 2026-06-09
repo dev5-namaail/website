@@ -202,6 +202,9 @@ const T = {
     'nav-retrieval': 'استرجاع المستندات',
     'nav-settings': 'الإعدادات',
     'nav-about': 'حول',
+    'nav-contact': 'اتصل بنا',
+    'nav-portfolio': 'محفظتنا',
+    'nav-media-hub': 'مركز الوسائط',
   };
 
 export default T;

@@ -8,9 +8,10 @@ import Layout from "./Layout";
 import PageNotFound from "./components/pagenotfound/PageNotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Loading from "./components/loading/Loading";
-// Settings
-const Settings = lazy(() => import("./components/settings/Settings"));
+import Contact from "./components/contact/Contact";
+import Portfolio from "./components/portfolio/Portfolio";
 
+const Media_hub = lazy(() => import("./components/media_hub/Media_hub"));
 const About = lazy(() => import("./components/about/About"));
 
 function App() {
@@ -40,8 +41,10 @@ function App() {
               <Route path="/" element={<Layout lang={lang} setLang={setLang} />}>
               <Route index element={<Home currentLang={lang} />} />
               <Route path="DocumentRetrieval" element={<DocumentRetrieval currentLang={lang}/>} />
-              <Route path="settings" element={<Settings currentLang={lang} />} />
               <Route path="about" element={<About currentLang={lang} />} />
+              <Route path="portfolio" element={<Portfolio currentLang={lang} />} />
+              <Route path="contact" element={<Contact currentLang={lang} />} />
+              <Route path="media-hub" element={<Media_hub currentLang={lang} />} />
               <Route path="*" element={<PageNotFound />} />
             </Route>
           </Route>

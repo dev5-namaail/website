@@ -202,6 +202,9 @@ const T = {
     'nav-retrieval': 'Récupération de Documents',
     'nav-settings': 'Paramètres',
     'nav-about': 'À propos',
+    'nav-contact': 'Contact Nous',
+    'nav-portfolio': 'Portefeuille',
+    'nav-media-hub': 'Media Hub',
   };
 
 export default T;

@@ -15,9 +15,12 @@ function Layout({ lang = 'en', setLang }) {
           </div>
           <nav className={styles.nav}>
             <NavLink to="/" end className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}>{t['nav-home']}</NavLink>
-            <NavLink to="/DocumentRetrieval" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}>{t['nav-retrieval']}</NavLink>
-            <NavLink to="/settings" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}>{t['nav-settings']}</NavLink>
+            <NavLink to="/portfolio" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}>{t['nav-portfolio']}</NavLink>
             <NavLink to="/about" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}>{t['nav-about']}</NavLink>
+            <NavLink to="/contact" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}>{t['nav-contact']}</NavLink>
+            <NavLink to="/media-hub" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}>{t['nav-media-hub']}</NavLink>
+            <NavLink to="/DocumentRetrieval" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}>{t['nav-retrieval']}</NavLink>
+
           </nav>
         </header>
       <main className={styles.main}>
