@@ -187,6 +187,8 @@ const T = {
     'home-docuarena-cta': 'Download DocuArena Brochure',
     'home-cta-title': 'Enough Talk, Let\'s Build Something Together',
     'home-cta-btn': 'Contact Us',
+    'home-cta-profile': 'Download Company Profile',
+    'home-cta-pdf': 'Download DocuArena Brochure',
     'home-title': 'Document Retrieval Cost Calculator',
     'home-desc': 'Calculate the true cost of document retrieval in your organization. Five questions. Two minutes. Accurate results.',
     'home-cta': 'Start Calculator',

@@ -187,6 +187,8 @@ const T = {
     'home-docuarena-cta': 'Télécharger la Brochure DocuArena',
     'home-cta-title': 'Assez Parlé, Construisons Quelque Chose Ensemble',
     'home-cta-btn': 'Contactez-Nous',
+    'home-cta-profile': 'Télécharger le Profil d\'Entreprise',
+    'home-cta-pdf': 'Télécharger la Brochure DocuArena',
     'home-title': 'Calculatrice de Coût de Récupération',
     'home-desc': 'Calculez le coût réel de la récupération de documents dans votre organisation. Cinq questions. Deux minutes. Résultats précis.',
     'home-cta': 'Commencer',
