@@ -12,6 +12,20 @@
   --mid: #5a6a7e;
   --rule: #dde3ea;
   --card: #ffffff;
+  /* Font scale */
+  --fs-hero: clamp(40px, 6vw, 72px);
+  --fs-h2: clamp(28px, 4vw, 42px);
+  --fs-h3: 22px;
+  --fs-card-title: 18px;
+  --fs-body: 16px;
+  --fs-small: 14px;
+  --fs-xs: 12px;
+  --fs-btn: 13px;
+  --fw-hero: 900;
+  --fw-h2: 900;
+  --fw-h3: 800;
+  --fw-card-title: 800;
+  --fw-btn: 800;
 }
 
 html { scroll-behavior: smooth; }

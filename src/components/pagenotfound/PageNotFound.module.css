@@ -14,14 +14,14 @@
 }
 
 .title {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-h2);
   color: var(--ink);
   margin-bottom: 12px;
 }
 
 .description {
-  font-size: 16px;
+  font-size: var(--fs-body);
   color: var(--mid);
   margin-bottom: 32px;
   line-height: 1.6;
@@ -31,14 +31,14 @@
   display: inline-block;
   background: var(--blue);
   color: white;
-  padding: 13px 28px;
-  font-size: 11px;
+  padding: 14px 28px;
+  font-size: var(--fs-btn);
+  font-weight: var(--fw-btn);
   font-family: inherit;
-  font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 999px;
   transition: all 0.2s;
 }
 

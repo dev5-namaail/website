@@ -126,7 +126,8 @@ function Home({ currentLang = "en" }) {
             <div className={styles.aboutCardAccent} />
             <h3>{t["home-cta-profile"]}</h3>
             <p>{t["home-serv-sub"]}</p>
-            <DownloadButton href={profilePdf}>{t["home-cta-profile"]}</DownloadButton>
+            <DownloadButton href={profilePdf}>{t['about-download-profile']}</DownloadButton>
+
           </div>
         </div>
       </section>
@@ -141,7 +142,8 @@ function Home({ currentLang = "en" }) {
             <Link to="/contact" className={styles.docuarenaAction}>
               {t["home-cta-btn"]}
             </Link>
-            <DownloadButton href={brochurePdf}>{t["home-docuarena-cta"]}</DownloadButton>
+            <DownloadButton href={brochurePdf}>{t['about-download-brochure']}</DownloadButton>
+
           </div>
 
           <div className={styles.docuarenaStats}>

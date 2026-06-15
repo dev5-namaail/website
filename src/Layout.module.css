@@ -70,7 +70,7 @@
   text-decoration: none;
   color: var(--mid);
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--fs-small);
   letter-spacing: 0.5px;
   transition: color 0.2s ease;
   padding: 6px 0;
