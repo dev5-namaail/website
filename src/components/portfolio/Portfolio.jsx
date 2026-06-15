@@ -9,12 +9,12 @@ import  famImg from '../../assets/fixedassets.jpg';
 import   prmImg from '../../assets/prm.jpg';
 import videoSrc from '../../assets/portfolio.mp4';
 const items = [
-  { key: 'ecm', icon: '🏢' },
-  { key: 'fam', icon: '📊' },
-  { key: 'prm', icon: '📁' },
-  { key: 'digit', icon: '🔍' },
-  { key: 'kodak', icon: '📄' },
-  { key: 'cms', icon: '✉️' },
+  { key: 'ecm' },
+  { key: 'fam'},
+  { key: 'prm' },
+  { key: 'digit' },
+  { key: 'kodak'},
+  { key: 'cms' },
 ];
 
 const imgs = {
@@ -48,11 +48,8 @@ export default function Portfolio({ currentLang = 'en' }) {
 
 
       <section className={styles.grid}>
-        {items.map(({ key, icon }) => (
+        {items.map(({ key }) => (
           <div key={key} className={styles.card}>
-            {/* <div className={styles.iconWrap}>
-              <span className={styles.icon}>{icon}</span>
-            </div> */}
             <div className={styles.imgWrap}>
               <img src={imgs[key]} alt={t[`portfolio-${key}-title`]} className={styles.cardImage} />
             </div>
