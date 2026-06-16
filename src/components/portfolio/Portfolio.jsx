@@ -61,9 +61,9 @@ export default function Portfolio({ currentLang = 'en' }) {
               <span className={styles.cardKey}>( {key.toUpperCase()} )</span>
             </h3>
             <p className={styles.cardDesc}> {t[`portfolio-${key}-desc`]} </p>
-            <div className={styles.cardFooter}>
+            {/* <div className={styles.cardFooter}>
               <Link to={`/portfolio/${key}`} className={styles.moreLink}>{t['portfolio-read-more']}</Link>
-            </div>
+            </div> */}
           </div>
         ))}
       </section>

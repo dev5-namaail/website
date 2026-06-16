@@ -1,15 +1,51 @@
 import { useState, useEffect, useRef } from "react";
 import { T } from "../../i18n/translations";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 import styles from "./Home.module.css";
 import brochurePdf from "../../assets/Namaa-Brochure.pdf";
 import profilePdf from "../../assets/Namaa-InfoLogistics-Company-Profile-2024-1.pdf";
-
+import digitImg from "../../assets/digit.jpg";
+import fixedImg from "../../assets/fixedassets.jpg";
+import prmImg from "../../assets/prm.jpg";
+import kodakImg from "../../assets/kodak.jpg";
+import testimonialImg from "../../assets/WhatsApp-Image-2024-09-02-at-10.19.18-AM-1536x734 (1).jpeg";
+import img19 from "../../assets/19.jpg";
+import img18 from "../../assets/18.jpg";
+import img17 from "../../assets/17-1.jpg";
+import img16 from "../../assets/16-1.jpg";
+import a5bar from "../../assets/a5bar.png";
+import img15 from "../../assets/15-1 - Copy.jpg";
+import img155 from "../../assets/15-1.jpg";
+import gamhoria from "../../assets/gomhoria.png";
+import heroTablet from "../../assets/WhatsApp-Image-2024-09-02-at-10.19.18-AM-1536x734 (1).jpeg";
 const serviceItems = [
-  { icon: "📄", nameKey: "home-serv1", descKey: "home-serv1d" },
-  { icon: "🔍", nameKey: "home-serv2", descKey: "home-serv2d" },
-  { icon: "🛡️", nameKey: "home-serv3", descKey: "home-serv3d" },
-  { icon: "📊", nameKey: "home-serv4", descKey: "home-serv4d" },
+  { icon: fixedImg, nameKey: "home-serv1", descKey: "home-serv1d" },
+  { icon: digitImg, nameKey: "home-serv2", descKey: "home-serv2d" },
+  { icon: prmImg, nameKey: "home-serv3", descKey: "home-serv3d" },
+  { icon: kodakImg, nameKey: "home-serv4", descKey: "home-serv4d" },
+];
+
+const clientItems = [
+  { icon: kodakImg, nameKey: "home-client1" },
+  { icon: digitImg, nameKey: "home-client2" },
+  { icon: fixedImg, nameKey: "home-client3" },
+  { icon: prmImg, nameKey: "home-client4" },
+  { icon: kodakImg, nameKey: "home-client5" },
+  { icon: heroTablet, nameKey: "home-client6" },
+  { icon: img19, nameKey: "home-client7" },
+  { icon: img18, nameKey: "home-client8" },
+  { icon: img17, nameKey: "home-client9" },
+  { icon: img16, nameKey: "home-client10" },
+  { icon: a5bar, nameKey: "home-client11" },
+  { icon: gamhoria, nameKey: "home-client12" },
+  { icon: img15, nameKey: "home-client13" },
+  { icon: img155, nameKey: "home-client14" },
+  
+  
 ];
 
 const aboutItems = ["home-about1", "home-about2", "home-about3"];
@@ -51,9 +87,7 @@ function DownloadButton({ href, children }) {
   return (
     <a className={styles.downloadButton} href={href} target="_blank" rel="noreferrer">
       <span>{children}</span>
-      <span className={styles.downloadIcon} aria-hidden="true">
-        ⇩
-      </span>
+      <span className={styles.downloadIcon}>⇩</span>
     </a>
   );
 }
@@ -73,6 +107,7 @@ function Home({ currentLang = "en" }) {
 
   return (
     <div className={styles.page}>
+      {/* Hero */}
       <section className={styles.heroSlider}>
         <div className={styles.heroSlide}>
           <div className={styles.heroOverlay} />
@@ -92,6 +127,7 @@ function Home({ currentLang = "en" }) {
         </div>
       </section>
 
+      {/* Services */}
       <section className={styles.services}>
         <div className={styles.sectionHeader}>
           <p className={styles.sectionKicker}>{t["home-serv-title"]}</p>
@@ -102,7 +138,7 @@ function Home({ currentLang = "en" }) {
         <div className={styles.servicesGrid}>
           {serviceItems.map((service) => (
             <article className={styles.serviceCard} key={service.nameKey}>
-              <div className={styles.serviceIcon}>{service.icon}</div>
+              <img className={styles.serviceIcon} src={service.icon} alt={t[service.nameKey]} />
               <h3 className={styles.serviceName}>{t[service.nameKey]}</h3>
               <p className={styles.serviceDesc}>{t[service.descKey]}</p>
             </article>
@@ -110,6 +146,7 @@ function Home({ currentLang = "en" }) {
         </div>
       </section>
 
+      {/* About */}
       <section className={styles.about}>
         <div className={styles.aboutSplit}>
           <div className={styles.aboutCopy}>
@@ -126,12 +163,12 @@ function Home({ currentLang = "en" }) {
             <div className={styles.aboutCardAccent} />
             <h3>{t["home-cta-profile"]}</h3>
             <p>{t["home-serv-sub"]}</p>
-            <DownloadButton href={profilePdf}>{t['about-download-profile']}</DownloadButton>
-
+            <DownloadButton href={profilePdf}>{t["about-download-profile"]}</DownloadButton>
           </div>
         </div>
       </section>
 
+      {/* Docuarena / Stats */}
       <section className={styles.docuarena}>
         <div className={styles.docuarenaGrid}>
           <div className={styles.docuarenaPanel}>
@@ -142,40 +179,82 @@ function Home({ currentLang = "en" }) {
             <Link to="/contact" className={styles.docuarenaAction}>
               {t["home-cta-btn"]}
             </Link>
-            <DownloadButton href={brochurePdf}>{t['about-download-brochure']}</DownloadButton>
-
+            <DownloadButton href={brochurePdf}>{t["about-download-brochure"]}</DownloadButton>
           </div>
 
           <div className={styles.docuarenaStats}>
             <div className={styles.docuarenaCard}>
-              <span className={styles.docuarenaNumber} ref={ref1}>
-                {count1}+
-              </span>
+              <span className={styles.docuarenaNumber} ref={ref1}>{count1}+</span>
               <span className={styles.docuarenaLabel}>{t["home-stat1lbl"]}</span>
+              <p className={styles.statDesc}>{t["home-stat1desc"]}</p>
             </div>
+
             <div className={styles.docuarenaCard}>
-              <span className={styles.docuarenaNumber} ref={ref2}>
-                {count2}+
-              </span>
+              <span className={styles.docuarenaNumber} ref={ref2}>{count2}+</span>
               <span className={styles.docuarenaLabel}>{t["home-stat2lbl"]}</span>
+              <p className={styles.statDesc}>{t["home-stat2desc"]}</p>
             </div>
+
             <div className={styles.docuarenaCard}>
-              <span className={styles.docuarenaNumber} ref={ref3}>
-                {count3}+
-              </span>
+              <span className={styles.docuarenaNumber} ref={ref3}>{count3}+</span>
               <span className={styles.docuarenaLabel}>{t["home-stat3lbl"]}</span>
+              <p className={styles.statDesc}>{t["home-stat3desc"]}</p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Testimonial */}
+      <section className={styles.testimonial}>
+        <div className={styles.testimonialContent}>
+          <h2>{t["home-testimonial-title"]}</h2>
+          <p>{t["home-testimonial-desc"]}</p>
+          <img src={testimonialImg} alt="DocuArena" className={styles.testimonialImage} />
+        </div>
+      </section>
+
+      {/* Clients */}
+      <section className={styles.clients}>
+        <div className={styles.sectionHeader}>
+          <h2 className={styles.sectionTitle}>{t["home-clients-title"]}</h2>
+        </div>
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          pagination={{ clickable: true }}
+          loop={true}
+          className={styles.clientSwiper}
+        >
+          {clientItems.map((client) => (
+            <SwiperSlide key={client.nameKey}>
+              <div className={styles.clientCard}>
+                <img className={styles.clientIcon} src={client.icon} alt={t[client.nameKey]} />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </section>
+
+      {/* Who We Serve */}
+      <section className={styles.serve}>
+        <div className={styles.sectionHeader}>
+          <p className={styles.sectionKicker}>{t["home-serve-title"]}</p>
+          <h2 className={styles.sectionTitle}>{t["home-serve-title"]}</h2>
+        </div>
+        <div className={styles.serveGrid}>
+          {serviceItems.map((service) => (
+            <div className={styles.serveCard} key={service.nameKey}>
+              <h3>{t[service.nameKey]}</h3>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA */}
       <section className={styles.cta}>
         <div className={styles.ctaContent}>
           <h2 className={styles.ctaTitle}>{t["home-cta-title"]}</h2>
           <p className={styles.ctaSub}>{t["home-serv-sub"]}</p>
-          {/* <Link to="/contact" className={styles.ctaBtn}>
-            {t["home-cta-btn"]}
-          </Link> */}
         </div>
       </section>
     </div>
