@@ -227,10 +227,10 @@
 
 .serviceIcon {
   display: block;
-  width: 264px;
-  height: 164px;
+  width: 200px;
+  height: 150px;
   margin: 0 auto 18px;
-  border-radius: 12px;
+  border-radius: 10px;
   object-fit: cover;
   background: linear-gradient(135deg, rgba(15, 95, 255, 0.1), rgba(74, 222, 128, 0.14));
 }
@@ -547,8 +547,9 @@
 }
 
 .clientSwiper {
-  max-width: 700px;
+  max-width: 900px;
   padding-bottom: 36px;
+  margin: 0 auto;
 }
 
 .clientSwiper .swiper-pagination-bullet {
@@ -591,7 +592,6 @@
 
 
 .clientCard {
-  
   flex-shrink: 0;
   display: flex;
   align-items: center;
