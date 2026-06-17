@@ -25,7 +25,7 @@ export default function About({ currentLang = 'en' }) {
   const t = T[currentLang];
 
   return (
-    <article className={styles.page}>
+    <article className={styles.page} dir={t.dir} lang={currentLang}>
       <section className={styles.hero} style={{ backgroundImage: `linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%), url(${heroDesktop})` }}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>{t['about-title']}</h1>

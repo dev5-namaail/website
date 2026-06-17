@@ -3,6 +3,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import { T } from './i18n/translations';
 import styles from './Layout.module.css';
 import LangBar from "./components/DocumentRetrieval/LangBar";
+import Footer from "./components/footer/Footer";
 
 function Layout({ lang = 'en', setLang }) {
   const t = T[lang];
@@ -26,6 +27,7 @@ function Layout({ lang = 'en', setLang }) {
       <main className={styles.main}>
         <Outlet />
       </main>
+      <Footer />
     </div>
   );
 }
