@@ -4,25 +4,35 @@
 }
 
 /* ── Hero ── */
-.heroSlider {
-  position: relative;
-  min-height: 680px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  isolation: isolate;
-}
 
 .heroSlide {
   position: relative;
   width: 100%;
-  min-height: 750px;
+  min-height: 510px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+/* .heroSlide {
+  position: relative;
+  width: 100%;
+  min-height: 510px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, rgba(2, 18, 43, 0.85), rgba(14, 18, 24, 0.7)), url('../../assets/digit.jpg');
   background-size: cover;
   background-position: center;
+} */
+
+.heroVideo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .heroOverlay {

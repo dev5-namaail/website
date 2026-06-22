@@ -2,7 +2,6 @@ import { T } from '../../i18n/translations';
 import styles from './About.module.css';
 import brochurePdf from '../../assets/Namaa-Brochure.pdf';
 import profilePdf from '../../assets/Namaa-InfoLogistics-Company-Profile-2024-1.pdf';
-import heroDesktop from '../../assets/about/about-hero-desktop.jpeg';
 
 const valueKeys = [
   ['about-val1-title', 'about-val1-body-p1', 'about-val1-body-p2'],
@@ -26,7 +25,7 @@ export default function About({ currentLang = 'en' }) {
 
   return (
     <article className={styles.page} dir={t.dir} lang={currentLang}>
-      <section className={styles.hero} style={{ backgroundImage: `linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%), url(${heroDesktop})` }}>
+      <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>{t['about-title']}</h1>
           <p className={styles.heroSub}>{t['about-desc']}</p>
