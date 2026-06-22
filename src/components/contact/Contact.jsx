@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { T } from "../../i18n/translations";
 import styles from "./Contact.module.css";
@@ -9,33 +9,41 @@ export default function Contact({ currentLang = "en" }) {
   const [errors, setErrors] = useState({});
   const [sent, setSent] = useState(false);
 
-  function sendEmail(e) {
-    e.preventDefault();
+  useEffect(() => {
+    emailjs.init("0QE4DuP8HM6CwzodW");
+  }, []);
+
+  useEffect(() => {
+    if (!sent) return;
+    const timer = setTimeout(() => setSent(false), 4000);
+    return () => clearTimeout(timer);
+  }, [sent]);
+
+  function validate() {
     const f = form.current;
     const errs = {};
-    if (!f.user_name.value.trim()) errs.user_name = t["contact-err-name"];
-    if (!f.user_email.value.trim()) errs.user_email = t["contact-err-email"];
-    else if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(f.user_email.value))
-      errs.user_email = t["contact-err-email-invalid"];
+    if (!f.name.value.trim()) errs.name = t["contact-err-name"];
+    if (!f.email.value.trim()) errs.email = t["contact-err-email"];
+    else if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(f.email.value))
+      errs.email = t["contact-err-email-invalid"];
     if (!f.message.value.trim()) errs.message = t["contact-err-message"];
+    return errs;
+  }
+
+  function sendEmail(e) {
+    e.preventDefault();
+    const errs = validate();
     setErrors(errs);
     if (Object.keys(errs).length) return;
-
+    form.current.time.value = new Date().toLocaleString();
     emailjs
-emailjs
-  .sendForm("service_t1tnmn1", "template_fqiaq81", form.current, "0QE4DuP8HM6CwzodW")
-        .then(
-        () => {
-          setSent(true);
-          form.current.reset();
-        },
-        (err) => {
-          console.error("EmailJS error:", err);
-          errs._api = err.text || "Failed to send. Try again later.";
-          setErrors({ ...errs });
-        }
+      .sendForm("service_ti133mc", "template_5kiycuc", form.current)
+      .then(
+        () => { setSent(true); form.current.reset(); },
+        (err) => setErrors({ _api: err.text || "Failed to send. Try again later." })
       );
   }
+  
 
   return (
     <div className={styles.page}>
@@ -48,23 +56,24 @@ emailjs
 
       <div className={styles.content}>
         <form ref={form} className={styles.form} onSubmit={sendEmail} noValidate>
+          <input type="hidden" name="time" />
           <div className={styles.row}>
             <label className={styles.label}>
               {t["contact-name"]}
-              <input name="user_name" className={styles.input} placeholder={t["contact-name-ph"]} required />
-              {errors.user_name && <div className={styles.error}>{errors.user_name}</div>}
+              <input name="name" className={styles.input} placeholder={t["contact-name-ph"]} required />
+              {errors.name && <div className={styles.error}>{errors.name}</div>}
             </label>
             <label className={styles.label}>
               {t["contact-email"]}
-              <input name="user_email" type="email" className={styles.input} placeholder={t["contact-email-ph"]} required />
-              {errors.user_email && <div className={styles.error}>{errors.user_email}</div>}
+              <input name="email" type="email" className={styles.input} placeholder={t["contact-email-ph"]} required />
+              {errors.email && <div className={styles.error}>{errors.email}</div>}
             </label>
           </div>
 
           <div className={styles.row}>
             <label className={styles.label}>
               {t["contact-phone"]}
-              <input name="user_phone" className={styles.input} placeholder={t["contact-phone-ph"]} />
+              <input name="phone" className={styles.input} placeholder={t["contact-phone-ph"]} />
             </label>
             <label className={styles.label}>
               {t["contact-subject"]}

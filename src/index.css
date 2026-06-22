@@ -12,25 +12,35 @@
   --mid: #5a6a7e;
   --rule: #dde3ea;
   --card: #ffffff;
-  /* Font scale */
-  --fs-hero: clamp(40px, 6vw, 72px);
-  --fs-h2: clamp(28px, 4vw, 42px);
-  --fs-h3: 22px;
-  --fs-card-title: 18px;
-  --fs-body: 16px;
-  --fs-small: 15px;
-  --fs-xs: 13px;
-  --fs-btn: 14px;
-  --fw-hero: 900;
-  --fw-h2: 900;
-  --fw-h3: 800;
-  --fw-card-title: 800;
-  --fw-btn: 800;
+
+  --fs-hero: clamp(32px, 5vw, 52px);
+  --fs-h2: clamp(24px, 3.5vw, 36px);
+  --fs-h3: clamp(18px, 2.2vw, 24px);
+  --fs-card-title: clamp(16px, 1.5vw, 20px);
+  --fs-body: clamp(14px, 1.1vw, 16px);
+  --fs-btn: clamp(13px, 1vw, 14px);
+  --fs-small: clamp(12px, 1vw, 14px);
+  --fs-xs: clamp(10px, 0.8vw, 12px);
+
+  --fw-hero: 800;
+  --fw-h2: 700;
+  --fw-h3: 600;
+  --fw-card-title: 600;
+  --fw-body: 400;
+  --fw-btn: 600;
+  --fw-small: 400;
+  --fw-xs: 500;
 }
 
 html { scroll-behavior: smooth; }
 body {
   font-family: 'Barlow Condensed', Tajawal, sans-serif;
+  font-size: var(--fs-body);
+  font-weight: var(--fw-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   background: var(--paper);
   color: var(--ink);
   min-height: 100vh;

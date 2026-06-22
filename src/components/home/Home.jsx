@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import heroVideo from "../../assets/Namaa-PRM-ERM-web-homepage-1-1.mp4";
 import { T } from "../../i18n/translations";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -31,6 +31,7 @@ import logo11 from "../../assets/metlife.png";
 import logo12 from "../../assets/rosa_el_youssef.jpg";
 import logo13 from "../../assets/sena3a.png";
 import logo14 from "../../assets/idida.png";
+import { useEffect, useRef, useState } from "react";
 
 const serviceItems = [
   { icon: kodakImg, nameKey: "home-serv1", descKey: "home-serv1d" },
@@ -112,8 +113,9 @@ export default function Home({ currentLang = "en" }) {
     <div className={styles.page} dir={t.dir} lang={currentLang}>
       <section className={styles.heroSlider}>
         <div className={styles.heroSlide}>
+          <video className={styles.heroVideo} src={heroVideo} autoPlay muted loop playsInline />
           <div className={styles.heroOverlay} />
-          <div className={styles.heroContent}>
+          {/* <div className={styles.heroContent}>
             <span className={styles.heroEyebrow}>{t["home-hero-title-green"]}</span>
             <h1 className={styles.heroTitle}>{t["home-hero-title"]}</h1>
             <p className={styles.heroSub}>{t["home-hero-sub"]}</p>
@@ -125,7 +127,7 @@ export default function Home({ currentLang = "en" }) {
                 {t["home-cta-btn"]}
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

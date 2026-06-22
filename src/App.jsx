@@ -8,11 +8,14 @@ import Layout from "./Layout";
 import PageNotFound from "./components/pagenotfound/PageNotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Loading from "./components/loading/Loading";
-import Contact from "./components/contact/Contact";
-import Portfolio from "./components/portfolio/Portfolio";
 
-const Media_hub = lazy(() => import("./components/media_hub/Media_hub"));
 const About = lazy(() => import("./components/about/About"));
+const Portfolio = lazy(() => import("./components/portfolio/Portfolio"));
+const ContactLazy = lazy(() => import("./components/contact/Contact"));
+const NewsLazy = lazy(() => import("./components/new/News"));
+const BlogsLazy = lazy(() => import("./components/blogs/Blogs"));
+const BlogDetailLazy = lazy(() => import("./components/blogs/Blogs"));
+const PortfolioDetail = lazy(() => import("./components/portfolio/PortfolioDetail"));
 
 function App() {
     const [lang, setLang] = useState('en');
@@ -40,11 +43,15 @@ function App() {
           <Route element={<ProtectedRoute />}>
               <Route path="/" element={<Layout lang={lang} setLang={setLang} />}>
               <Route index element={<Home currentLang={lang} />} />
+              
               <Route path="DocumentRetrieval" element={<DocumentRetrieval currentLang={lang}/>} />
               <Route path="about" element={<About currentLang={lang} />} />
               <Route path="portfolio" element={<Portfolio currentLang={lang} />} />
-              <Route path="contact" element={<Contact currentLang={lang} />} />
-              <Route path="media-hub" element={<Media_hub currentLang={lang} />} />
+              <Route path="contact" element={<ContactLazy currentLang={lang} />} />
+              <Route path="news" element={<NewsLazy currentLang={lang} />} />
+              <Route path="blogs" element={<BlogsLazy currentLang={lang} />} />
+              <Route path="blog/:id" element={<BlogDetailLazy currentLang={lang} />} />
+              <Route path="portfolio/:key" element={<PortfolioDetail currentLang={lang} />} />
               <Route path="*" element={<PageNotFound />} />
             </Route>
           </Route>

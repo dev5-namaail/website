@@ -4,22 +4,14 @@
 }
 
 .hero {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  isolation: isolate;
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%);
+  padding: 80px 24px;
+  text-align: center;
 }
 
 .heroContent {
-  position: relative;
-  z-index: 1;
-  max-width: 860px;
+  max-width: 640px;
   margin: 0 auto;
-  padding: 96px 24px 120px;
-  text-align: center;
 }
 
 .heroTitle {
@@ -41,7 +33,7 @@
 }
 
 .content {
-  max-width: 1120px;
+  max-width: 640px;
   margin: 0 auto;
   padding: 80px 24px;
 }
@@ -86,17 +78,16 @@
 .accentBlock {
   position: relative;
   padding: 28px 32px;
-  border: 1px solid rgba(15, 95, 255, 0.1);
-  border-radius: 26px;
-  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid var(--rule);
+  border-radius: 16px;
+  background: var(--card);
   margin-bottom: 24px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .accentBlock:hover {
   transform: translateY(-4px);
-  border-color: rgba(15, 95, 255, 0.22);
-  box-shadow: 0 20px 50px rgba(15, 45, 90, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .accentBlock p,
@@ -142,8 +133,7 @@
 }
 
 .visionBlock {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(248, 251, 255, 0.92));
-  box-shadow: 0 8px 30px rgba(15, 45, 90, 0.08);
+  background: var(--card);
 }
 
 .visionBlock p {
@@ -162,9 +152,9 @@
 .missionText p {
   position: relative;
   padding: 20px 24px 20px 52px;
-  border: 1px solid rgba(15, 95, 255, 0.09);
-  border-radius: 18px;
-  background: linear-gradient(135deg, rgba(15, 95, 255, 0.04), rgba(74, 222, 128, 0.04));
+  border: 1px solid var(--rule);
+  border-radius: 16px;
+  background: var(--card);
 }
 
 .missionText p::before {
@@ -196,19 +186,18 @@
 
 .valueItem {
   padding: 30px 28px;
-  border: 1px solid rgba(15, 95, 255, 0.1);
-  border-radius: 26px;
-  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid var(--rule);
+  border-radius: 16px;
+  background: var(--card);
   display: grid;
   grid-template-columns: 20px 1fr;
   gap: 18px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .valueItem:hover {
   transform: translateY(-4px);
-  border-color: rgba(15, 95, 255, 0.22);
-  box-shadow: 0 20px 50px rgba(15, 45, 90, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .valueItem h3 {
@@ -283,9 +272,6 @@
 }
 
 @media (max-width: 700px) {
-  .hero {
-    min-height: 550px;
-  }
 
   .content {
     margin: 0 18px;
