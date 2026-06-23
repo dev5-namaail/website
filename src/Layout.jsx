@@ -5,6 +5,7 @@ import styles from './Layout.module.css';
 import LangBar from "./components/DocumentRetrieval/LangBar";
 import { useState, useEffect } from "react";
 import logoImg from "./assets/logos/namaa-logo.png";
+import Footer from "./components/footer/Footer";
 
 function Layout({ lang = 'en', setLang }) {
   const t = T[lang];
@@ -82,6 +83,7 @@ function Layout({ lang = 'en', setLang }) {
       <main className={styles.main}>
         <Outlet />
       </main>
+      <Footer/>
     </div>
   );
 }
