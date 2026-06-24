@@ -14,7 +14,7 @@ const Portfolio = lazy(() => import("./components/portfolio/Portfolio"));
 const ContactLazy = lazy(() => import("./components/contact/Contact"));
 const NewsLazy = lazy(() => import("./components/new/News"));
 const BlogsLazy = lazy(() => import("./components/blogs/Blogs"));
-const BlogDetailLazy = lazy(() => import("./components/blogs/Blogs"));
+const BlogDetailLazy = lazy(() => import("./components/blogs/BlogsDetails"));
 const PortfolioDetail = lazy(() => import("./components/portfolio/PortfolioDetail"));
 
 function App() {

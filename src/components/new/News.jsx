@@ -88,10 +88,10 @@ function News({ currentLang = 'en' }) {
         </div>
       </section>
 
-      <section className={styles.cta}>
+      {/* <section className={styles.cta}>
         <h2 className={styles.ctaTitle}>{t['media-cta-title']}</h2>
         <Link to="/contact" className={styles.ctaBtn}>{t['media-cta-btn']}</Link>
-      </section>
+      </section> */}
     </div>
   );
 }
