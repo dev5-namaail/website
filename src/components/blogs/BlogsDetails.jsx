@@ -87,13 +87,7 @@ function BlogDetail({ currentLang = 'en' }) {
             </ol>
           </section>
 
-          <section className={styles.ctaBox}>
-            <h3>{t['blog-detail-cta-title']}</h3>
-            <p>{t['blog-detail-cta-desc']}</p>
-            <Link to="/contact" className={styles.ctaButton}>
-              {t['blog-detail-cta-btn']}
-            </Link>
-          </section>
+          
         </div>
       </article>
 
