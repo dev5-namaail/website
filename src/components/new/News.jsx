@@ -71,27 +71,9 @@ function News({ currentLang = 'en' }) {
         </div>
       </section>
 
-      <section className={styles.awards}>
-        <h2 className={styles.sectionTitle}>{t['media-awards-title']}</h2>
-        <div className={styles.awardCard}>
-          <div className={styles.awardImgWrap}>
-            <img
-              src="https://namaa-il.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-10-28-at-4.04.57-PM-768x858.jpeg"
-              alt={t['media-award-1-title']}
-              className={styles.awardImg}
-            />
-          </div>
-          <div className={styles.awardContent}>
-            <h3 className={styles.awardTitle}>{t['media-award-1-title']}</h3>
-            <p className={styles.awardDesc}>{t['media-award-1-desc']}</p>
-          </div>
-        </div>
-      </section>
+  
 
-      {/* <section className={styles.cta}>
-        <h2 className={styles.ctaTitle}>{t['media-cta-title']}</h2>
-        <Link to="/contact" className={styles.ctaBtn}>{t['media-cta-btn']}</Link>
-      </section> */}
+   
     </div>
   );
 }
