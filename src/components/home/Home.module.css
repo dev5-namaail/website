@@ -45,10 +45,11 @@
 .heroContent {
   position: relative;
   z-index: 1;
-  max-width: 860px;
+  /* max-width: 1060px; */
   margin: 0 auto;
-  padding: 96px 24px 120px;
+  padding: 96px 24px 40px;
   text-align: center;
+  background-color: #eceef1;
 }
 
 .heroEyebrow {
@@ -60,7 +61,7 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.08);
-  color: #bbf7d0;
+  color: var(--navy);
   font-size: var(--fs-xs);
   font-weight: var(--fw-btn);
   letter-spacing: 1.8px;
@@ -71,7 +72,7 @@
 .heroTitle {
   font-size: var(--fs-hero);
   font-weight: var(--fw-hero);
-  color: white;
+  color: var(--navy);
   letter-spacing: -2px;
   line-height: 1.04;
   margin: 0 0 24px;
@@ -82,7 +83,7 @@
   max-width: 680px;
   margin: 0 auto;
   font-size: var(--fs-body);
-  color: rgba(255, 255, 255, 0.86);
+  color: var(--navy);
   line-height: 1.75;
 }
 
@@ -101,7 +102,7 @@
   min-height: 48px;
   padding:14px 32px;
   border-radius: 999px;
-  background: linear-gradient(135deg, var(--blue), #0f7cff);
+  background: linear-gradient(135deg, var(--blue), #0e2138);
   color: white;
   font-size: var(--fs-btn);
   font-weight: var(--fw-btn);
@@ -118,9 +119,9 @@
   min-height: 48px;
   padding: 14px 32px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(1, 12, 19, 0.247);
   border: 1px solid rgba(255, 255, 255, 0.34);
-  color: white;
+  color: var(--navy);
   font-size: var(--fs-btn);
   font-weight: var(--fw-btn);
   letter-spacing: 1.4px;
@@ -136,7 +137,7 @@
 }
 
 .heroCtaSecondary:hover {
-  background: rgba(255, 255, 255, 0.16);
+  background: rgba(7, 41, 68, 0.692);
   border-color: rgba(255, 255, 255, 0.72);
 }
 

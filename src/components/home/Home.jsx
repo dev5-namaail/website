@@ -111,11 +111,15 @@ export default function Home({ currentLang = "en" }) {
 
   return (
     <div className={styles.page} dir={t.dir} lang={currentLang}>
-      <section className={styles.heroSlider}>
+      {/* <section className={styles.heroSlider}> */}
         <div className={styles.heroSlide}>
           <video className={styles.heroVideo} src={heroVideo} autoPlay muted loop playsInline />
           <div className={styles.heroOverlay} />
-          {/* <div className={styles.heroContent}>
+       
+        </div>
+      {/* </section> */}
+
+<div className={styles.heroContent}>
             <span className={styles.heroEyebrow}>{t["home-hero-title-green"]}</span>
             <h1 className={styles.heroTitle}>{t["home-hero-title"]}</h1>
             <p className={styles.heroSub}>{t["home-hero-sub"]}</p>
@@ -127,10 +131,8 @@ export default function Home({ currentLang = "en" }) {
                 {t["home-cta-btn"]}
               </Link>
             </div>
-          </div> */}
-        </div>
-      </section>
-
+          </div> 
+          
       <section className={styles.services}>
         <div className={styles.sectionHeader}>
           <p className={styles.sectionKicker}>{t["home-serv-title"]}</p>
