@@ -373,37 +373,11 @@ export default function Dashboard({ lang, results, curSym, onReset }) {
           </div>
         </div>
 
-        {/* Recovery bars */}
-        <div className="dash-card">
-          <div className="dash-card-title">{t['dash-g4']}</div>
-          <div style={{ marginBottom: 20 }}>
-            {priorities.map(p => (
-              <div key={p.rank} className="priority-row">
-                <div className={`priority-rank ${p.cls}`}>{p.rank}</div>
-                <div className="priority-text">{t[p.key]}</div>
-                <div className="priority-impact">{p.impact}</div>
-              </div>
-            ))}
-          </div>
-          <RecoveryBars drivers={recoveryDrivers} sym={sym} lang={lang} />
-        </div>
-
-        {/* Bar chart */}
-        <div className="dash-card">
-          <div className="dash-card-title">{t['dash-g5']}</div>
-          <BarChart drivers={barDrivers} sym={sym} lang={lang} />
-        </div>
-
-        {/* Payback chart */}
-        <div className="dash-card full">
-          <div className="dash-card-title">{t['dash-g6']}</div>
-          <PaybackChart results={results} sym={sym} lang={lang} />
-        </div>
+    
+  
       </div>
 
-      <div className="reset-row">
-        <button className="btn-reset" onClick={onReset}>{t.reset}</button>
-      </div>
+     
     </div>
   );
 }
