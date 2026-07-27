@@ -112,11 +112,11 @@ function Blogs({ currentLang = 'en' }) {
         <div className={styles.blogGrid}>
           {blogs.map((blog) => (
             <article key={blog.id} className={styles.blogCard}>
-              {/* Image */}
-          <img src={blog.image} alt={t[blog.titleKey]} className={styles.blogImage} />
-
+              <Link to={`/blog/${blog.id}`} className={styles.blogImageLink}>
+                <img src={blog.image} alt={t[blog.titleKey]} className={styles.blogImage} />
+              </Link>
               <div className={styles.blogContent}>
-                {/* <span className={styles.blogCategory}>{t[blog.categoryKey]}</span> */}
+                <span className={styles.blogCategory}>{t[blog.categoryKey]}</span>
                 <h3 className={styles.blogTitle}>
                   <Link to={`/blog/${blog.id}`}>{t[blog.titleKey]}</Link>
                 </h3>

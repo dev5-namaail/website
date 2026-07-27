@@ -36,62 +36,42 @@ function BlogDetail({ currentLang = 'en' }) {
 
   return (
     <div className={styles.page}>
-      {/* Back Button */}
       <div className={styles.backNav}>
         <Link to="/blogs" className={styles.backLink}>
           ← {t['blog-back'] || 'Back to Blogs'}
         </Link>
       </div>
 
-      {/* Article Header */}
       <article className={styles.articleContainer}>
-        <div className={styles.articleHeader}>
-          <span className={styles.articleCategory}>{t[blogPost.categoryKey]}</span>
-          <h1 className={styles.articleTitle}>{t[blogPost.titleKey]}</h1>
-          <div className={styles.articleMeta}>
-            <time>{t[blogPost.dateKey]}</time>
-            <span className={styles.readingTime}>{t['blog-reading-time']}</span>
+        <div className={styles.featuredImage}>
+          <img src={blogPost.image} alt={t[blogPost.titleKey]} />
+        </div>
+
+        <span className={styles.articleCategory}>{t[blogPost.categoryKey]}</span>
+        <h1 className={styles.articleTitle}>{t[blogPost.titleKey]}</h1>
+
+        <div className={styles.articleMeta}>
+          <div className={styles.authorAvatar}>N</div>
+          <div className={styles.authorInfo}>
+            <span className={styles.authorName}>Namaa InfoLogistics</span>
+            <span>{t[blogPost.dateKey]}</span>
           </div>
         </div>
 
-        {/* Featured Image */}
-        <div className={styles.featuredImage}>
-          <img src={blogPost.image} alt={t[blogPost.titleKey]} className={styles.image} />
-        </div>
+        <div
+          className={styles.articleContent}
+          dangerouslySetInnerHTML={{ __html: t[blogPost.contentKey] }}
+        />
 
-        {/* Article Content */}
-        <div className={styles.articleContent}>
-          <p className={styles.excerpt}>{t[blogPost.excerptKey]}</p>
-          
-          <section className={styles.contentSection}>
-            <h2>{t['blog-article-content']}</h2>
-            <p>{t[blogPost.contentKey]}</p>
-            <ul>
-              <li>{t['blog-insight-1']}</li>
-              <li>{t['blog-insight-2']}</li>
-              <li>{t['blog-insight-3']}</li>
-              <li>{t['blog-insight-4']}</li>
-            </ul>
-            <p>{t['blog-benefits']}</p>
-          </section>
-
-          <section className={styles.contentSection}>
-            <h2>{t['blog-implementation-title']}</h2>
-            <p>{t['blog-implementation-intro']}</p>
-            <ol>
-              <li>{t['blog-phase-1']}</li>
-              <li>{t['blog-phase-2']}</li>
-              <li>{t['blog-phase-3']}</li>
-              <li>{t['blog-phase-4']}</li>
-              <li>{t['blog-phase-5']}</li>
-            </ol>
-          </section>
-
-          
+        <div className={styles.ctaBox}>
+          <h3>{t['blog-detail-cta-title']}</h3>
+          <p>{t['blog-detail-cta-desc']}</p>
+          <Link to="/contact" className={styles.ctaButton}>
+            {t['blog-detail-cta-btn']}
+          </Link>
         </div>
       </article>
 
-      {/* Navigation */}
       <nav className={styles.postNavigation}>
         <button
           className={styles.navButton}
