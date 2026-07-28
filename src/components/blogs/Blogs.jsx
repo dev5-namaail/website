@@ -1,15 +1,13 @@
 import { T } from '../../i18n/translations';
 import { Link } from 'react-router-dom';
 import blog1 from "../../assets/blogs/blog1.jpg";
-import blog2 from "../../assets/blogs/blogs2.jpg";
-import blog3 from "../../assets/blogs/blogs3.jpg";
-import blog4 from "../../assets/blogs/blogs4.jpg";
-import blog5 from "../../assets/blogs/blogs5.jpg";
-import blog6 from "../../assets/blogs/blogs6.jpg";
-import blog7 from "../../assets/blogs/blogs7.jpg";
-import blog8 from "../../assets/blogs/blogs8.jpg";
-import blog9 from "../../assets/blogs/blogs9.jpg";
-import blog10 from "../../assets/blogs/blog1.jpg";
+import blog2 from "../../assets/blogs/blogs9.jpg";
+import blog3 from "../../assets/blogs/blogs8.jpg";
+import blog4 from "../../assets/blogs/blogs2.jpg";
+import blog5 from "../../assets/blogs/blogs4.jpg";
+import blog6 from "../../assets/blogs/blogs5.jpg";
+import blog7 from "../../assets/blogs/blogs6.jpg";
+import blog8 from "../../assets/blogs/blogs7.jpg";
 import styles from './Blogs.module.css';
 function Blogs({ currentLang = 'en' }) {
   const t = T[currentLang];
@@ -29,7 +27,7 @@ function Blogs({ currentLang = 'en' }) {
       excerptKey: 'blog-2-excerpt',
       categoryKey: 'blog-category',
       dateKey: 'blog-2-date',
-      image: blog9
+      image: blog2
     },
     {
       id: 3,
@@ -37,7 +35,7 @@ function Blogs({ currentLang = 'en' }) {
       excerptKey: 'blog-3-excerpt',
       categoryKey: 'blog-category',
       dateKey: 'blog-3-date',
-      image: blog8
+      image: blog3
     },
     {
       id: 4,
@@ -45,7 +43,7 @@ function Blogs({ currentLang = 'en' }) {
       excerptKey: 'blog-4-excerpt',
       categoryKey: 'blog-category',
       dateKey: 'blog-4-date',
-      image: blog2
+      image: blog4
     },
     {
       id: 5,
@@ -53,7 +51,7 @@ function Blogs({ currentLang = 'en' }) {
       excerptKey: 'blog-5-excerpt',
       categoryKey: 'blog-category',
       dateKey: 'blog-5-date',
-      image: blog4
+      image: blog5
     },
     {
       id: 6,
@@ -61,7 +59,7 @@ function Blogs({ currentLang = 'en' }) {
       excerptKey: 'blog-6-excerpt',
       categoryKey: 'blog-category',
       dateKey: 'blog-6-date',
-      image: blog5
+      image: blog6
     },
     {
       id: 7,
@@ -69,7 +67,7 @@ function Blogs({ currentLang = 'en' }) {
       excerptKey: 'blog-7-excerpt',
       categoryKey: 'blog-category',
       dateKey: 'blog-7-date',
-      image: blog6
+      image: blog7
     },
     {
       id: 8,
@@ -77,26 +75,26 @@ function Blogs({ currentLang = 'en' }) {
       excerptKey: 'blog-8-excerpt',
       categoryKey: 'blog-category',
       dateKey: 'blog-8-date',
-      image: blog7
+      image: blog8
     }
     ,
-    {
-      id: 9,
-      titleKey: 'blog-9-title',
-      excerptKey: 'blog-9-excerpt',
-      categoryKey: 'blog-category',
-      dateKey: 'blog-9-date',
-      image: blog9
-    }
-    ,
-    {
-      id: 10,
-      titleKey: 'blog-10-title',
-      excerptKey: 'blog-10-excerpt',
-      categoryKey: 'blog-category',
-      dateKey: 'blog-10-date',
-      image: blog10
-    }
+    // {
+    //   id: 9,
+    //   titleKey: 'blog-9-title',
+    //   excerptKey: 'blog-9-excerpt',
+    //   categoryKey: 'blog-category',
+    //   dateKey: 'blog-9-date',
+    //   image: blog9
+    // }
+    // ,
+    // {
+    //   id: 10,
+    //   titleKey: 'blog-10-title',
+    //   excerptKey: 'blog-10-excerpt',
+    //   categoryKey: 'blog-category',
+    //   dateKey: 'blog-10-date',
+    //   image: blog10
+    // }
   ];
 
   return (
