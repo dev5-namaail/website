@@ -28,7 +28,7 @@ export default function About({ currentLang = 'en' }) {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>{t['about-title']}</h1>
-          <p className={styles.heroSub}>{t['about-desc']}</p>
+          {/* <p className={styles.heroSub}>{t['about-desc']}</p> */}
         </div>
       </section>
 
@@ -44,8 +44,8 @@ export default function About({ currentLang = 'en' }) {
 
         <section className={styles.section}>
           <h2>{t['about-vision']}</h2>
-          <div className={`${styles.accentBlock} ${styles.visionBlock}`}>
-            <p><strong>{t['about-vision-text']}</strong></p>
+          <div className={`${styles.accentBlock}`}>
+            <p>{t['about-vision-text']}</p>
           </div>
         </section>
 

@@ -17,7 +17,7 @@ function Blogs({ currentLang = 'en' }) {
       id: 1,
       titleKey: 'blog-1-title',
       excerptKey: 'blog-1-excerpt',
-      categoryKey: 'blog-category',
+      // categoryKey: 'blog-category',
       dateKey: 'blog-1-date',
       image: blog1
     },
@@ -25,7 +25,7 @@ function Blogs({ currentLang = 'en' }) {
       id: 2,
       titleKey: 'blog-2-title',
       excerptKey: 'blog-2-excerpt',
-      categoryKey: 'blog-category',
+      // categoryKey: 'blog-category',
       dateKey: 'blog-2-date',
       image: blog2
     },
@@ -33,7 +33,7 @@ function Blogs({ currentLang = 'en' }) {
       id: 3,
       titleKey: 'blog-3-title',
       excerptKey: 'blog-3-excerpt',
-      categoryKey: 'blog-category',
+      // categoryKey: 'blog-category',
       dateKey: 'blog-3-date',
       image: blog3
     },
@@ -41,7 +41,7 @@ function Blogs({ currentLang = 'en' }) {
       id: 4,
       titleKey: 'blog-4-title',
       excerptKey: 'blog-4-excerpt',
-      categoryKey: 'blog-category',
+      // categoryKey: 'blog-category',
       dateKey: 'blog-4-date',
       image: blog4
     },
@@ -49,7 +49,7 @@ function Blogs({ currentLang = 'en' }) {
       id: 5,
       titleKey: 'blog-5-title',
       excerptKey: 'blog-5-excerpt',
-      categoryKey: 'blog-category',
+      // categoryKey: 'blog-category',
       dateKey: 'blog-5-date',
       image: blog5
     },
@@ -57,7 +57,7 @@ function Blogs({ currentLang = 'en' }) {
       id: 6,
       titleKey: 'blog-6-title',
       excerptKey: 'blog-6-excerpt',
-      categoryKey: 'blog-category',
+      // categoryKey: 'blog-category',
       dateKey: 'blog-6-date',
       image: blog6
     },
@@ -65,7 +65,7 @@ function Blogs({ currentLang = 'en' }) {
       id: 7,
       titleKey: 'blog-7-title',
       excerptKey: 'blog-7-excerpt',
-      categoryKey: 'blog-category',
+      // categoryKey: 'blog-category',
       dateKey: 'blog-7-date',
       image: blog7
     },
@@ -73,7 +73,7 @@ function Blogs({ currentLang = 'en' }) {
       id: 8,
       titleKey: 'blog-8-title',
       excerptKey: 'blog-8-excerpt',
-      categoryKey: 'blog-category',
+      // categoryKey: 'blog-category',
       dateKey: 'blog-8-date',
       image: blog8
     }
@@ -114,7 +114,7 @@ function Blogs({ currentLang = 'en' }) {
                 <img src={blog.image} alt={t[blog.titleKey]} className={styles.blogImage} />
               </Link>
               <div className={styles.blogContent}>
-                <span className={styles.blogCategory}>{t[blog.categoryKey]}</span>
+                {/* <span className={styles.blogCategory}>{t[blog.categoryKey]}</span> */}
                 <h3 className={styles.blogTitle}>
                   <Link to={`/blog/${blog.id}`}>{t[blog.titleKey]}</Link>
                 </h3>

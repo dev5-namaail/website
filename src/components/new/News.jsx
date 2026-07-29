@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './News.module.css';
 import mediastrategic from '../../assets/mediastrategic.png';
 import mcitdigutal from '../../assets/mcitdigutal.png';
-
+import Awards from '../../assets/Awards.jpeg'
 const partnerships = [
   {
     titleKey: 'media-partnership-1-title',
@@ -26,7 +26,6 @@ const partnerships = [
   },
 ];
 
-// eslint-disable-next-line react/prop-types
 function News({ currentLang = 'en' }) {
   const t = T[currentLang];
 
@@ -71,9 +70,27 @@ function News({ currentLang = 'en' }) {
         </div>
       </section>
 
-  
+      <section className={styles.awards}>
+        <h2 className={styles.sectionTitle}>{t['media-awards-title']}</h2>
+        <div className={styles.awardCard}>
+          <div className={styles.awardImgWrap}>
+            <img
+              src={Awards}
+              alt={t['media-award-1-title']}
+              className={styles.awardImg}
+            />
+          </div>
+          <div className={styles.awardContent}>
+            <h3 className={styles.awardTitle}>{t['media-award-1-title']}</h3>
+            <p className={styles.awardDesc}>{t['media-award-1-desc']}</p>
+          </div>
+        </div>
+      </section>
 
-   
+      {/* <section className={styles.cta}>
+        <h2 className={styles.ctaTitle}>{t['media-cta-title']}</h2>
+        <Link to="/contact" className={styles.ctaBtn}>{t['media-cta-btn']}</Link>
+      </section> */}
     </div>
   );
 }
