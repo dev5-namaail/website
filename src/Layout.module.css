@@ -136,7 +136,7 @@
 }
 
 .hamburgerOpen span:nth-child(1) {
-  transform: translateY(3.5px) rotate(45deg);
+  transform: translateY(10px) rotate(45deg);
 }
 
 .hamburgerOpen span:nth-child(2) {
