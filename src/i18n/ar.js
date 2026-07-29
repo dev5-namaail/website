@@ -156,6 +156,8 @@
     'conservative-label': 'السيناريو المحافظ',
     'typical-label': 'السيناريو المعتاد',
     'best-label': 'أفضل سيناريو',
+    // 'home-hero-title': 'أعد تشكيل أعمالك مع Namaa InfoLogistics',
+    "home-testimonial-DocuArena": " مع وجود DocuArena",
     'home-hero-title': 'أعد تشكيل أعمالك',
     'home-hero-title-green': 'namaa infologistics',
     'home-hero-sub': 'نحوّل خيالك إلى واقع بحلول متطورة لإدارة السجلات والمعلومات.',

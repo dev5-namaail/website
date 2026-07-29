@@ -35,7 +35,7 @@ export default function Portfolio({ currentLang = 'en' }) {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>{t['portfolio-title']}</h1>
-          <p className={styles.heroSub}>{t['portfolio-sub']}</p>
+          {/* <p className={styles.heroSub}>{t['portfolio-sub']}</p> */}
         </div>
       </section>
       <section className={styles.videoSection}>
@@ -62,7 +62,7 @@ export default function Portfolio({ currentLang = 'en' }) {
             </h3>
             <p className={styles.cardDesc}> {t[`portfolio-${key}-desc`]} </p>
             <div className={styles.cardFooter}>
-              <Link to={`/portfolio/${key}`} className={styles.moreLink}>{t['portfolio-read-more']}</Link>
+               <Link to={`/portfolio/${key}`} className={styles.moreLink}>{t['portfolio-read-more']}</Link>
             </div>
           </div>
         ))}

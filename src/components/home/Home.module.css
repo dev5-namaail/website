@@ -8,7 +8,7 @@
 .heroSlide {
   position: relative;
   width: 100%;
-  min-height: 750px;
+  min-height: 850px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,12 +45,26 @@
 .heroContent {
   position: relative;
   z-index: 1;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 96px 24px 40px;
   text-align: center;
+  /* background-color: rgba(236, 238, 241, 0.92); */
+  /* box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15); */
+  /* border-radius: 24px; */
+}
+.heroSuccess{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 96px 24px 40px;
+  text-align: center;
+  gap: 40px;
   background-color: rgba(236, 238, 241, 0.92);
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+  /* border-radius: 24px; */
 }
+
 
 .heroEyebrow {
   display: inline-flex;
@@ -174,9 +188,9 @@
 
 .servicesGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4,1fr);
   gap: 24px;
-  max-width: 1520px;
+  max-width: 1620px;
   margin: 0 auto;
 }
 
@@ -197,10 +211,11 @@
 .serviceIcon {
   display: block;
   width: 100%;
-  height: 180px;
+  height: 230px;
   margin: 0 0 20px;
   border-radius: 14px;
   object-fit: cover;
+  border: 3px solid rgba(15, 23, 42, 0.06);
 }
 
 .serviceName {
@@ -596,6 +611,14 @@
   object-fit: cover;
   margin: 0 0 16px;
 }
+.successImage{
+    display: block;
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin: 0 0 16px;
+}
 
 .serveCardTitle {
   margin: 0;
@@ -755,7 +778,13 @@
   .heroContent {
     padding: 72px 18px 96px;
   }
-
+.heroSuccess{
+  flex-direction: column;
+  gap: 40px;
+}
+.serveCardImage {
+  width: 170%;
+}
   .heroTitle {
     letter-spacing: -1px;
   }

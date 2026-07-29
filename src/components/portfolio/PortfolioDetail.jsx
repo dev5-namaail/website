@@ -32,8 +32,10 @@ export default function PortfolioDetail({ currentLang = 'en' }) {
   return (
     <div className={styles.page}>
       <div className={styles.backNav}>
-        <Link to="/portfolio" className={styles.backLink}>← {t['portfolio-back']}</Link>
-      </div>
+   <Link to="/portfolio" className={styles.backLink}>
+                <span className={styles.backArrow}>&larr;</span>
+                {t['portfolio-back'] || 'Back to portfolio'}
+              </Link>      </div>
 
       <article className={styles.container}>
         <header className={styles.header}>

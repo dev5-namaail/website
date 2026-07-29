@@ -50,7 +50,7 @@ export default function Contact({ currentLang = "en" }) {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>{t["contact-title"]}</h1>
-          <p className={styles.heroSub}>{t["contact-desc"]}</p>
+          {/* <p className={styles.heroSub}>{t["contact-desc"]}</p> */}
         </div>
       </section>
 

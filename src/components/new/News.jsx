@@ -34,7 +34,7 @@ function News({ currentLang = 'en' }) {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>{t['media-title']}</h1>
-          <p className={styles.heroSub}>{t['media-subtitle']}</p>
+          {/* <p className={styles.heroSub}>{t['media-subtitle']}</p> */}
         </div>
       </section>
 

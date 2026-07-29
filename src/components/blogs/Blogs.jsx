@@ -102,7 +102,7 @@ function Blogs({ currentLang = 'en' }) {
       {/* Page Header */}
       <section className={styles.pageHeader}>
         <h1 className={styles.pageTitle}>{t['blogs-title']}</h1>
-        <p className={styles.pageSubtitle}>{t['blogs-subtitle']}</p>
+        {/* <p className={styles.pageSubtitle}>{t['blogs-subtitle']}</p> */}
       </section>
 
       {/* Blogs Grid */}
