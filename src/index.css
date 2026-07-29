@@ -13,7 +13,7 @@
   --rule: #dde3ea;
   --card: #ffffff;
 
-  --fs-hero: clamp(30px, 5vw, 40px);
+  --fs-hero: clamp(32px, 5vw, 43px);
   --fs-h2: clamp(24px, 3.5vw, 30px);
   --fs-h3: clamp(18px, 2.2vw, 24px);
   --fs-card-title: clamp(16px, 1.5vw, 20px);
@@ -61,7 +61,7 @@ body.lang-ar { font-family: 'Tajawal', sans-serif; }
 .header-left { padding: 44px 56px; display: flex; flex-direction: column; justify-content: flex-start; gap: 16px; border-right: 1px solid rgba(255,255,255,0.06); }
 .header-right { padding: 48px 56px; display: flex; flex-direction: column; justify-content: center; }
 .logo-wrap { background: white; display: inline-block; padding: 10px 20px; border-radius: 6px; margin-bottom: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.18); }
-.logo-wrap img { height: 88px; width: auto; display: block; }
+.logo-wrap img { height: 70px; width: auto; display: block; }
 .logo-pill { background: white; display: inline-flex; align-items: center; padding: 8px 16px; border-radius: 6px; box-shadow: 0 2px 12px rgba(0,0,0,0.22); }
 .logo-pill img { height: 52px; width: auto; display: block; }
 .header-title { font-size: clamp(28px, 3.5vw, 46px); font-weight: 800; line-height: 1.1; color: white; letter-spacing: -0.5px; margin-top: 20px; }

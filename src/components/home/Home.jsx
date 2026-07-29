@@ -9,10 +9,14 @@ import styles from "./Home.module.css";
 import brochurePdf from "../../assets/Namaa-Brochure.pdf";
 import profilePdf from "../../assets/Namaa-InfoLogistics-Company-Profile-2024-1.pdf";
 import testimonialImg from "../../assets/WhatsApp-Image1.png";
-import digitImg from "../../assets/digit.jpg";
-import fixedImg from "../../assets/fixedassets.jpg";
-import prmImg from "../../assets/prm.jpg";
-import kodakImg from "../../assets/kodak.jpg";
+import digitImg from "../../assets/HOME/Digitization.jpg";
+// import digitImg from "../../assets/digit.jpg";
+import fixedImg from "../../assets/HOME/FAM.jpeg";
+// import fixedImg from "../../assets/fixedassets.jpg";
+// import prmImg from "../../assets/prm.jpg";
+import prmImg from "../../assets/HOME/prm.jpg";
+// import kodakImg from "../../assets/kodak.jpg";
+import kodakImg from "../../assets/HOME/KODAK.jpg";
 import service1 from "../../assets/service1.jpg";
 import service2 from "../../assets/service2.jpg";
 import service3 from "../../assets/service3.jpg";
@@ -31,6 +35,7 @@ import logo11 from "../../assets/metlife.png";
 import logo12 from "../../assets/rosa_el_youssef.jpg";
 import logo13 from "../../assets/sena3a.png";
 import logo14 from "../../assets/idida.png";
+import successImg from "../../assets/HOME/SUCCESS.jpg";
 import { useEffect, useRef, useState } from "react";
 
 const serviceItems = [
@@ -119,7 +124,17 @@ export default function Home({ currentLang = "en" }) {
         </div>
       {/* </section> */}
 
-<div className={styles.heroContent}>
+<div className={styles.heroSuccess}>
+                         <div>
+                                      <img className={styles.successImage} src={successImg} alt={t[service.nameKey]} />
+
+                        </div>
+
+
+
+
+
+  <div className={styles.heroContent}>
             {/* <span className={styles.heroEyebrow}>{t["home-hero-title-green"]}</span> */}
             <h1 className={styles.heroTitle}>{t["home-hero-title"]}</h1>
             <p className={styles.heroSub}>{t["home-hero-sub"]}</p>
@@ -132,6 +147,9 @@ export default function Home({ currentLang = "en" }) {
               </Link>
             </div>
           </div> 
+                    
+
+</div>
           
       <section className={styles.services}>
         <div className={styles.sectionHeader}>
@@ -173,7 +191,7 @@ export default function Home({ currentLang = "en" }) {
         <div className={styles.docuarenaGrid}>
           <div className={styles.docuarenaPanel}>
             {/* <p className={styles.sectionKicker}>{t["home-docuarena-title"]}</p> */}
-            <h2 className={styles.docuarenaTitle}>{t["home-docuarena-sub"]}</h2>
+            <h2 className={styles.docuarenaTitle}>{t["home-docuarena-sub"]}</h2>         
             <p className={styles.docuarenaDesc}>{t["home-docuarena-desc"]}</p>
             <div className={styles.docuarenaActions}>
               <Link to="/contact" className={styles.docuarenaAction}>
@@ -207,7 +225,8 @@ export default function Home({ currentLang = "en" }) {
       <section className={styles.testimonial}>
         <div className={styles.testimonialContent}>
           <h2>{t["home-testimonial-title"]}</h2>
-          <p>{t["home-testimonial-desc"]}</p>
+          <p></p>
+          <p><strong>{t["home-testimonial-DocuArena"]}</strong> : {t["home-testimonial-desc"]}</p>
           <img src={testimonialImg} alt="DocuArena" className={styles.testimonialImage} />
         </div>
       </section>
