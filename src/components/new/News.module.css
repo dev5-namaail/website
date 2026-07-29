@@ -40,8 +40,8 @@
 }
 
 .heroTitle {
-  font-size: 48px;
-  font-weight: 900;
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-hero);
   color: white;
   letter-spacing: -1.5px;
   line-height: 1.1;
@@ -49,7 +49,7 @@
 }
 
 .heroSub {
-  font-size: 17px;
+  font-size: var(--fs-body);
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.7;
   margin: 0;
@@ -57,8 +57,8 @@
 }
 
 .sectionTitle {
-  font-size: 32px;
-  font-weight: 800;
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-hero);
   color: var(--ink);
   margin: 0 0 48px;
   text-align: center;
@@ -80,7 +80,7 @@
 .awards {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 80px 24px 50px;
+  padding: 20px 24px 50px;
 }
 
 .partnershipList {
@@ -128,16 +128,16 @@
 }
 
 .quoteText {
-  font-size: 15px;
+  font-size: var(--fs-body);
   color: #334155;
   line-height: 1.8;
   margin: 0 0 12px;
   font-style: italic;
-  font-weight: 400;
+  font-weight: var(--fw-body);
 }
 
 .quoteFooter {
-  font-size: 13px;
+  font-size: var(--fs-small);
   color: var(--blue);
   font-weight: 600;
 }
@@ -158,12 +158,12 @@
   background: #f1f5f9;
   border: none;
   padding: 8px 20px;
-  font-size: 12px;
+  font-size: var(--fs-xs);
   font-weight: 600;
   letter-spacing: 0.3px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #475569;
+  color: var(--mid);
   border-radius: 8px;
   transition: all 0.25s ease;
 }
@@ -221,16 +221,16 @@
 }
 
 .awardTitle {
-  font-size: 24px;
-  font-weight: 800;
+  font-size: var(--fs-card-title);
+  font-weight: var(--fw-h2);
   color: var(--ink);
   margin: 0 0 18px;
   letter-spacing: -0.3px;
 }
 
 .awardDesc {
-  font-size: 15px;
-  color: #475569;
+  font-size: var(--fs-body);
+  color: var(--mid);
   line-height: 1.8;
   margin: 0;
 }
@@ -242,8 +242,8 @@
 }
 
 .ctaTitle {
-  font-size: 32px;
-  font-weight: 800;
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-hero);
   color: white;
   margin: 0 0 32px;
   letter-spacing: -0.5px;
@@ -254,7 +254,7 @@
   background: linear-gradient(135deg, var(--blue) 0%, #1a7fd1 100%);
   color: white;
   padding: 16px 40px;
-  font-size: 14px;
+  font-size: var(--fs-btn);
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -278,7 +278,5 @@
 @media (max-width: 800px) {
   .awardCard { grid-template-columns: 1fr; gap: 24px; }
   .awardImgWrap { width: 100%; height: 280px; }
-  .heroTitle { font-size: 34px; }
   .hero { padding: 60px 20px; }
-  .sectionTitle { font-size: 26px; }
 }

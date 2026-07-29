@@ -10,8 +10,8 @@
 }
 
 .pageTitle {
-  font-size: 48px;
-  font-weight: 900;
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-hero);
   color: white;
   letter-spacing: -1px;
   line-height: 1.1;
@@ -20,13 +20,13 @@
 }
 
 .pageSubtitle {
-  font-size: 18px;
+  font-size: var(--fs-card-title);
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
   margin: 0;
   position: relative;
   z-index: 1;
-  font-weight: 500;
+  font-weight: var(--fw-body);
 }
 
 /* Blog Grid */
@@ -95,7 +95,7 @@
 
 .blogCategory {
   display: inline-block;
-  font-size: 10px;
+  font-size: var(--fs-xs);
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -108,9 +108,9 @@
 }
 
 .blogTitle {
-  font-size: 16px;
+  font-size: var(--fs-card-title);
   font-weight: 800;
-  color: #0f172a;
+  color: var(--ink);
   margin: 0;
   line-height: 1.35;
   flex: 1;
@@ -127,11 +127,11 @@
 }
 
 .blogExcerpt {
-  font-size: 13px;
-  color: #64748b;
+  font-size: var(--fs-small);
+  color: var(--mid);
   line-height: 1.6;
   margin: 0;
-  font-weight: 500;
+  font-weight: var(--fw-body);
 }
 
 .blogMeta {
@@ -139,9 +139,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px;
-  border-top: 2px solid #e2e8f0;
-  font-size: 12px;
-  color: #475569;
+  border-top: 2px solid var(--rule);
+  font-size: var(--fs-xs);
+  color: var(--mid);
   font-weight: 700;
   letter-spacing: 0.5px;
   background: #f8fafc;
@@ -156,7 +156,7 @@
   align-items: center;
   gap: 6px;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: var(--fs-xs);
   letter-spacing: 0.8px;
   padding: 6px 10px;
   border-radius: 4px;
@@ -166,7 +166,7 @@
 .blogReadMore::after {
   content: '→';
   transition: transform 0.3s ease;
-  font-size: 14px;
+  font-size: var(--fs-body);
 }
 
 .blogReadMore:hover {
@@ -182,30 +182,30 @@
 .noBlogs {
   text-align: center;
   padding: 48px 24px;
-  color: #64748b;
+  color: var(--mid);
 }
 
 .ctaSection {
   padding: 96px 24px;
   text-align: center;
   background: #f8fafc;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid var(--rule);
 }
 
 .ctaTitle {
-  font-size: 38px;
-  font-weight: 900;
-  color: #0f172a;
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-hero);
+  color: var(--ink);
   margin: 0 0 32px;
   letter-spacing: -1px;
 }
 
 .ctaBtn {
   display: inline-block;
-  background: #0b5fff;
+  background: var(--blue);
   color: white;
   padding: 14px 32px;
-  font-size: 13px;
+  font-size: var(--fs-btn);
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -216,7 +216,7 @@
 }
 
 .ctaBtn:hover {
-  background: #0d4dcc;
+  background: #1450a0;
   transform: translateY(-2px);
 }
 
@@ -228,10 +228,6 @@
 }
 
 @media (max-width: 768px) {
-  .pageTitle {
-    font-size: 32px;
-  }
-
   .pageHeader {
     padding: 72px 24px;
   }
@@ -248,10 +244,6 @@
     padding: 64px 24px;
   }
 
-  .ctaTitle {
-    font-size: 28px;
-  }
-
   .blogCard {
     border-radius: 12px;
   }
@@ -262,15 +254,6 @@
 }
 
 @media (max-width: 480px) {
-  .pageTitle {
-    font-size: 24px;
-    letter-spacing: -0.5px;
-  }
-
-  .pageSubtitle {
-    font-size: 16px;
-  }
-
   .pageHeader {
     padding: 48px 16px;
   }
@@ -292,26 +275,7 @@
     gap: 10px;
   }
 
-  .blogTitle {
-    font-size: 16px;
-  }
-
-  .blogExcerpt {
-    font-size: 13px;
-  }
-
   .ctaSection {
     padding: 48px 16px;
   }
-
-  .ctaTitle {
-    font-size: 20px;
-    margin-bottom: 24px;
-  }
-
-  .ctaBtn {
-    padding: 14px 28px;
-    font-size: 12px;
-  }
 }
-

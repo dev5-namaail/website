@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import styles from "./Home.module.css";
 import brochurePdf from "../../assets/Namaa-Brochure.pdf";
 import profilePdf from "../../assets/Namaa-InfoLogistics-Company-Profile-2024-1.pdf";
-import testimonialImg from "../../assets/WhatsApp-Image-2024-09-02-at-10.19.18-AM-1536x734 (1).jpeg";
+import testimonialImg from "../../assets/WhatsApp-Image1.png";
 import digitImg from "../../assets/digit.jpg";
 import fixedImg from "../../assets/fixedassets.jpg";
 import prmImg from "../../assets/prm.jpg";
@@ -120,7 +120,7 @@ export default function Home({ currentLang = "en" }) {
       {/* </section> */}
 
 <div className={styles.heroContent}>
-            <span className={styles.heroEyebrow}>{t["home-hero-title-green"]}</span>
+            {/* <span className={styles.heroEyebrow}>{t["home-hero-title-green"]}</span> */}
             <h1 className={styles.heroTitle}>{t["home-hero-title"]}</h1>
             <p className={styles.heroSub}>{t["home-hero-sub"]}</p>
             <div className={styles.heroActions}>
@@ -135,7 +135,7 @@ export default function Home({ currentLang = "en" }) {
           
       <section className={styles.services}>
         <div className={styles.sectionHeader}>
-          <p className={styles.sectionKicker}>{t["home-serv-title"]}</p>
+          <h1 className={styles.sectionTitle}>{t["home-serv-title"]}</h1>
           <p className={styles.sectionSub}>{t["home-serv-sub"]}</p>
         </div>
         <div className={styles.servicesGrid}>
@@ -152,7 +152,7 @@ export default function Home({ currentLang = "en" }) {
       <section className={styles.about}>
         <div className={styles.aboutSplit}>
           <div className={styles.aboutCopy}>
-            <p className={styles.sectionKicker}>{t["home-about-title"]}</p>
+            <span className={styles.sectionKicker}>{t["home-about-title"]}</span>
             <ul className={styles.aboutList}>
               {aboutItems.map((key) => (
                 <li key={key}>{t[key]}</li>
@@ -172,7 +172,7 @@ export default function Home({ currentLang = "en" }) {
       <section className={styles.docuarena}>
         <div className={styles.docuarenaGrid}>
           <div className={styles.docuarenaPanel}>
-            <p className={styles.sectionKicker}>{t["home-docuarena-title"]}</p>
+            {/* <p className={styles.sectionKicker}>{t["home-docuarena-title"]}</p> */}
             <h2 className={styles.docuarenaTitle}>{t["home-docuarena-sub"]}</h2>
             <p className={styles.docuarenaDesc}>{t["home-docuarena-desc"]}</p>
             <div className={styles.docuarenaActions}>
@@ -212,39 +212,10 @@ export default function Home({ currentLang = "en" }) {
         </div>
       </section>
 
-      <section className={styles.clients}>
-        <div className={styles.sectionHeader}>
-          <h2 className={styles.sectionTitle}>{t["home-clients-title"]}</h2>
-        </div>
-        <Swiper
-          modules={[Autoplay, Pagination]}
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
-          pagination={{ clickable: true }}
-          loop={true}
-          slidesPerView={4}
-          spaceBetween={24}
-          breakpoints={{
-            320: { slidesPerView: 1, spaceBetween: 0 },
-            500: { slidesPerView: 2, spaceBetween: 16 },
-            768: { slidesPerView: 3, spaceBetween: 20 },
-            1024: { slidesPerView: 4, spaceBetween: 24 },
-          }}
-          className={styles.clientSwiper}
-        >
-          {clientItems.map((client) => (
-            <SwiperSlide key={client.nameKey}>
-              <div className={styles.clientCard}>
-                <img className={styles.clientIcon} src={client.icon} alt={t[client.nameKey]} />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </section>
 
 <section className={styles.serveStyle}>
         <div className={styles.serveHeader}>
-          <p className={styles.serveKicker}>{t["home-serve-title"]}</p>
-          <h2 className={styles.serveTitle}>{t["home-serve-title"]}</h2>
+          {/* <h2 className={styles.serveTitle}>{t["home-clients-title"]}</h2> */}
         </div>
 
         <div className={styles.serveGrid}>
@@ -278,8 +249,42 @@ export default function Home({ currentLang = "en" }) {
         </div>
       </section> 
       
+   
+
+      <section className={styles.clients}>
+        <div className={styles.sectionHeader}>
+          <h2 className={styles.sectionTitle}>
+          {t["home-serve-title"]}
+    </h2>
+        </div>
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          pagination={{ clickable: true }}
+          loop={true}
+          slidesPerView={4}
+          spaceBetween={24}
+          breakpoints={{
+            320: { slidesPerView: 1, spaceBetween: 0 },
+            500: { slidesPerView: 2, spaceBetween: 16 },
+            768: { slidesPerView: 3, spaceBetween: 20 },
+            1024: { slidesPerView: 4, spaceBetween: 24 },
+          }}
+          className={styles.clientSwiper}
+        >
+          {clientItems.map((client) => (
+            <SwiperSlide key={client.nameKey}>
+              <div className={styles.clientCard}>
+                <img className={styles.clientIcon} src={client.icon} alt={t[client.nameKey]} />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </section>
+
+
       
-           {/* <section className={styles.cta}>
+        <section className={styles.cta}>
         <div className={styles.ctaContent}>
           <h2 className={styles.ctaTitle}>{t["home-cta-title"]}</h2>
           <p className={styles.ctaSub}>{t["home-serv-sub"]}</p>
@@ -288,7 +293,7 @@ export default function Home({ currentLang = "en" }) {
             <Link to="/portfolio" className={styles.ctaBtnOutline}>{t["nav-portfolio"]}</Link>
           </div>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }

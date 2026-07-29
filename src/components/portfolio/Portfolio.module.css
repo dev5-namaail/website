@@ -36,8 +36,8 @@
 }
 
 .sectionTitle {
-  font-size: var(--fs-h2);
-  font-weight: var(--fw-h2);
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-hero);
   color: var(--ink);
   text-align: center;
   margin: 20px 0 0 8px;
