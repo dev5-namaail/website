@@ -28,6 +28,8 @@ export default function PortfolioDetail({ currentLang = 'en' }) {
     descKey: `portfolio-${key}-desc`,
     contentKey: `portfolio-${key}-content`,
   };
+  const raw = t[item.contentKey] || t[item.descKey] || '';
+  const looksLikeHtml = /<[^>]+>/.test(raw);
 
   return (
     <div className={styles.page}>
@@ -57,7 +59,18 @@ export default function PortfolioDetail({ currentLang = 'en' }) {
 
           <div className={styles.details}>
             <h2 className={styles.detailsTitle}>{t[item.titleKey]}</h2>
-            <p className={styles.lead}>{t[item.contentKey] || t[item.descKey]}</p>
+            {looksLikeHtml ? (
+              <div className={styles.lead} dangerouslySetInnerHTML={{ __html: raw }} />
+            ) : (
+              <div className={styles.lead}>
+                {String(raw)
+                  .split(/\n\n+/)
+                  .filter(Boolean)
+                  .map((p, i) => (
+                    <p key={i}>{p}</p>
+                  ))}
+              </div>
+            )}
 
             <div className={styles.statements}>
               <h3 className={styles.statTitle}>{t['portfolio-features-title']}</h3>
