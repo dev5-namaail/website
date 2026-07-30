@@ -216,6 +216,40 @@
 }
 
 .articleContent p {
+  margin: 0 0 20px;
+}
+
+.articleContent h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 40px 0 16px;
+}
+
+.articleContent h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 28px 0 12px;
+}
+
+.articleContent strong {
+  color: #0f172a;
+}
+
+.articleContent ul,
+.articleContent ol {
+  margin: 20px 0;
+  padding-left: 24px;
+  color: #475569;
+}
+
+.articleContent li {
+  margin: 8px 0;
+  line-height: 1.7;
+}
+
+.articleContent p {
   margin: 0 0 24px;
   color: #374151;
 }

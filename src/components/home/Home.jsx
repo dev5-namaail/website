@@ -36,6 +36,7 @@ import logo12 from "../../assets/rosa_el_youssef.jpg";
 import logo13 from "../../assets/sena3a.png";
 import logo14 from "../../assets/idida.png";
 import successImg from "../../assets/HOME/SUCCESS.jpg";
+import videoImg from "../../assets/HOME/video.jpg";
 import { useEffect, useRef, useState } from "react";
 
 const serviceItems = [
@@ -116,40 +117,42 @@ export default function Home({ currentLang = "en" }) {
 
   return (
     <div className={styles.page} dir={t.dir} lang={currentLang}>
-      {/* <section className={styles.heroSlider}> */}
-        <div className={styles.heroSlide}>
-          <video className={styles.heroVideo} src={heroVideo} autoPlay muted loop playsInline />
-          <div className={styles.heroOverlay} />
-       
+      <div className={styles.heroSlide}>
+        <video className={styles.heroVideo} src={heroVideo} autoPlay muted loop playsInline />
+        {/* <img className={styles.heroMobileFallback} src={videoImg} alt="" /> */}
+        <div className={styles.heroOverlay} />
+        <div className={styles.heroMobileContent}>
+          <span className={styles.mobileBadge}>Namaa</span>
+          <h1 className={styles.mobileTitle}>{t["home-hero-title"]}</h1>
+          <p className={styles.mobileSub}>{t["home-hero-sub"]}</p>
+          <div className={styles.mobileActions}>
+            <Link to="/DocumentRetrieval" className={styles.mobileCta}>
+              {t["home-hero-cta"]}
+            </Link>
+            <Link to="/contact" className={styles.mobileCtaSecondary}>
+              {t["home-cta-btn"]}
+            </Link>
+          </div>
         </div>
-      {/* </section> */}
+      </div>
 
-<div className={styles.heroSuccess}>
-                         <div>
-                                      <img className={styles.successImage} src={successImg} alt={t[service.nameKey]} />
-
-                        </div>
-
-
-
-
-
-  <div className={styles.heroContent}>
-            {/* <span className={styles.heroEyebrow}>{t["home-hero-title-green"]}</span> */}
-            <h1 className={styles.heroTitle}>{t["home-hero-title"]}</h1>
-            <p className={styles.heroSub}>{t["home-hero-sub"]}</p>
-            <div className={styles.heroActions}>
-              <Link to="/DocumentRetrieval" className={styles.heroCta}>
-                {t["home-hero-cta"]}
-              </Link>
-              <Link to="/contact" className={styles.heroCtaSecondary}>
-                {t["home-cta-btn"]}
-              </Link>
-            </div>
-          </div> 
-                    
-
-</div>
+      <div className={styles.heroSuccess}>
+        <div>
+          <img className={styles.successImage} src={successImg} alt="" />
+        </div>
+        <div className={styles.heroContent}>
+          <h1 className={styles.heroTitle}>{t["home-hero-title"]}</h1>
+          <p className={styles.heroSub}>{t["home-hero-sub"]}</p>
+          <div className={styles.heroActions}>
+            <Link to="/DocumentRetrieval" className={styles.heroCta}>
+              {t["home-hero-cta"]}
+            </Link>
+            <Link to="/contact" className={styles.heroCtaSecondary}>
+              {t["home-cta-btn"]}
+            </Link>
+          </div>
+        </div>
+      </div>
           
       <section className={styles.services}>
         <div className={styles.sectionHeader}>
