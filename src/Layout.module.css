@@ -23,7 +23,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
-  height: 64px;
+  height: 94px;
 }
 
 .logo {
@@ -49,7 +49,7 @@
   text-decoration: none;
   color: var(--mid);
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--fs-body);
   transition: all 0.2s ease;
   padding: 8px 16px;
   position: relative;
@@ -91,7 +91,7 @@
   border-color: var(--rule);
   color: var(--mid);
   padding: 4px 10px;
-  font-size: 10px;
+  font-size: var(--fs-xs);
   border-radius: 6px;
   letter-spacing: 0.5px;
 }
@@ -136,7 +136,7 @@
 }
 
 .hamburgerOpen span:nth-child(1) {
-  transform: translateY(3.5px) rotate(45deg);
+  transform: translateY(10px) rotate(45deg);
 }
 
 .hamburgerOpen span:nth-child(2) {
@@ -162,7 +162,7 @@
 }
 
 .arrow {
-  font-size: 7px;
+  font-size: var(--fs-xs);
   line-height: 1;
   transition: transform 0.25s ease;
 }
@@ -197,7 +197,7 @@
   padding: 9px 16px;
   text-decoration: none;
   color: var(--mid);
-  font-size: 13px;
+  font-size: var(--fs-small);
   font-weight: 500;
   border-radius: 8px;
   transition: all 0.18s ease;
@@ -271,7 +271,7 @@
   .navLink {
     padding: 12px 16px;
     width: 100%;
-    font-size: 15px;
+    font-size: var(--fs-body);
     border-radius: 8px;
   }
 
@@ -318,6 +318,6 @@
 
   .dropdownItem {
     padding: 10px 16px;
-    font-size: 14px;
+    font-size: var(--fs-body);
   }
 }

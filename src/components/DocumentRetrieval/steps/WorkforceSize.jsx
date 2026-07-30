@@ -67,7 +67,7 @@ export default function WorkforceSize({ lang, formData, onChange, onNext }) {
 
       <div className="nav-row">
         <span />
-        <button className="btn btn-primary" onClick={onNext}>
+        <button className="btn btn-primary rounded-full" onClick={onNext}>
           {t.next}
           <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
         </button>

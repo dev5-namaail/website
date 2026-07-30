@@ -8,11 +8,20 @@
 .heroSlide {
   position: relative;
   width: 100%;
-  min-height: 550px;
+  min-height: 850px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+.heroVideo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover ;
+  object-position: center;
 }
 /* .heroSlide {
   position: relative;
@@ -26,15 +35,6 @@
   background-position: center;
 } */
 
-.heroVideo {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
 .heroOverlay {
   position: absolute;
   inset: 0;
@@ -45,12 +45,26 @@
 .heroContent {
   position: relative;
   z-index: 1;
-  /* max-width: 1060px; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 96px 24px 40px;
   text-align: center;
-  background-color: #eceef1;
+  /* background-color: rgba(236, 238, 241, 0.92); */
+  /* box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15); */
+  /* border-radius: 24px; */
 }
+.heroSuccess{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 96px 24px 40px;
+  text-align: center;
+  gap: 40px;
+  background-color: rgba(236, 238, 241, 0.92);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+  /* border-radius: 24px; */
+}
+
 
 .heroEyebrow {
   display: inline-flex;
@@ -149,17 +163,17 @@
 }
 
 .sectionKicker {
-  margin: 0 0 12px;
+  margin:0 0 12px;
   color: var(--blue);
-  font-size: var(--fs-xs);
+  font-size: var(--fs-l);
   font-weight: var(--fw-btn);
   letter-spacing: 2.2px;
   text-transform: uppercase;
 }
 
 .sectionTitle {
-  font-size: var(--fs-h2);
-  font-weight: var(--fw-h2);
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-hero);
   color: var(--ink);
   letter-spacing: -1.2px;
   line-height: 1.1;
@@ -168,15 +182,15 @@
 
 /* ── Services ── */
 .services {
-  padding: 120px 24px;
+  padding: 50px 24px;
   background: var(--paper);
 }
 
 .servicesGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4,1fr);
   gap: 24px;
-  max-width: 1520px;
+  max-width: 1620px;
   margin: 0 auto;
 }
 
@@ -197,10 +211,11 @@
 .serviceIcon {
   display: block;
   width: 100%;
-  height: 180px;
+  height: 230px;
   margin: 0 0 20px;
   border-radius: 14px;
   object-fit: cover;
+  border: 3px solid rgba(15, 23, 42, 0.06);
 }
 
 .serviceName {
@@ -220,7 +235,7 @@
 
 /* ── About ── */
 .about {
-  padding: 120px 24px;
+  padding: 50px 24px;
   background: white;
 }
 
@@ -241,8 +256,8 @@
   max-width: 680px;
   margin: 0 0 28px;
   color: var(--ink);
-  font-size: var(--fs-h2);
-  font-weight: var(--fw-h2);
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-hero);
   letter-spacing: -1.3px;
   line-height: 1.12;
 }
@@ -308,7 +323,7 @@
 
 /* ── Docuarena ── */
 .docuarena {
-  padding: 120px 24px;
+  padding: 30px 14px;
   background: linear-gradient(135deg, #f6f9ff 0%, #eef4fb 100%);
 }
 
@@ -330,8 +345,8 @@
 .docuarenaTitle {
   margin: 0;
   color: var(--ink);
-  font-size: var(--fs-h2);
-  font-weight: var(--fw-h2);
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-hero);
   letter-spacing: -1.4px;
   line-height: 1.1;
 }
@@ -387,7 +402,7 @@
 
 .docuarenaCard {
   position: relative;
-  padding: 32px 30px;
+  padding: 22px;
   border-radius: 24px;
   background: white;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
@@ -404,7 +419,7 @@
 
 .docuarenaNumber {
   color: var(--blue);
-  font-size: 46px;
+  font-size: var(--fs-hero);
   font-weight: 900;
   line-height: 1;
   letter-spacing: -1.5px;
@@ -426,7 +441,7 @@
 
 /* ── Testimonial ── */
 .testimonial {
-  padding: 120px 24px;
+  padding: 50px 24px;
   background: white;
 }
 
@@ -439,8 +454,8 @@
 .testimonialContent h2 {
   margin: 0 0 20px;
   color: var(--ink);
-  font-size: var(--fs-h2);
-  font-weight: var(--fw-h2);
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-hero);
   letter-spacing: -1.2px;
   line-height: 1.1;
 }
@@ -469,7 +484,7 @@
 }
 
 .clientSwiper {
-  max-width: 1000px;
+  max-width: 1300px;
   padding-bottom: 40px;
   margin: 0 auto;
 }
@@ -520,7 +535,7 @@
 
 /* ── Serve ── */
 .serveStyle {
-  padding: 120px 24px;
+  padding: 50px 24px;
   background: white;
 }
 
@@ -542,8 +557,8 @@
 .serveTitle {
   margin: 0;
   color: var(--ink);
-  font-size: var(--fs-h2);
-  font-weight: var(--fw-h2);
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-hero);
   letter-spacing: -1.2px;
   line-height: 1.1;
 }
@@ -596,6 +611,14 @@
   object-fit: cover;
   margin: 0 0 16px;
 }
+.successImage{
+    display: block;
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin: 0 0 16px;
+}
 
 .serveCardTitle {
   margin: 0;
@@ -606,10 +629,12 @@
 
 /* ── CTA ── */
 .cta {
-  padding: 120px 24px;
-  background: linear-gradient(135deg, var(--navy), #071d4d);
+  padding: 50px 24px;
+  /* background: linear-gradient(135deg, var(--navy), #31435f); */
+  background: #1a2a3d;
   position: relative;
   overflow: hidden;
+  margin-bottom: 200px;
 }
 
 .cta::before {
@@ -724,7 +749,7 @@
 }
 
 .downloadIcon {
-  font-size: 16px;
+  font-size: var(--fs-card-title);
   line-height: 1;
 }
 
@@ -753,7 +778,13 @@
   .heroContent {
     padding: 72px 18px 96px;
   }
-
+.heroSuccess{
+  flex-direction: column;
+  gap: 40px;
+}
+.serveCardImage {
+  width: 170%;
+}
   .heroTitle {
     letter-spacing: -1px;
   }
@@ -775,8 +806,8 @@
   .clients,
   .serveStyle,
   .cta {
-    padding-top: 72px;
-    padding-bottom: 72px;
+    padding-top: 52px;
+    padding-bottom: 52px;
   }
 
   .servicesGrid {
@@ -788,7 +819,7 @@
   }
 
   .docuarenaNumber {
-    font-size: 40px;
+    font-size: var(--fs-h2);
   }
 
   .docuarenaActions,

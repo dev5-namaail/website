@@ -4,14 +4,14 @@
 
 .pageHeader {
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  padding: 80px 24px;
+  padding: 100px 24px;
   text-align: center;
   position: relative;
 }
 
 .pageTitle {
-  font-size: 48px;
-  font-weight: 900;
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-hero);
   color: white;
   letter-spacing: -1px;
   line-height: 1.1;
@@ -20,13 +20,13 @@
 }
 
 .pageSubtitle {
-  font-size: 18px;
+  font-size: var(--fs-card-title);
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
   margin: 0;
   position: relative;
   z-index: 1;
-  font-weight: 500;
+  font-weight: var(--fw-body);
 }
 
 .blogsSection {
@@ -86,8 +86,9 @@
 
 .blogCategory {
   display: inline-block;
-  font-size: 11px;
-  font-weight: 700;
+  font-size: var(--fs-xs);
+  font-weight: 800;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: #059669;
   background: rgba(5, 150, 105, 0.1);
@@ -98,9 +99,9 @@
 }
 
 .blogTitle {
-  font-size: 17px;
-  font-weight: 700;
-  color: #0f172a;
+  font-size: var(--fs-card-title);
+  font-weight: 800;
+  color: var(--ink);
   margin: 0;
   line-height: 1.4;
 }
@@ -116,10 +117,11 @@
 }
 
 .blogExcerpt {
-  font-size: 13px;
-  color: #64748b;
+  font-size: var(--fs-small);
+  color: var(--mid);
   line-height: 1.6;
   margin: 0;
+  font-weight: var(--fw-body);
 }
 
 .blogMeta {
@@ -127,10 +129,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px;
-  border-top: 1px solid #e8edf2;
-  font-size: 12px;
-  color: #94a3b8;
-  font-weight: 500;
+  border-top: 2px solid var(--rule);
+  font-size: var(--fs-xs);
+  color: var(--mid);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: #f8fafc;
 }
 
 .blogReadMore {
@@ -141,12 +145,19 @@
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
+  text-transform: uppercase;
+  font-size: var(--fs-xs);
+  letter-spacing: 0.8px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background: rgba(11, 95, 255, 0.08);
 }
 
 .blogReadMore::after {
   content: '→';
   transition: transform 0.3s ease;
+  font-size: var(--fs-body);
 }
 
 .blogReadMore:hover {
@@ -158,10 +169,6 @@
 }
 
 @media (max-width: 768px) {
-  .pageTitle {
-    font-size: 32px;
-  }
-
   .pageHeader {
     padding: 72px 24px;
   }
@@ -175,6 +182,14 @@
     gap: 20px;
   }
 
+  .ctaSection {
+    padding: 64px 24px;
+  }
+
+  .blogCard {
+    border-radius: 12px;
+  }
+
   .blogContent {
     padding: 16px 20px 12px;
   }
@@ -185,10 +200,6 @@
 }
 
 @media (max-width: 480px) {
-  .pageTitle {
-    font-size: 24px;
-  }
-
   .pageHeader {
     padding: 48px 16px;
   }
@@ -199,5 +210,10 @@
 
   .blogTitle {
     font-size: 16px;
+  }
+}
+
+  .ctaSection {
+    padding: 48px 16px;
   }
 }
