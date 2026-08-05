@@ -3,6 +3,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import { T } from './i18n/translations';
 import styles from './Layout.module.css';
 import LangBar from "./components/DocumentRetrieval/LangBar";
+import Chatbot from "./components/Chatbot/Chatbot";
 import { useState, useEffect } from "react";
 import logoImg from "./assets/logos/namaa-logo.png";
 import Footer from "./components/footer/Footer";
@@ -84,6 +85,7 @@ function Layout({ lang = 'en', setLang }) {
         <Outlet />
       </main>
       <Footer/>
+      <Chatbot lang={lang} />
     </div>
   );
 }
