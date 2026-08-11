@@ -48,7 +48,8 @@ const serviceItems = [
 const service = [
   { icon: service1, nameKey: "home-serv1", descKey: "home-serv1d" },
   { icon: service2, nameKey: "home-serv2", descKey: "home-serv2d" },
-  { icon: service3, nameKey: "home-serv3", descKey: "home-serv3d" },
+  // { icon: service3, nameKey: "home-serv34", descKey: "home-serv3d" },
+    { icon: service3, nameKey: "home-serv3", descKey: "home-serv3d" },
   { icon: service4, nameKey: "home-serv4", descKey: "home-serv4d" },
 ];
 const clientItems = [
@@ -136,7 +137,7 @@ export default function Home({ currentLang = "en" }) {
         </div>
       </div>
 
-      <div className={styles.heroSuccess}>
+      {/* <div className={styles.heroSuccess}>
         <div>
           <img className={styles.successImage} src={successImg} alt="" />
         </div>
@@ -152,7 +153,7 @@ export default function Home({ currentLang = "en" }) {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
           
       <section className={styles.services}>
         <div className={styles.sectionHeader}>
@@ -183,17 +184,22 @@ export default function Home({ currentLang = "en" }) {
           <div className={styles.aboutCard}>
             <h3>{t["home-cta-profile"]}</h3>
             <p>{t["home-serv-sub"]}</p>
-            <DownloadButton href={profilePdf}>
+            <div className={styles.docuarenaActions}>
+               <DownloadButton href={profilePdf}>
               {t["about-download-profile"]}
             </DownloadButton>
+              <Link to="/contact" className={styles.docuarenaAction}>
+                {t["home-cta-btn"]}
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
       <section className={styles.docuarena}>
         <div className={styles.docuarenaGrid}>
-          <div className={styles.docuarenaPanel}>
-            {/* <p className={styles.sectionKicker}>{t["home-docuarena-title"]}</p> */}
+          {/* <div className={styles.docuarenaPanel}>
+            <p className={styles.sectionKicker}>{t["home-docuarena-title"]}</p>
             <h2 className={styles.docuarenaTitle}>{t["home-docuarena-sub"]}</h2>         
             <p className={styles.docuarenaDesc}>{t["home-docuarena-desc"]}</p>
             <div className={styles.docuarenaActions}>
@@ -204,7 +210,7 @@ export default function Home({ currentLang = "en" }) {
                 {t["about-download-brochure"]}
               </DownloadButton>
             </div>
-          </div>
+          </div> */}
           <div className={styles.docuarenaStats}>
             <div className={styles.docuarenaCard}>
               <span className={styles.docuarenaNumber} ref={ref1}>{count1}+</span>
@@ -225,25 +231,25 @@ export default function Home({ currentLang = "en" }) {
         </div>
       </section>
 
-      <section className={styles.testimonial}>
+      {/* <section className={styles.testimonial}>
         <div className={styles.testimonialContent}>
           <h2>{t["home-testimonial-title"]}</h2>
           <p></p>
           <p><strong>{t["home-testimonial-DocuArena"]}</strong> : {t["home-testimonial-desc"]}</p>
           <img src={testimonialImg} alt="DocuArena" className={styles.testimonialImage} />
         </div>
-      </section>
+      </section> */}
 
 
 <section className={styles.serveStyle}>
         <div className={styles.serveHeader}>
-          {/* <h2 className={styles.serveTitle}>{t["home-clients-title"]}</h2> */}
+          <h2 className={styles.serveTitle}>{t["home-clients-title"]}</h2>
         </div>
 
         <div className={styles.serveGrid}>
           <Swiper
             modules={[Autoplay, Pagination]}
-            autoplay={{ delay: 4000, disableOnInteraction: false }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             pagination={{ clickable: true }}
             loop={true}
             className={styles.serveSwiper}

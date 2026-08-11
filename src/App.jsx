@@ -1,13 +1,12 @@
-import DocumentRetrieval from "./components/DocumentRetrieval/DocumentRetrieval";
 import Home from "./components/home/Home";
 import { lazy, Suspense, useState, useEffect } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { T } from "./i18n/translations";
-
 import Layout from "./Layout";
 import PageNotFound from "./components/pagenotfound/PageNotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Loading from "./components/loading/Loading";
+import DocumentRetrieval from "./components/DocumentRetrieval/DocumentRetrieval";
+import { T } from './i18n/translations';
 
 const About = lazy(() => import("./components/about/About"));
 const Portfolio = lazy(() => import("./components/portfolio/Portfolio"));
@@ -16,6 +15,8 @@ const NewsLazy = lazy(() => import("./components/new/News"));
 const BlogsLazy = lazy(() => import("./components/blogs/Blogs"));
 const BlogDetailLazy = lazy(() => import("./components/blogs/BlogsDetails"));
 const PortfolioDetail = lazy(() => import("./components/portfolio/PortfolioDetail"));
+const Docuarena = lazy(() => import("./components/docuarena/Docuarena"));
+const DocuarenaMobile = lazy(() => import("./components/docuarena/DocuarenaMobile"));
 
 function App() {
     const [lang, setLang] = useState('en');
@@ -43,8 +44,9 @@ function App() {
           <Route element={<ProtectedRoute />}>
               <Route path="/" element={<Layout lang={lang} setLang={setLang} />}>
               <Route index element={<Home currentLang={lang} />} />
-              
               <Route path="DocumentRetrieval" element={<DocumentRetrieval currentLang={lang}/>} />
+              <Route path="Docuarena" element={<Docuarena currentLang={lang}/>} />
+              <Route path="DocuarenaMobile" element={<DocuarenaMobile currentLang={lang}/>} />
               <Route path="about" element={<About currentLang={lang} />} />
               <Route path="portfolio" element={<Portfolio currentLang={lang} />} />
               <Route path="contact" element={<ContactLazy currentLang={lang} />} />
