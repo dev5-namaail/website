@@ -21,7 +21,7 @@ function Footer() {
             </p>
           </div>
           <div className={styles.contactColumn}>
-            <h4>About Namaa</h4>
+            <h4>Namaa Address</h4>
             <p>
               76 El Tayaran St.
               <br />

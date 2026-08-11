@@ -1,5 +1,5 @@
 import { T } from '../../i18n/translations';
-import logo from '../../assets/logos/namaa-logo.png';
+import logo from '../../assets/logos/namaa.png';
 
 // eslint-disable-next-line react/prop-types
 export default function Header({ lang }) {

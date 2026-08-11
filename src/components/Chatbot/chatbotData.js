@@ -367,6 +367,60 @@ const KB = {
           "Nous serions ravis d'échanger ! Utilisez la page Contact pour demander un appel et suggérer un créneau : [[Page Contact|/contact]] — notre équipe confirmera votre rendez-vous.",
       },
       {
+        id: "timeline",
+        keywords: ["combien de temps", "delai", "duree", "mise en oeuvre", "deploiement", "quand", "lancement", "en combien de temps"],
+        response:
+          "Les délais dépendent du périmètre, mais la plupart des projets démarrent en 4 à 8 semaines. Nous commençons par une évaluation, puis configurons, migrons, formons et accompagnons votre équipe à chaque étape. Contactez-nous pour un calendrier adapté : [[Page Contact|/contact]].",
+      },
+      {
+        id: "integration",
+        keywords: ["integration", "intégration", "erp", "systeme existant", "systèmes existants", "sap", "oracle", "compatible", "api", "se connecter", "avec notre systeme"],
+        response:
+          "Oui — nos solutions s'intègrent à vos systèmes ECM, ERP et métier existants. DocuArena prend en charge les API standard et les flux d'import/export, pour s'adapter à votre infrastructure sans la remplacer. Parlez-nous de vos systèmes : [[Contactez-nous|/contact]].",
+      },
+      {
+        id: "training",
+        keywords: ["formation", "former", "atelier", "cours", "apprendre", "accompagnement", "prise en main", "apres vente", "documentation"],
+        response:
+          "Chaque projet inclut la formation de votre équipe et l'accompagnement au démarrage, plus un support continu. Nous formons votre personnel en présentiel ou à distance et fournissons documentation et processus pour une adoption fluide.",
+      },
+      {
+        id: "differentiator",
+        keywords: ["different", "difference", "mieux que", "pourquoi docuarena", "avantages", "benefices", "unique", "comparer", "concurrent", "en quoi c est mieux"],
+        response:
+          "Ce qui rend DocuArena différent : contrairement aux plateformes ECM qui enregistrent où un document devrait se trouver, DocuArena impose où il se trouve réellement. Chaque mouvement est suivi par scan de code-barres, chaque récupération est régie par un bon de travail et chaque re-classement est vérifié — éliminant le mauvais classement et réduisant fortement le temps de récupération.",
+      },
+      {
+        id: "scalability",
+        keywords: ["petite entreprise", "petite societe", "grande entreprise", "evolutif", "capacite", "millions", "dossiers", "combien", "croitre"],
+        response:
+          "DocuArena s'adapte d'un petit bureau aux archives d'entreprise et gouvernementales comptant des millions de dossiers. Que vous commenciez avec quelques centaines de boîtes ou une archive nationale, la plateforme évolue avec vous.",
+      },
+      {
+        id: "coverage",
+        keywords: ["pays", "ou travaillez", "hors egypte", "international", "etranger", "golfe", "arabie", "emirats", "afrique", "moyen orient", "egypte"],
+        response:
+          "Basés au Caire, en Égypte, nous servons des clients au Moyen-Orient et en Afrique — notamment le Golfe, l'Afrique du Nord et au-delà. Notre équipe accompagne les déploiements internationaux et à distance.",
+      },
+      {
+        id: "hosting",
+        keywords: ["cloud", "sur site", "on premise", "hebergement", "hebergé", "ou sont mes donnees", "serveur", "saas", "donnees stockees", "dans le cloud"],
+        response:
+          "Nous prenons en charge les deux options : déploiement sur site dans votre environnement, ou hébergement cloud privé. Dans les deux cas, vos données restent sous votre contrôle, avec des contrôles d'accès stricts et des normes d'audit.",
+      },
+      {
+        id: "get-started",
+        keywords: ["comment commencer", "commencer", "premiere etape", "etapes", "processus", "par ou commencer", "et apres", "demarrer"],
+        response:
+          "Commencer est simple :\n1. Demandez une évaluation gratuite : [[Contactez-nous|/contact]]\n2. Lancez le calculateur de ROI pour voir vos économies : [[Ouvrir le Calculateur de ROI|/DocumentRetrieval]]\n3. Notre équipe cadre, propose et vous accompagne jusqu'à l'implémentation.",
+      },
+      {
+        id: "payment",
+        keywords: ["paiement", "payer", "devise", "devises", "egp", "usd", "euro", "dollar", "facture", "facturation", "echeances", "comment payer"],
+        response:
+          "Nous émettons des factures formelles et acceptons les paiements en EGP, USD et EUR selon le contrat. Les conditions de paiement sont convenues par projet. Pour plus de détails : [[Page Contact|/contact]].",
+      },
+      {
         id: "hours",
         keywords: ["horaires", "heures", "ouverture", "quand", "disponible", "week end", "semaine", "disponibilite"],
         response:
@@ -505,6 +559,51 @@ const KB = {
         id: "appointment",
         keywords: ["موعد", "حجز مكالمة", "اجتماع", "جدولة", "التحدث مع المبيعات", "المبيعات", "معاودة الاتصال", "اتصل بي", "استشارة"],
         response: "يسعدنا التحدث معك! استخدم صفحة التواصل لطلب مكالمة واقتراح وقت مناسب: [[صفحة التواصل|/contact]] — سيقوم فريقنا بتأكيد موعدك.",
+      },
+      {
+        id: "timeline",
+        keywords: ["كم المدة", "مدة التنفيذ", "المدة", "تنفيذ", "التنفيذ", "كام شهر", "متى نبدأ", "إمتى", "التركيب", "تستغرق"],
+        response: "المدة تعتمد على حجم المشروع، لكن معظم المشاريع تبدأ خلال 4 إلى 8 أسابيع. نبدأ بتقييم، ثم الإعداد والنقل والتدريب والدعم في كل خطوة. تواصل معنا لمعرفة الجدول الزمني المناسب: [[صفحة التواصل|/contact]].",
+      },
+      {
+        id: "integration",
+        keywords: ["تكامل", "ربط", "أنظمتنا", "الأنظمة الحالية", "الأنظمة الموجودة", "erp", "sap", "oracle", "متوافق", "api", "الاتصال بنظام", "مع نظامنا"],
+        response: "نعم — حلولنا تتكامل مع أنظمة ECM وERP والأنظمة التشغيلية الموجودة لديكم. يدعم DocuArena واجهات API القياسية وسير عمل الاستيراد والتصدير، ليتوافق مع بنيتكم الحالية دون استبدالها. أخبرنا بأنظمتكم: [[تواصل معنا|/contact]].",
+      },
+      {
+        id: "training",
+        keywords: ["تدريب", "نقدر نتعلم", "ورش عمل", "دورات", "كيف نستخدم", "الدعم بعد", "بعد التسليم", "ما بعد البيع", "شروحات"],
+        response: "كل مشروع يشمل تدريب فريقكم والتسليم مع دعم مستمر. ندرّب موظفيكم حضورياً أو عن بُعد ونوفر الوثائق وسير العمل لضمان تبنٍّ سلس.",
+      },
+      {
+        id: "differentiator",
+        keywords: ["الفرق", "مختلف", "أفضل من", "ليه docuarena", "مزايا", "مميزات", "فريد", "مقارنة", "المنافسين", "بيختلف عن", "ايه اللي يميزكم"],
+        response: "ما يميز DocuArena: على عكس منصات ECM التي تسجل أين *يفترض* أن يكون المستند، يفرض DocuArena أين يوجد فعلاً. كل حركة تُتبع بمسح الباركود، وكل استرجاع يخضع لأمر عمل، وكل إعادة تصنيف مُتحقق منها — يقضي على سوء التصنيف ويخفض وقت الاسترجاع بشكل كبير.",
+      },
+      {
+        id: "scalability",
+        keywords: ["شركة صغيرة", "شركه صغيره", "شركة كبيرة", "شركه كبيره", "قابل للتوسع", "التوسع", "سعة", "ملايين", "سجلات", "كام صندوق", "تكبر معانا"],
+        response: "DocuArena يتوسع من مكتب واحد إلى أرشيفات مؤسسية وحكومية بملايين السجلات. سواء بدأتم بمئات الصناديق أو أرشيف وطني، المنصة تكبر معكم.",
+      },
+      {
+        id: "coverage",
+        keywords: ["بلاد", "دول", "بره مصر", "خارج مصر", "دولي", "الخليج", "السعودية", "الإمارات", "أفريقيا", "الشرق الأوسط", "مصر", "شغل في"],
+        response: "مقرنا في القاهرة، مصر، ونخدم عملاء في الشرق الأوسط وأفريقيا — بما في ذلك الخليج وشمال أفريقيا وخارجها. فريقنا يدعم النشر الدولي وعن بُعد.",
+      },
+      {
+        id: "hosting",
+        keywords: ["سحاب", "cloud", "على خوادمنا", "استضافة", "الاستضافة", "فين بياناتي", "سيرفر", "server", "برمجيات كخدمة", "saas", "بياناتنا فين"],
+        response: "ندعم الخيارين: النشر على خوادمكم داخل بيئتكم، أو الاستضافة السحابية الخاصة. في الحالتين تبقى بياناتكم تحت سيطرتكم، مع ضوابط وصول صارمة ومعايير تدقيق.",
+      },
+      {
+        id: "get-started",
+        keywords: ["ازاي نبدأ", "كيف نبدأ", "نبدأ ازاي", "الخطوة الأولى", "الخطوات", "مراحل العمل", "عملية", "إيه الخطوة الجاية", "التقديم"],
+        response: "البداية بسيطة:\n1. اطلب تقييماً مجانياً: [[تواصل معنا|/contact]]\n2. شغّل حاسبة العائد لترى الوفورات المحتملة: [[افتح حاسبة العائد|/DocumentRetrieval]]\n3. فريقنا يحدد النطاق ويقدم العرض ويرافقك حتى التنفيذ.",
+      },
+      {
+        id: "payment",
+        keywords: ["الدفع", "دفع", "عملة", "العملة", "جنيه", "دولار", "يورو", "فاتورة", "الفوترة", "أقساط", "ندفع ازاي", "طرق الدفع"],
+        response: "نصدر فواتير رسمية ونتقبل الدفع بالجنيه المصري والدولار واليورو حسب العقد. شروط الدفع تُتفق لكل مشروع. للتفاصيل: [[صفحة التواصل|/contact]].",
       },
       {
         id: "hours",

@@ -7,6 +7,15 @@ import { getReply, getQuickReplies } from "./chatbotData";
 
 const LINK_TOKEN = /\[\[([^\]|]+)\|([^\]]+)\]\]/g;
 
+const QUICK_ROUTES = {
+  DocuArena: "/Docuarena",
+  "ROI Calculator": "/DocumentRetrieval",
+  "Calculateur ROI": "/DocumentRetrieval",
+  "حاسبة العائد": "/DocumentRetrieval",
+  Contact: "/contact",
+  "تواصل معنا": "/contact",
+};
+
 function renderText(text, onNavigate) {
   const parts = String(text).split(/(\[\[[^\]]+\]\])/g);
   return parts.map((part, i) => {
@@ -97,6 +106,10 @@ export default function Chatbot({ lang = "en" }) {
 
   function handleQuickClick(q) {
     send(q);
+    const route = QUICK_ROUTES[q];
+    if (route) {
+      setTimeout(() => navigate(route), 350);
+    }
     requestAnimationFrame(() => {
       const el = quickRef.current;
       if (!el) return;
