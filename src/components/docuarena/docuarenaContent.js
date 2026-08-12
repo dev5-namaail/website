@@ -23,7 +23,7 @@ const C = {
       "Secure Physical Records Lifecycle Management",
     ],
     // Challenges
-    challengesKicker: "The Reality of Manual Records Management",
+    // challengesKicker: "The Reality of Manual Records Management",
     challengesTitle: "Are These Challenges Familiar?",
     challengesSub: "Managing physical records shouldn't mean managing uncertainty.",
     challenges: [
@@ -38,7 +38,7 @@ const C = {
     ],
     challengesClose: "If any of these sound familiar, you're not alone. They're exactly the challenges DocuArena was built to solve.",
     // Physical records still matter
-    matterKicker: "Why Physical Records Still Matter",
+    // matterKicker: "Why Physical Records Still Matter",
     matterTitle: "Physical Records Still Matter",
     matterP1:
       "Digital transformation has changed how organizations manage information — but it has not eliminated physical records.",
@@ -71,7 +71,7 @@ const C = {
     ],
     platformClose: "One enterprise platform. Complete operational control.",
     // Lifecycle
-    lifecycleKicker: "The Document Lifecycle",
+    // lifecycleKicker: "The Document Lifecycle",
     lifecycleTitle: "From Receiving to Secure Destruction",
     lifecycleSub: "Every physical record follows a fully controlled lifecycle.",
     lifecycle: [
@@ -120,7 +120,7 @@ const C = {
     mobileClose: "Whether inside the warehouse or at a customer location, every movement remains visible and fully controlled.",
     mobileCta: "Explore the Mobile Experience",
     // Cost calculator
-    costKicker: "The Hidden Cost of Manual Processes",
+    // costKicker: "The Hidden Cost of Manual Processes",
     costTitle: "What Are Manual Processes Really Costing You?",
     costSub:
       "Every delayed retrieval. Every misplaced file. Every unnecessary warehouse visit. Every manual spreadsheet. Every compliance issue. They all have a measurable cost.",
@@ -152,7 +152,7 @@ const C = {
       ["Stand-alone applications", "Enterprise API Integration"],
     ],
     // Experts
-    expertsKicker: "Built by the People Who Manage Records",
+    // expertsKicker: "Built by the People Who Manage Records",
     expertsTitle: "Built by Records Management Experts",
     expertsP1: "DocuArena wasn't developed as a generic software application.",
     expertsP2:
@@ -226,7 +226,7 @@ const C = {
       "Évolutivité d'entreprise",
       "Gestion sécurisée du cycle de vie des documents physiques",
     ],
-    challengesKicker: "La réalité de la gestion manuelle des documents",
+    // challengesKicker: "La réalité de la gestion manuelle des documents",
     challengesTitle: "Ces défis vous semblent-ils familiers ?",
     challengesSub: "Gérer des documents physiques ne devrait pas signifier gérer l'incertitude.",
     challenges: [
@@ -241,7 +241,7 @@ const C = {
     ],
     challengesClose:
       "Si l'un de ces points vous semble familier, vous n'êtes pas seul. Ce sont exactement les défis que DocuArena a été conçu pour résoudre.",
-    matterKicker: "Pourquoi les documents physiques comptent toujours",
+    // matterKicker: "Pourquoi les documents physiques comptent toujours",
     matterTitle: "Les documents physiques comptent toujours",
     matterP1:
       "La transformation numérique a changé la façon dont les organisations gèrent l'information — mais elle n'a pas éliminé les documents physiques.",
@@ -273,7 +273,7 @@ const C = {
       { q: "Un DMS ou ERP déjà en place ?", a: "DocuArena s'intègre en toute fluidité à vos systèmes existants via des API REST — sans perturber vos investissements technologiques actuels." },
     ],
     platformClose: "Une seule plateforme d'entreprise. Un contrôle opérationnel complet.",
-    lifecycleKicker: "Le cycle de vie documentaire",
+    // lifecycleKicker: "Le cycle de vie documentaire",
     lifecycleTitle: "De la réception à la destruction sécurisée",
     lifecycleSub: "Chaque document physique suit un cycle de vie entièrement contrôlé.",
     lifecycle: [
@@ -319,7 +319,7 @@ const C = {
     ],
     mobileClose: "Dans l'entrepôt ou chez un client, chaque mouvement reste visible et entièrement contrôlé.",
     mobileCta: "Découvrir l'expérience mobile",
-    costKicker: "Le coût caché des processus manuels",
+    // costKicker: "Le coût caché des processus manuels",
     costTitle: "Combien vous coûtent réellement les processus manuels ?",
     costSub:
       "Chaque récupération retardée. Chaque fichier égaré. Chaque visite inutile à l'entrepôt. Chaque feuille de calcul. Chaque problème de conformité. Tous ont un coût mesurable.",
@@ -349,7 +349,7 @@ const C = {
       ["Reporting statique", "Tableaux de bord exécutifs en direct"],
       ["Applications autonomes", "Intégration API d'entreprise"],
     ],
-    expertsKicker: "Créé par ceux qui gèrent les documents",
+    // expertsKicker: "Créé par ceux qui gèrent les documents",
     expertsTitle: "Créé par des experts en gestion des documents",
     expertsP1: "DocuArena n'a pas été développé comme un logiciel générique.",
     expertsP2:
@@ -419,7 +419,7 @@ const C = {
       "قابلية توسع مؤسسية",
       "إدارة آمنة لدورة حياة المستندات الفعلية",
     ],
-    challengesKicker: "واقع إدارة المستندات اليدوية",
+    // challengesKicker: "واقع إدارة المستندات اليدوية",
     challengesTitle: "هل هذه التحديات مألوفة لديكم؟",
     challengesSub: "إدارة المستندات الفعلية لا يجب أن تعني إدارة حالة من عدم اليقين.",
     challenges: [
@@ -433,7 +433,7 @@ const C = {
       "الإدارة تفتقر إلى رؤية تشغيلية لحظية.",
     ],
     challengesClose: "إذا كان أي من هذه النقاط مألوفاً لديكم، فأنتم لستم وحدكم. هذه هي بالضبط التحديات التي بُني DocuArena لحلها.",
-    matterKicker: "لماذا تظل المستندات الفعلية مهمة",
+    // matterKicker: "لماذا تظل المستندات الفعلية مهمة",
     matterTitle: "المستندات الفعلية لا تزال مهمة",
     matterP1: "غيّر التحول الرقمي طريقة إدارة المؤسسات للمعلومات — لكنه لم يلغِ المستندات الفعلية.",
     matterP2:
@@ -463,7 +463,7 @@ const C = {
       { q: "لديكم بالفعل DMS أو ERP؟", a: "يتكامل DocuArena بسلاسة مع أنظمتكم الحالية عبر REST API — دون تعطيل استثماراتكم التقنية." },
     ],
     platformClose: "منصة مؤسسية واحدة. تحكم تشغيلي كامل.",
-    lifecycleKicker: "دورة حياة المستند",
+    // lifecycleKicker: "دورة حياة المستند",
     lifecycleTitle: "من الاستلام حتى الإتلاف الآمن",
     lifecycleSub: "كل مستند فعلي يتبع دورة حياة مُتحكماً فيها بالكامل.",
     lifecycle: [
@@ -509,7 +509,7 @@ const C = {
     ],
     mobileClose: "داخل المخزن أو في موقع العميل، تظل كل حركة مرئية ومُتحكماً فيها بالكامل.",
     mobileCta: "اكتشف التجربة المحمولة",
-    costKicker: "التكلفة الخفية للعمليات اليدوية",
+    // costKicker: "التكلفة الخفية للعمليات اليدوية",
     costTitle: "كم تكلفك العمليات اليدوية فعلياً؟",
     costSub:
       "كل استرجاع متأخر. كل ملف في غير مكانه. كل زيارة مخزن غير ضرورية. كل جدول يدوي. كل مشكلة امتثال. جميعها لها تكلفة قابلة للقياس.",
@@ -539,7 +539,7 @@ const C = {
       ["تقارير ثابتة", "لوحات قيادة تنفيذية حية"],
       ["تطبيقات منعزلة", "تكامل API مؤسسي"],
     ],
-    expertsKicker: "بناها من يديرون المستندات",
+    // expertsKicker: "بناها من يديرون المستندات",
     expertsTitle: "بناها خبراء إدارة المستندات",
     expertsP1: "لم يُطوَّر DocuArena كبرنامج عام.",
     expertsP2: "صممه محترفون بعقود من الخبرة العملية في إدارة المستندات وعمليات المخازن وحوكمة المعلومات المؤسسية.",
