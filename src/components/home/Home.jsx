@@ -109,6 +109,13 @@ function DownloadButton({ href, children }) {
     </a>
   );
 }
+const counters = [
+  { value: "hp-count1v", suffix: "hp-count1s", label: "hp-count1l", decimal: false },
+  { value: "hp-count2v", suffix: "hp-count2s", label: "hp-count2l", decimal: false },
+  { value: "hp-count3v", suffix: "hp-count3s", label: "hp-count3l", decimal: false },
+  { value: "hp-count4v", suffix: "hp-count4s", label: "hp-count4l", decimal: true },
+  { value: "hp-count5v", suffix: "hp-count5s", label: "hp-count5l", decimal: false },
+];
 
 export default function Home({ currentLang = "en" }) {
   const t = T[currentLang];
@@ -116,6 +123,50 @@ export default function Home({ currentLang = "en" }) {
   const [ref2, count2] = useCountUp(30);
   const [ref3, count3] = useCountUp(100);
 
+    function useCountUp(end, duration = 2000) {
+      const [count, setCount] = useState(0);
+      const ref = useRef(null);
+    
+      useEffect(() => {
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            if (!entry.isIntersecting) return;
+            let start = 0;
+            const increment = end / (duration / 16);
+            const timer = setInterval(() => {
+              start += increment;
+              if (start >= end) {
+                setCount(end);
+                clearInterval(timer);
+              } else {
+                setCount(Math.floor(start));
+              }
+            }, 16);
+            observer.disconnect();
+          },
+          { threshold: 0.1 },
+        );
+        if (ref.current) observer.observe(ref.current);
+        return () => observer.disconnect();
+      }, [end, duration]);
+    
+      return [ref, count];
+    }
+    
+  function CountCard({ value, suffix, label, decimal }) {
+    const end = parseFloat(value);
+    const [ref, count] = useCountUp(end);
+    const display = decimal ? (count / 10).toFixed(1) : String(count);
+    return (
+      <div className={styles.countCard} ref={ref}>
+        <span className={styles.countNum}>
+          {display}
+          <span className={styles.countSuffix}>{suffix}</span>
+        </span>
+        <span className={styles.countLabel}>{label}</span>
+      </div>
+    );
+  }
   return (
     <div className={styles.page} dir={t.dir} lang={currentLang}>
       <div className={styles.heroSlide}>
@@ -229,6 +280,21 @@ export default function Home({ currentLang = "en" }) {
             </div>
           </div>
         </div>
+
+          {/* ── 11. COUNTERS ── */}
+      {/* <section className={styles.counters}>
+        <div className={styles.container}>
+          <div className={styles.sectionHead}>
+            <span className={styles.kicker}>{t["hp-count-kicker"]}</span>
+          </div>
+          <div className={styles.countGrid}>
+            {counters.map((c) => (
+              <CountCard key={c.label} value={t[c.value]} suffix={t[c.suffix]} label={t[c.label]} decimal={c.decimal} />
+            ))}
+          </div>
+          <p className={styles.countNote}>{t["hp-count-note"]}</p>
+        </div>
+      </section> */}
       </section>
 
       {/* <section className={styles.testimonial}>
