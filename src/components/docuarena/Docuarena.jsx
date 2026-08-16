@@ -12,7 +12,7 @@ import stage6 from "../../assets/66.jpg";
 import stage7 from "../../assets/5.jpg";
 import stage8 from "../../assets/19.jpg";
 import matterImg from "../../assets/prm.jpg";
-import expertsImg from "../../assets/image-HOME.jpg";
+import expertsImg from "../../assets/docuarena.png";
 import trainingImg from "../../assets/digit.jpg";
 
 function Kicker({ text }) {
@@ -265,9 +265,7 @@ function Docuarena({ currentLang = "en" }) {
       <section className={styles.experts}>
         <div className={styles.container}>
           <div className={styles.expertsGrid}>
-            <div className={styles.expertsVisual}>
-              <img src={expertsImg} alt={c.expertsTitle} className={styles.expertsImg} />
-            </div>
+           
             <div className={styles.expertsCopy}>
               <SectionHead kicker={c.expertsKicker} title={c.expertsTitle} />
               {[c.expertsP1, c.expertsP2, c.expertsP3, c.expertsP4, c.expertsP5].map((p, i) => (
@@ -275,6 +273,9 @@ function Docuarena({ currentLang = "en" }) {
                   {p}
                 </p>
               ))}
+            </div>
+             <div className={styles.expertsVisual}>
+              <img src={expertsImg} alt={c.expertsTitle} className={styles.expertsImg} />
             </div>
           </div>
         </div>
@@ -284,6 +285,9 @@ function Docuarena({ currentLang = "en" }) {
       <section className={styles.training}>
         <div className={styles.container}>
           <div className={styles.trainingGrid}>
+           <div className={styles.trainingVisual}>
+              <img src={trainingImg} alt={c.trainingTitle} className={styles.trainingImg} />
+            </div>
             <div className={styles.trainingCopy}>
               <SectionHead kicker={c.trainingKicker} title={c.trainingTitle} />
               <p className={styles.trainingP}>{c.trainingP1}</p>
@@ -298,9 +302,7 @@ function Docuarena({ currentLang = "en" }) {
                 {c.trainingCta}
               </Link>
             </div>
-            <div className={styles.trainingVisual}>
-              <img src={trainingImg} alt={c.trainingTitle} className={styles.trainingImg} />
-            </div>
+           
           </div>
         </div>
       </section>
