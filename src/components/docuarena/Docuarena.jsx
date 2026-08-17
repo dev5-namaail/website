@@ -6,11 +6,11 @@ import heroVideo from "../../assets/video.mp4";
 import stage1 from "../../assets/1.jpg";
 import stage2 from "../../assets/22.jpg";
 import stage3 from "../../assets/33.jpg";
-import stage4 from "../../assets/44.jpg";
+import stage4 from "../../assets/ECM.jpg";
 import stage5 from "../../assets/77.jpg";
 import stage6 from "../../assets/66.jpg";
 import stage7 from "../../assets/5.jpg";
-import stage8 from "../../assets/19.jpg";
+import stage8 from "../../assets/44.jpg";
 import matterImg from "../../assets/prm.jpg";
 import expertsImg from "../../assets/docuarena.png";
 import trainingImg from "../../assets/digit.jpg";
@@ -111,11 +111,11 @@ function Docuarena({ currentLang = "en" }) {
               <p className={styles.matterP}>{c.matterP1}</p>
               <p className={styles.matterP}>{c.matterP2}</p>
               <p className={styles.matterP}>{c.matterP3}</p>
-              <ul className={styles.matterList}>
+              {/* <ul className={styles.matterList}>
                 {c.matter.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
-              </ul>
+              </ul> */}
               <p className={styles.matterClose}>{c.matterClose}</p>
             </div>
             <div className={styles.matterVisual}>
@@ -126,9 +126,9 @@ function Docuarena({ currentLang = "en" }) {
       </section>
 
       {/* ── ONE PLATFORM ── */}
-      <section className={styles.platform}>
+      {/* <section className={styles.platform}>
         <div className={styles.container}>
-          {/* <SectionHead kicker={c.platformKicker} title={c.platformTitle} /> */}
+          <SectionHead kicker={c.platformKicker} title={c.platformTitle} /> 
           <div className={styles.platformGrid}>
             {c.platform.map((item, i) => (
               <div key={i} className={styles.platformCard}>
@@ -139,7 +139,7 @@ function Docuarena({ currentLang = "en" }) {
           </div>
           <p className={styles.platformClose}>{c.platformClose}</p>
         </div>
-      </section>
+      </section> */}
 
       {/* ── LIFECYCLE ── */}
       <section className={styles.lifecycle}>
@@ -164,9 +164,9 @@ function Docuarena({ currentLang = "en" }) {
       </section>
 
       {/* ── FEATURES ── */}
-      <section className={styles.features}>
+      {/* <section className={styles.features}>
         <div className={styles.container}>
-          {/* <SectionHead kicker={c.featuresKicker} title={c.featuresTitle} sub={c.featuresSub} /> */}
+           <SectionHead kicker={c.featuresKicker} title={c.featuresTitle} sub={c.featuresSub} /> 
           <div className={styles.featureGrid}>
             {c.features.map((f, i) => (
               <div key={i} className={styles.featureCard}>
@@ -177,7 +177,7 @@ function Docuarena({ currentLang = "en" }) {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ── MOBILE ── */}
       {/* <section className={styles.mobile}>
@@ -292,11 +292,11 @@ function Docuarena({ currentLang = "en" }) {
               <SectionHead kicker={c.trainingKicker} title={c.trainingTitle} />
               <p className={styles.trainingP}>{c.trainingP1}</p>
               <p className={styles.trainingP}>{c.trainingP2}</p>
-              <ul className={styles.trainingList}>
+              {/* <ul className={styles.trainingList}>
                 {c.training.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
-              </ul>
+              </ul> */}
               <p className={styles.trainingP}>{c.trainingP3}</p>
               <Link to="/contact" className={styles.trainingCta}>
                 {c.trainingCta}

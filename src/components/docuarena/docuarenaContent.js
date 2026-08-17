@@ -154,14 +154,10 @@ const C = {
     // Experts
     // expertsKicker: "Built by the People Who Manage Records",
     expertsTitle: "Built by Records Management Experts",
-    expertsP1: "DocuArena wasn't developed as a generic software application.",
     expertsP2:
-      "It was designed by professionals with decades of practical experience in records management, warehouse operations, and enterprise information governance.",
+      "Docuarena was designed by professionals with decades of practical experience in records management, warehouse operations, and enterprise information governance.",
     expertsP3:
-      "Every workflow, barcode scan, approval process, and operational feature reflects real-world experience managing physical records at enterprise scale.",
-    expertsP4: "When you choose DocuArena, you're not simply purchasing software.",
-    expertsP5:
-      "You're partnering with specialists who understand both the technology and the day-to-day realities of Physical Records Management.",
+      "When you choose DocuArena, You're partnering with specialists who understand both the technology and the day-to-day realities of Physical Records Management.",
     // Training
     // trainingKicker: "Knowledge Transfer",
     trainingTitle: "Knowledge Transfer That Ensures Success",
@@ -351,14 +347,12 @@ const C = {
     ],
     // expertsKicker: "Créé par ceux qui gèrent les documents",
     expertsTitle: "Créé par des experts en gestion des documents",
-    expertsP1: "DocuArena n'a pas été développé comme un logiciel générique.",
-    expertsP2:
-      "Il a été conçu par des professionnels avec des décennies d'expérience pratique en gestion des documents, opérations d'entrepôt et gouvernance de l'information.",
-    expertsP3:
-      "Chaque workflow, scan de code-barres, processus d'approbation et fonctionnalité reflète une expérience réelle de gestion des documents physiques à l'échelle d'entreprise.",
-    expertsP4: "Choisir DocuArena, ce n'est pas simplement acheter un logiciel.",
-    expertsP5:
-      "C'est s'associer à des spécialistes qui comprennent à la fois la technologie et les réalités quotidiennes de la gestion des documents physiques.",
+    // expertsP1: "DocuArena n'a pas été développé comme un logiciel générique.",
+    expertsP2:"DocuArena a été conçu par des professionnels cumulant des décennies d'expérience pratique en gestion d'archives, en exploitation d'entrepôts et en gouvernance de l'information d'entreprise.",
+    expertsP3:"En choisissant DocuArena, vous collaborez avec des spécialistes qui maîtrisent à la fois la technologie et les réalités quotidiennes de la gestion des archives physiques.",
+    // expertsP4: "Choisir DocuArena, ce n'est pas simplement acheter un logiciel.",
+    // expertsP5:
+      // "C'est s'associer à des spécialistes qui comprennent à la fois la technologie et les réalités quotidiennes de la gestion des documents physiques.",
     // trainingKicker: "Transfert de connaissances",
     trainingTitle: "Un transfert de connaissances qui garantit le succès",
     trainingP1: "Des implémentations réussies reposent sur des utilisateurs compétents.",
@@ -541,11 +535,11 @@ const C = {
     ],
     // expertsKicker: "بناها من يديرون المستندات",
     expertsTitle: "بناها خبراء إدارة المستندات",
-    expertsP1: "لم يُطوَّر DocuArena كبرنامج عام.",
-    expertsP2: "صممه محترفون بعقود من الخبرة العملية في إدارة المستندات وعمليات المخازن وحوكمة المعلومات المؤسسية.",
-    expertsP3: "كل سير عمل ومسح باركود وعملية اعتماد وميزة يعكس خبرة حقيقية في إدارة المستندات الفعلية على نطاق المؤسسات.",
-    expertsP4: "عندما تختار DocuArena، فأنت لا تشتري برنامجاً فحسب.",
-    expertsP5: "أنت تشراك مع متخصصين يفهمون التقنية وواقع العمل اليومي لإدارة المستندات الفعلية.",
+    // expertsP1: "لم يُطوَّر DocuArena كبرنامج عام.",
+    expertsP2:"صُمم DocuArena على يد متخصصين يتمتعون بعقود من الخبرة العملية في إدارة السجلات، وعمليات المستودعات، وحوكمة معلومات المؤسسات.",
+    expertsP3:"باختيارك DocuArena، فإنك تتعاون مع متخصصين يفهمون التكنولوجيا والواقع العملي لإدارة السجلات المادية.",
+    // expertsP4: "عندما تختار DocuArena، فأنت لا تشتري برنامجاً فحسب.",
+    // expertsP5: "أنت تشراك مع متخصصين يفهمون التقنية وواقع العمل اليومي لإدارة المستندات الفعلية.",
     // trainingKicker: "نقل المعرفة",
     trainingTitle: "نقل معرفة يضمن النجاح",
     trainingP1: "التطبيقات الناجحة تعتمد على مستخدمين متمكنين.",
