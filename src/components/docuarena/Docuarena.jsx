@@ -197,9 +197,9 @@ function Docuarena({ currentLang = "en" }) {
                 ))}
               </ul>
               <p className={styles.mobileClose}>{c.mobileClose}</p>
-              {/* <Link to="/DocuarenaMobile" className={styles.mobileCta}>
+              <Link to="/DocuarenaMobile" className={styles.mobileCta}>
                 {c.mobileCta}
-              </Link> */}
+              </Link>
             </div>
             <div className={styles.phone}>
               <div className={styles.phoneScreen}>

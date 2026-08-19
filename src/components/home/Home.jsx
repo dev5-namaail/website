@@ -37,6 +37,7 @@ import logo13 from "../../assets/sena3a.png";
 import logo14 from "../../assets/idida.png";
 import successImg from "../../assets/HOME/SUCCESS.jpg";
 import videoImg from "../../assets/HOME/video.jpg";
+import stepsImg from "../../assets/HOME/stepss.jfif";
 import { useEffect, useRef, useState } from "react";
 
 const serviceItems = [
@@ -49,7 +50,7 @@ const service = [
   { icon: service1, nameKey: "home-serv1", descKey: "home-serv1d" },
   { icon: service2, nameKey: "home-serv2", descKey: "home-serv2d" },
   // { icon: service3, nameKey: "home-serv34", descKey: "home-serv3d" },
-    { icon: service3, nameKey: "home-serv3", descKey: "home-serv3d" },
+  { icon: service3, nameKey: "home-serv3", descKey: "home-serv3d" },
   { icon: service4, nameKey: "home-serv4", descKey: "home-serv4d" },
 ];
 const clientItems = [
@@ -122,37 +123,42 @@ export default function Home({ currentLang = "en" }) {
   const [ref1, count1] = useCountUp(17);
   const [ref2, count2] = useCountUp(30);
   const [ref3, count3] = useCountUp(100);
+  const [ref4, count4] = useCountUp(100);
+  const [ref5, count5] = useCountUp(20);
+  const [ref6, count6] = useCountUp(95);
+  const [ref7, count7] = useCountUp(99.9);
 
-    function useCountUp(end, duration = 2000) {
-      const [count, setCount] = useState(0);
-      const ref = useRef(null);
-    
-      useEffect(() => {
-        const observer = new IntersectionObserver(
-          ([entry]) => {
-            if (!entry.isIntersecting) return;
-            let start = 0;
-            const increment = end / (duration / 16);
-            const timer = setInterval(() => {
-              start += increment;
-              if (start >= end) {
-                setCount(end);
-                clearInterval(timer);
-              } else {
-                setCount(Math.floor(start));
-              }
-            }, 16);
-            observer.disconnect();
-          },
-          { threshold: 0.1 },
-        );
-        if (ref.current) observer.observe(ref.current);
-        return () => observer.disconnect();
-      }, [end, duration]);
-    
-      return [ref, count];
-    }
-    
+
+  function useCountUp(end, duration = 2000) {
+    const [count, setCount] = useState(0);
+    const ref = useRef(null);
+
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (!entry.isIntersecting) return;
+          let start = 0;
+          const increment = end / (duration / 16);
+          const timer = setInterval(() => {
+            start += increment;
+            if (start >= end) {
+              setCount(end);
+              clearInterval(timer);
+            } else {
+              setCount(Math.floor(start));
+            }
+          }, 16);
+          observer.disconnect();
+        },
+        { threshold: 0.1 },
+      );
+      if (ref.current) observer.observe(ref.current);
+      return () => observer.disconnect();
+    }, [end, duration]);
+
+    return [ref, count];
+  }
+
   function CountCard({ value, suffix, label, decimal }) {
     const end = parseFloat(value);
     const [ref, count] = useCountUp(end);
@@ -205,7 +211,7 @@ export default function Home({ currentLang = "en" }) {
           </div>
         </div>
       </div> */}
-          
+
       <section className={styles.services}>
         <div className={styles.sectionHeader}>
           <h1 className={styles.sectionTitle}>{t["home-serv-title"]}</h1>
@@ -222,6 +228,7 @@ export default function Home({ currentLang = "en" }) {
         </div>
       </section>
 
+
       <section className={styles.about}>
         <div className={styles.aboutSplit}>
           <div className={styles.aboutCopy}>
@@ -236,9 +243,9 @@ export default function Home({ currentLang = "en" }) {
             <h3>{t["home-cta-profile"]}</h3>
             <p>{t["home-serv-sub"]}</p>
             <div className={styles.docuarenaActions}>
-               <DownloadButton href={profilePdf}>
-              {t["about-download-profile"]}
-            </DownloadButton>
+              <DownloadButton href={profilePdf}>
+                {t["about-download-profile"]}
+              </DownloadButton>
               <Link to="/contact" className={styles.docuarenaAction}>
                 {t["home-cta-btn"]}
               </Link>
@@ -247,42 +254,81 @@ export default function Home({ currentLang = "en" }) {
         </div>
       </section>
 
+
+
+      <section className={styles.processSection}>
+        <div className={styles.processContainer}>
+          <div className={styles.processHeader}>
+            <span className={styles.processMainTitle}>{t["home-process-title"]}</span>
+            {/* <h2 className={styles.processMainTitle}>{t["home-process-sub"]}</h2> */}
+          </div>
+          <div className={styles.processImageWrapper}>
+            <img className={styles.processImage} src={stepsImg} alt="Namaa 5-Step Process" />
+          </div>
+        </div>
+      </section>
+
       <section className={styles.docuarena}>
         <div className={styles.docuarenaGrid}>
-          {/* <div className={styles.docuarenaPanel}>
-            <p className={styles.sectionKicker}>{t["home-docuarena-title"]}</p>
-            <h2 className={styles.docuarenaTitle}>{t["home-docuarena-sub"]}</h2>         
-            <p className={styles.docuarenaDesc}>{t["home-docuarena-desc"]}</p>
-            <div className={styles.docuarenaActions}>
+          <div className={styles.docuarenaPanel}>
+            {/* <p className={styles.sectionKicker}>{t["home-docuarena-title"]}</p> */}
+            <h2 className={styles.docuarenaTitle}>{t["home-docuarena-sub"]}</h2>
+            {/* <p className={styles.docuarenaDesc}>{t["home-docuarena-desc"]}</p> */}
+            {/* <div className={styles.docuarenaActions}>
               <Link to="/contact" className={styles.docuarenaAction}>
                 {t["home-cta-btn"]}
               </Link>
               <DownloadButton href={brochurePdf}>
                 {t["about-download-brochure"]}
               </DownloadButton>
-            </div>
-          </div> */}
+            </div> */}
+          </div>
           <div className={styles.docuarenaStats}>
-            <div className={styles.docuarenaCard}>
+            {/* <div className={styles.docuarenaCard}>
               <span className={styles.docuarenaNumber} ref={ref1}>{count1}+</span>
               <span className={styles.docuarenaLabel}>{t["home-stat1lbl"]}</span>
               <p className={styles.statDesc}>{t["home-stat1desc"]}</p>
-            </div>
+            </div> */}
             <div className={styles.docuarenaCard}>
               <span className={styles.docuarenaNumber} ref={ref2}>{count2}+</span>
               <span className={styles.docuarenaLabel}>{t["home-stat2lbl"]}</span>
-              <p className={styles.statDesc}>{t["home-stat2desc"]}</p>
+              {/* <p className={styles.statDesc}>{t["home-stat2desc"]}</p> */}
             </div>
-            <div className={styles.docuarenaCard}>
+            {/* <div className={styles.docuarenaCard}>
               <span className={styles.docuarenaNumber} ref={ref3}>{count3}+</span>
               <span className={styles.docuarenaLabel}>{t["home-stat3lbl"]}</span>
               <p className={styles.statDesc}>{t["home-stat3desc"]}</p>
+            </div> */}
+            <div className={styles.docuarenaCard}>
+              <span className={styles.docuarenaNumber} ref={ref4}>{count4}M+</span>
+              <span className={styles.docuarenaLabel}>{t["home-stat4lbl"]}</span>
+              {/* <p className={styles.statDesc}>{t["home-stat3desc"]}</p> */}
+            </div>
+            <div className={styles.docuarenaCard}>
+              <span className={styles.docuarenaNumber} ref={ref5}>{count5}
+                +</span>
+              <span className={styles.docuarenaLabel}>{t["home-stat5lbl"]}</span>
+              {/* <p className={styles.statDesc}>{t["home-stat3desc"]}</p> */}
+            </div>
+            <div className={styles.docuarenaCard}>
+              <span className={styles.docuarenaNumber} ref={ref6}>{count6}
+                +</span>
+              <span className={styles.docuarenaLabel}>{t["home-stat6lbl"]}</span>
+              {/* <p className={styles.statDesc}>{t["home-stat3desc"]}</p> */}
+
+            </div>
+            <div className={styles.docuarenaCard}>
+              <span className={styles.docuarenaNumber} ref={ref7}>{count7}%
+                +</span>
+              <span className={styles.docuarenaLabel}>{t["home-stat7lbl"]}</span>
+              {/* <p className={styles.statDesc}>{t["home-stat3desc"]}</p>  */}
+
             </div>
           </div>
-        </div>
+          </div>
 
           {/* ── 11. COUNTERS ── */}
-      {/* <section className={styles.counters}>
+          {/* <section className={styles.counters}>
         <div className={styles.container}>
           <div className={styles.sectionHead}>
             <span className={styles.kicker}>{t["hp-count-kicker"]}</span>
@@ -294,7 +340,7 @@ export default function Home({ currentLang = "en" }) {
           </div>
           <p className={styles.countNote}>{t["hp-count-note"]}</p>
         </div>
-      </section> */}
+      </section>  */}
       </section>
 
       {/* <section className={styles.testimonial}>
@@ -306,8 +352,7 @@ export default function Home({ currentLang = "en" }) {
         </div>
       </section> */}
 
-
-<section className={styles.serveStyle}>
+      <section className={styles.serveStyle}>
         <div className={styles.serveHeader}>
           <h2 className={styles.serveTitle}>{t["home-clients-title"]}</h2>
         </div>
@@ -341,15 +386,15 @@ export default function Home({ currentLang = "en" }) {
             ))}
           </Swiper>
         </div>
-      </section> 
-      
-   
+      </section>
+
+
 
       <section className={styles.clients}>
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>
-          {t["home-serve-title"]}
-    </h2>
+            {t["home-serve-title"]}
+          </h2>
         </div>
         <Swiper
           modules={[Autoplay, Pagination]}
@@ -377,8 +422,8 @@ export default function Home({ currentLang = "en" }) {
       </section>
 
 
-      
-        <section className={styles.cta}>
+
+      <section className={styles.cta}>
         <div className={styles.ctaContent}>
           <h2 className={styles.ctaTitle}>{t["home-cta-title"]}</h2>
           <p className={styles.ctaSub}>{t["home-serv-sub"]}</p>
