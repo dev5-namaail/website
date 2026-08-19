@@ -168,6 +168,10 @@ const T = {
     'home-stat2lbl': 'Years of Experience',
     'home-stat3': '100+',
     'home-stat3lbl': 'Employees',
+        'home-stat4lbl':'Documents Archived ',
+        'home-stat5lbl':'Enterprise Clients',
+    'home-stat6lbl':'Customer Satisfaction',
+    'home-stat7lbl':'System Availability',
     'home-serv-title': 'What We Do',
     'home-serv-sub': 'End-to-end solutions that transform how your organization manages physical and digital records.',
     'home-serv1': 'Kodak Alaris',
@@ -185,7 +189,7 @@ const T = {
     'home-about3': 'Our progressive thinking and creative approach are what makes us different',
     'home-about-cta': 'Download Company Profile',
     'home-docuarena-title': 'When Technology Meets Ambitious Minds, Smart Products Happen',
-    'home-docuarena-sub': 'Here comes DocuArena',
+    'home-docuarena-sub': 'Here comes Namaa',
     'home-docuarena-desc': 'Innovation arises when ambitious minds leverage technology to its fullest potential. DocuArena is our flagship physical records management platform — an operational enforcement layer that closes the gap between your governance framework and what actually happens on your warehouse floor.',
     'home-docuarena-quote': 'Innovation arises when ambitious minds leverage technology to its fullest potential. DocuAarena delivers on that promise with physical records management that is measured, enforced, and future-ready.',
     'home-docuarena-cta': 'Download DocuArena Brochure',
@@ -560,6 +564,8 @@ const T = {
     'blog-detail-cta-btn': 'Get Started Today',
     'blog-prev-btn': 'Previous Article',
     'blog-next-btn': 'Next Article',
+    'home-process-title': 'Our Transformation Process',
+    'home-process-sub': 'Namaa understands the whole transformation lifecycle.',
   };
 
 export default T;

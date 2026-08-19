@@ -166,6 +166,10 @@ const T = {
     'home-stat2lbl': 'Années d\'Expérience',
     'home-stat3': '100+',
     'home-stat3lbl': 'Employés',
+    'home-stat4lbl':'Documents archivés ',
+    'home-stat5lbl': 'Clients déntreprise',
+    'home-stat6lbl':'Satisfaction client ',
+    'home-stat7lbl':'Disponibilité du système',
     'home-serv-title': 'Ce Que Nous Faisons',
     'home-serv-sub': 'Des solutions de bout en bout qui transforment la gestion de vos documents physiques et numériques.',
     'home-serv1': 'Kodak Alaris',
@@ -183,7 +187,7 @@ const T = {
     'home-about3': 'Notre pensée progressive et notre approche créative font notre différence',
     'home-about-cta': 'Télécharger le Profil d\'Entreprise',
     'home-docuarena-title': 'Quand la Technologie Rencontre les Esprits Ambitieux, les Produits Intelligents Émergent',
-    'home-docuarena-sub': 'Voici DocuArena',
+    'home-docuarena-sub': 'Voici Namaa',
     'home-docuarena-desc': 'L\'innovation naît quand les esprits ambitieux exploitent la technologie à son plein potentiel. DocuArena est notre plateforme phare de gestion des documents physiques.',
     'home-docuarena-quote': 'L\'innovation naît quand les esprits ambitieux exploitent la technologie à son plein potentiel. DocuArena concrétise cette promesse avec une gestion des dossiers physiques mesurée, appliquée et tournée vers l\'avenir.',
     'home-docuarena-cta': 'Télécharger la Brochure DocuArena',
@@ -569,6 +573,8 @@ const T = {
     'blog-9-content': 'Regulatory compliance is a critical driver for records management investment. Organizations face increasing pressure to demonstrate audit-ready records practices across industries. From GDPR in Europe to local data protection laws, the compliance landscape demands systematic approaches to records retention, access control, and disposal. A well-structured PRM system provides the framework for meeting these obligations while improving operational efficiency.',
     'blog-10-content': 'Artificial intelligence and robotic process automation are transforming document management from reactive storage to proactive intelligence. Automated classification, intelligent data extraction, and predictive analytics reduce manual effort and improve accuracy. Organizations adopting AI-driven records management achieve faster retrieval, better compliance, and significant cost savings. The future of document management is intelligent, automated, and integrated.',
     'blog-7-content': '<h2>Is Hidden Maintenance Draining Your Profits?</h2><p>Is your team constantly scrambling to fix surprise equipment failures? Are hidden maintenance costs eating away at your profits? You\'re not alone. Many businesses struggle with inefficient Fixed Asset Management (FAM), leading to:</p><ul><li><strong>Unplanned downtime:</strong> Imagine a critical production line shutting down because a key piece of equipment unexpectedly breaks. This lost productivity can cost your business thousands (or even millions) of dollars in a single day.</li><li><strong>Reactive vs. proactive maintenance:</strong> Scrambling to fix problems after they occur is expensive and disruptive. Strategic FAM focuses on preventative maintenance, catching small issues before they snowball into major failures. Think of it like car maintenance \u2013 regular oil changes are cheaper than a complete engine overhaul!</li><li><strong>Inaccurate financial reporting:</strong> Without a clear picture of your asset health and value, depreciation calculations become unreliable. This can impact your financial statements and limit your ability to secure funding.</li><li><strong>Regulatory headaches:</strong> Many industries have asset-related regulations that companies must comply with. Inefficient FAM can make it difficult to track assets and maintain the necessary documentation, leading to costly fines and delays.</li></ul><h2>How Strategic FAM Can Be Your Game-Changer</h2><ul><li><strong>Optimize equipment utilization:</strong> By knowing the capabilities and limitations of your assets, you can schedule tasks more effectively and maximize uptime. Imagine getting 20% more output from your machinery without additional investment!</li><li><strong>Reduce maintenance costs:</strong> Preventative maintenance plans identify and address potential issues before they escalate into costly repairs.</li><li><strong>Improve financial reporting accuracy:</strong> A comprehensive asset register with precise asset valuation ensures reliable depreciation calculations, giving you a clear picture of your financial health.</li><li><strong>Enhance regulatory compliance:</strong> With a centralized repository for asset data and maintenance records, you can easily demonstrate compliance with relevant regulations, saving you time and money in audits.</li></ul><p><strong>Ready to unlock the power of FAM and boost your business efficiency?</strong> Don\'t wait for another hidden cost to derail your progress. Contact us today and let our FAM experts show you how to maximize your return on assets!</p>',
+    'home-process-title': 'Notre Processus de Transformation',
+    'home-process-sub': 'Namaa comprend le cycle complet de transformation.',
   };
 
 

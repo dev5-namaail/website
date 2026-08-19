@@ -21,22 +21,22 @@ function DocuarenaMobile({ currentLang = "en" }) {
   return (    <div className={styles.page} dir={isRtl ? "rtl" : "ltr"}>
       <section className={styles.hero}>
         <div className={styles.container}>
-          <span className={styles.heroBadge}>DocuArena Mobile</span>
+          {/* <span className={styles.heroBadge}>DocuArena Mobile</span> */}
           <h1 className={styles.heroTitle}>
             {highlightLastWord(c.mobileHeroTitle)}
           </h1>
           <p className={styles.heroSub}>{c.mobileHeroSub}</p>
           <p className={styles.heroDesc}>{c.mobileHeroDesc}</p>
-          <Link to="/contact" className={styles.heroCta}>
+          {/* <Link to="/contact" className={styles.heroCta}>
             {c.mobileCta}
-          </Link>
+          </Link> */}
         </div>
       </section>
 
       <section className={styles.features}>
         <div className={styles.container}>
           <div className={styles.sectionHead}>
-            <p className={styles.kicker}>{c.mobileKicker}</p>
+            {/* <p className={styles.kicker}>{c.mobileKicker}</p> */}
             <h2 className={styles.sectionTitle}>{c.mobileTitle}</h2>
             <p className={styles.sectionSub}>{c.mobileSub}</p>
           </div>

@@ -299,7 +299,9 @@
 /* ── Docuarena ── */
 .docuarena {
   padding: 30px 14px;
-  background: linear-gradient(135deg, #f6f9ff 0%, #eef4fb 100%);
+  /* background: linear-gradient(135deg, #f6f9ff 0%, #eef4fb 100%); */
+  background: #032758;
+  color: white;
 
 }
 
@@ -316,15 +318,18 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+  text-align: center;
 }
 
 .docuarenaTitle {
-  margin: 0;
-  color: var(--ink);
+  margin-bottom: 30px;
+  /* color: var(--ink); */
+  color: white;
   font-size: var(--fs-hero);
   font-weight: var(--fw-hero);
   letter-spacing: -1.4px;
   line-height: 1.1;
+
 }
 
 .docuarenaSub {
@@ -372,8 +377,10 @@
 }
 
 .docuarenaStats {
-  display: flex;
-  gap: 20px;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
 }
 
 .docuarenaCard {
@@ -667,6 +674,52 @@
   object-fit: cover;
   margin: 0 0 16px;
 }
+/* ── Process Section ── */
+.processSection {
+  padding: 50px 24px;
+  background: linear-gradient(135deg, #f6f9ff 0%, #eef4fb 100%);
+}
+
+.processContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.processHeader {
+  margin-bottom: 40px;
+}
+
+.processMainTitle {
+  margin: 0;
+  color: var(--ink);
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-hero);
+  letter-spacing: -1.2px;
+  line-height: 1.1;
+}
+
+.processImageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.processImage {
+  display: block;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(15, 45, 90, 0.12);
+}
+
+@media (max-width: 680px) {
+  .processImage {
+    border-radius: 12px;
+  }
+}
+
 .successImage{
     display: block;
   width: 100%;
@@ -814,6 +867,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+
   .aboutSplit,
   .docuarenaGrid {
     grid-template-columns: 1fr;
@@ -867,7 +921,12 @@
   .heroSuccess {
     display: none;
   }
-
+.docuarenaStats {
+  display: flex;
+flex-direction: column;
+margin: auto;  
+gap: 20px;
+}
   .heroMobileContent {
     display: flex;
     flex-direction: column;
