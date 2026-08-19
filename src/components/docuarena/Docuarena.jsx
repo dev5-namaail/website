@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { getDocuarenaContent } from "./docuarenaContent";
 import styles from "./Docuarena.module.css";
-
 import heroVideo from "../../assets/video.mp4";
 import stage1 from "../../assets/1.jpg";
 import stage2 from "../../assets/22.jpg";
@@ -14,7 +13,9 @@ import stage8 from "../../assets/44.jpg";
 import matterImg from "../../assets/prm.jpg";
 import expertsImg from "../../assets/docuarena.png";
 import trainingImg from "../../assets/digit.jpg";
+import prmImg from "../../assets/Digitilization_files/fixedassets-1.jpg";
 
+// eslint-disable-next-line react/prop-types
 function Kicker({ text }) {
   return <p className={styles.kicker}>{text}</p>;
 }
@@ -30,6 +31,7 @@ function highlightLastWord(text) {
   );
 }
 
+// eslint-disable-next-line react/prop-types
 function SectionHead({ kicker, title, sub }) {
   return (
     <div className={styles.sectionHead}>
@@ -58,12 +60,15 @@ function Docuarena({ currentLang = "en" }) {
           </h1>
           <p className={styles.heroSub}>{c.heroSub}</p>
           <p className={styles.heroPain}>{c.heroPain}</p>
-          <p className={styles.heroDesc}>{c.heroDesc}</p>
+          <p className={styles.heroPain}>{c.heroDesc}</p>
           <p className={styles.heroDesc}>{c.heroDesc2}</p>
           <div className={styles.heroActions}>
             {/* <a href="mailto:info@namaa-il.com" className={styles.heroCta}>
               {c.heroCta}
             </a> */}
+              <Link to="/contact" className={styles.heroCta}>
+              {c.heroCta}
+            </Link>
             <Link to="/DocumentRetrieval" className={styles.heroCtaAlt}>
               {c.heroCtaAlt}
             </Link>
@@ -180,7 +185,7 @@ function Docuarena({ currentLang = "en" }) {
       </section> */}
 
       {/* ── MOBILE ── */}
-      {/* <section className={styles.mobile}>
+     <section className={styles.mobile}>
         <div className={styles.container}>
           <div className={styles.mobileGrid}>
             <div className={styles.mobileCopy}>
@@ -192,9 +197,9 @@ function Docuarena({ currentLang = "en" }) {
                 ))}
               </ul>
               <p className={styles.mobileClose}>{c.mobileClose}</p>
-              <Link to="/DocuarenaMobile" className={styles.mobileCta}>
+              {/* <Link to="/DocuarenaMobile" className={styles.mobileCta}>
                 {c.mobileCta}
-              </Link>
+              </Link> */}
             </div>
             <div className={styles.phone}>
               <div className={styles.phoneScreen}>
@@ -211,10 +216,11 @@ function Docuarena({ currentLang = "en" }) {
                 <div className={styles.phoneRow} />
                 <div className={styles.phoneRow} />
               </div>
+              {/* <img src={prmImg} alt={c.expertsTitle} className={styles.expertsImg} /> */}
             </div>
           </div>
         </div>
-      </section> */}
+      </section> 
 
       {/* ── COST CALCULATOR ── */}
       <section className={styles.cost}>
