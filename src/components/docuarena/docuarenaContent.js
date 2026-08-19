@@ -4,11 +4,10 @@ const C = {
     heroBadge: "Physical Records Management",
     heroTitle: "Take Complete Control of Your Physical Records",
     heroSub: "Enterprise Physical Records & Warehouse Management",
-    heroPain: "Lost files. Slow retrievals. No proof of custody. Rising warehouse costs.",
-    heroDesc:
-      "DocuArena is a purpose-built Physical Records Management (PRM) platform that gives your organization complete visibility and control over every physical record — from receiving to secure destruction.",
-    heroDesc2:
-      "Built specifically for organizations managing physical archives, DocuArena transforms manual warehouse operations into intelligent, barcode-driven workflows that improve operational efficiency, strengthen compliance, and reduce costs.",
+    // heroPain: "Lost files. Slow retrievals. No proof of custody. Rising warehouse costs.",
+    heroDesc:"DocuArena is a purpose-built Physical Records Management (PRM) platform that gives your organization complete visibility and control over every physical record—from receiving to secure destruction.",
+    // heroDesc2:
+      // "Built specifically for organizations managing physical archives, DocuArena transforms manual warehouse operations into intelligent, barcode-driven workflows that improve operational efficiency, strengthen compliance, and reduce costs.",
     heroCta: "Book a Live Demo",
     heroCtaAlt: "Calculate Your Savings",
     // Enterprise Ready
@@ -105,9 +104,9 @@ const C = {
     mobileHeroSub: "Every Operation in Your Pocket",
     mobileHeroDesc:
       "Warehouse staff and field teams stay connected to the central platform from anywhere. Scan, execute, verify, and update physical records in real time — no paperwork, no delays.",
-    mobileKicker: "Operations Anywhere",
+    // mobileKicker: "Operations Anywhere",
     mobileTitle: "Operations Anywhere",
-    mobileSub: "Warehouse operations should never stop because your team leaves the office.",
+    mobileSub: "Warehouse operations should never stop because your team leaves the office, DocuArena Mobile Application enables warehouse staff of performing all the duties wherever and whenever they are, every action remains visible and registered.",
     mobileDesc: "The DocuArena Mobile Application enables warehouse staff and field teams to:",
     mobile: [
       "Scan barcodes instantly",
@@ -162,7 +161,7 @@ const C = {
     // trainingKicker: "Knowledge Transfer",
     trainingTitle: "Knowledge Transfer That Ensures Success",
     trainingP1: "Successful implementations depend on knowledgeable users.",
-    trainingP2: "Our structured knowledge transfer programs are delivered directly by the team behind DocuArena and include:",
+    // trainingP2: "Our structured knowledge transfer programs are delivered directly by the team behind DocuArena and include:",
     training: [
       "Warehouse Operators",
       "Records Officers",
@@ -205,11 +204,10 @@ const C = {
     heroBadge: "Gestion des documents physiques",
     heroTitle: "Reprenez le contrôle total de vos documents physiques",
     heroSub: "Gestion documentaire et entrepôt de niveau entreprise",
-    heroPain: "Fichiers perdus. Récupérations lentes. Absence de preuve de garde. Coûts d'entrepôt croissants.",
-    heroDesc:
-      "DocuArena est une plateforme de gestion des documents physiques (PRM) conçue sur mesure pour donner à votre organisation une visibilité et un contrôle complets sur chaque document physique — de la réception à la destruction sécurisée.",
-    heroDesc2:
-      "Conçue spécifiquement pour les organisations gérant des archives physiques, DocuArena transforme les opérations manuelles d'entrepôt en flux de travail intelligents pilotés par code-barres qui améliorent l'efficacité opérationnelle, renforcent la conformité et réduisent les coûts.",
+    // heroPain: "Fichiers perdus. Récupérations lentes. Absence de preuve de garde. Coûts d'entrepôt croissants.",
+    heroDesc:"DocuArena est une plateforme de gestion des documents physiques (PRM) spécialement conçue pour offrir à votre organisation une visibilité et un contrôle complets sur chaque document physique, de sa réception à sa destruction sécurisée.",
+    // heroDesc2:
+      // "Conçue spécifiquement pour les organisations gérant des archives physiques, DocuArena transforme les opérations manuelles d'entrepôt en flux de travail intelligents pilotés par code-barres qui améliorent l'efficacité opérationnelle, renforcent la conformité et réduisent les coûts.",
     heroCta: "Réserver une démo en direct",
     heroCtaAlt: "Calculer vos économies",
     readyTitle: "Prêt pour l'entreprise",
@@ -301,9 +299,9 @@ const C = {
     mobileHeroSub: "Chaque opération dans votre poche",
     mobileHeroDesc:
       "Le personnel d'entrepôt et les équipes terrain restent connectés à la plateforme centrale où qu'ils soient. Scannez, exécutez, vérifiez et mettez à jour les documents physiques en temps réel — sans paperasse, sans délai.",
-    mobileKicker: "Opérations partout",
+    // mobileKicker: "Opérations partout",
     mobileTitle: "Opérations partout",
-    mobileSub: "Les opérations d'entrepôt ne doivent jamais s'arrêter parce que votre équipe quitte le bureau.",
+    mobileSub: "Les opérations d'entrepôt ne doivent jamais s'arrêter parce que votre équipe quitte le bureau , L'application mobile DocuArena permet au personnel d'entrepôt d'effectuer toutes leurs tâches où et quand ils le souhaitent ; chaque action reste visible et enregistrée.",
     mobileDesc: "L'application mobile DocuArena permet au personnel d'entrepôt et aux équipes terrain de :",
     mobile: [
       "Scanner les code-barres instantanément",
@@ -356,7 +354,7 @@ const C = {
     // trainingKicker: "Transfert de connaissances",
     trainingTitle: "Un transfert de connaissances qui garantit le succès",
     trainingP1: "Des implémentations réussies reposent sur des utilisateurs compétents.",
-    trainingP2: "Nos programmes structurés de transfert de connaissances sont délivrés par l'équipe derrière DocuArena :",
+    // trainingP2: "Nos programmes structurés de transfert de connaissances sont délivrés par l'équipe derrière DocuArena :",
     training: [
       "Opérateurs d'entrepôt",
       "Responsables des documents",
@@ -396,12 +394,11 @@ const C = {
     heroBadge: "إدارة المستندات الفعلية",
     heroTitle: "سيطر بشكل كامل على مستنداتك الفعلية",
     heroSub: "إدارة المستندات والمخازن على مستوى المؤسسات",
-    heroPain: "ملفات ضائعة. استرجاع بطيء. لا إثبات للحفظ. تكاليف مخازن متزايدة.",
-    heroDesc:
-      "DocuArena منصة مُدارة للمستندات الفعلية (PRM) مصممة خصيصاً لتمنح مؤسستك رؤية وتحكماً كاملين في كل مستند فعلي — من الاستلام حتى الإتلاف الآمن.",
-    heroDesc2:
-      "مبنية خصيصاً للمؤسسات التي تدير أرشيفات فعلية، تحوّل DocuArena عمليات المخزن اليدوية إلى سير عمل ذكية تعتمد على الباركود، لتحسين الكفاءة التشغيلية وتقوية الالتزام وخفض التكاليف.",
-    heroCta: "احجز عرضاً حياً",
+    // heroPain: "ملفات ضائعة. استرجاع بطيء. لا إثبات للحفظ. تكاليف مخازن متزايدة.",
+    heroDesc:"DocuArena هي منصة مصممة خصيصًا لإدارة السجلات المادية (PRM) تمنح مؤسستك رؤية كاملة وتحكمًا تامًا في كل سجل مادي - من الاستلام إلى التدمير الآمن.",
+    // heroDesc2:
+      // "مبنية خصيصاً للمؤسسات التي تدير أرشيفات فعلية، تحوّل DocuArena عمليات المخزن اليدوية إلى سير عمل ذكية تعتمد على الباركود، لتحسين الكفاءة التشغيلية وتقوية الالتزام وخفض التكاليف.",
+    heroCta: "احجز عرضاً",
     heroCtaAlt: "احسب مدخراتك",
     readyTitle: "جاهزة للمؤسسات",
     ready: [
@@ -489,9 +486,9 @@ const C = {
     mobileHeroSub: "كل عملية في جيبك",
     mobileHeroDesc:
       "طاقم المخزن والفرق الميدانية يبقون متصلين بالمنصة المركزية من أي مكان. امسح، نفّذ، تحقق وحدّث حالة الوثائق في الوقت الفعلي — بدون أوراق وبدون تأخير.",
-    mobileKicker: "عمليات في أي مكان",
+    // mobileKicker: "عمليات في أي مكان",
     mobileTitle: "عمليات في أي مكان",
-    mobileSub: "عمليات المخزن لا يجب أن تتوقف لمجرد أن فريقك يغادر المكتب.",
+    mobileSub: "عمليات المخزن لا يجب أن تتوقف لمجرد أن فريقك يغادر المكتب , يتيح تطبيق DocuArena للهواتف المحمولة لموظفي المستودعات أداء جميع المهام أينما كانوا ومتى ما كانوا، ويبقى كل إجراء مرئيًا ومسجلاً.",
     mobileDesc: "تطبيق DocuArena المحمول يمكن طاقم المخزن والفرق الميدانية من:",
     mobile: [
       "مسح الباركود فوراً",
@@ -543,7 +540,7 @@ const C = {
     // trainingKicker: "نقل المعرفة",
     trainingTitle: "نقل معرفة يضمن النجاح",
     trainingP1: "التطبيقات الناجحة تعتمد على مستخدمين متمكنين.",
-    trainingP2: "برامج نقل المعرفة المنظمة لدينا تُقدَّم مباشرة من فريق DocuArena وتشمل:",
+    // trainingP2: "برامج نقل المعرفة المنظمة لدينا تُقدَّم مباشرة من فريق DocuArena وتشمل:",
     training: [
       "مشغلي المخازن",
       "مسؤولي المستندات",
