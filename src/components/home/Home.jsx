@@ -607,8 +607,8 @@ export default function Home({ currentLang = "en" }) {
           <h2 className={styles.ctaTitle}>{t["home-cta-title"]}</h2>
           <p className={styles.ctaSub}>{t["home-serv-sub"]}</p>
           <div className={styles.ctaActions}>
-            <Link to="/contact" className={styles.ctaBtn}>{t["home-cta-btn"]}</Link>
-            <Link to="/portfolio" className={styles.ctaBtnOutline}>{t["nav-portfolio"]}</Link>
+            <Link to="/contact" className={styles.ctaBtn}>{t["hp-hero-cta2"]}</Link>
+            <Link to="/DocumentRetrieval" className={styles.ctaBtnOutline}>{t["hp-hero-cta1"]}</Link>
           </div>
         </div>
       </section>
