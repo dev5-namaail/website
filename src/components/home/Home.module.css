@@ -411,8 +411,8 @@
 /* ── Services ── */
 .services {
   padding: 50px 24px;
-  /* background: var(--paper); */
-  background: white;
+  background: var(--paper);
+  /* background: white; */
 }
 
 .servicesGrid {

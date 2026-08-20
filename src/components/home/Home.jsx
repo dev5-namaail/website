@@ -206,7 +206,21 @@ export default function Home({ currentLang = "en" }) {
           </div>
         </div>
       </div>
-
+  <section className={styles.services}>
+        <div className={styles.sectionHeader}>
+          <h1 className={styles.sectionTitle}>{t["home-serv-title"]}</h1>
+          {/* <p className={styles.sectionSub}>{t["home-serv-sub1"]}</p> */}
+        </div>
+        <div className={styles.servicesGrid}>
+          {serviceItems.map((service) => (
+            <article className={styles.serviceCard} key={service.nameKey}>
+              <img className={styles.serviceIcon} src={service.icon} alt={t[service.nameKey]} />
+              <h3 className={styles.serviceName}>{t[service.nameKey]}</h3>
+              <p className={styles.serviceDesc}>{t[service.descKey]}</p>
+            </article>
+          ))}
+        </div>
+      </section>
       {/* <div className={styles.heroSuccess}>
         <div>
           <img className={styles.successImage} src={successImg} alt="" />
@@ -344,21 +358,7 @@ export default function Home({ currentLang = "en" }) {
         </div>
       </section>
 
-      <section className={styles.services}>
-        <div className={styles.sectionHeader}>
-          <h1 className={styles.sectionTitle}>{t["home-serv-title"]}</h1>
-          {/* <p className={styles.sectionSub}>{t["home-serv-sub1"]}</p> */}
-        </div>
-        <div className={styles.servicesGrid}>
-          {serviceItems.map((service) => (
-            <article className={styles.serviceCard} key={service.nameKey}>
-              <img className={styles.serviceIcon} src={service.icon} alt={t[service.nameKey]} />
-              <h3 className={styles.serviceName}>{t[service.nameKey]}</h3>
-              <p className={styles.serviceDesc}>{t[service.descKey]}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+    
 
 
       <section className={styles.about}>
@@ -415,7 +415,34 @@ export default function Home({ currentLang = "en" }) {
           ))}
         </div>
       </section>
-      <section className={styles.docuarena}>
+    
+{/* ═══════════════════════════════════════════
+          6. WHY NAMAA INFOLOGISTICS
+          ═══════════════════════════════════════════ */}
+      <section className={styles.why}>
+        <div className={styles.sectionHeader}>
+          <span className={styles.sectionKicker}>{t["hp-why-kicker"]}</span>
+          <h2 className={styles.sectionTitle}>{t["hp-why-title"]}</h2>
+        </div>
+        <div className={styles.whyGrid}>
+          {whyItems.map((item) => (
+            <div className={styles.whyCard} key={item.key}>
+              <span className={styles.whyIcon}>{item.icon}</span>
+              <h3 className={styles.whyTitle}>{t[`${item.key}t`]}</h3>
+              <p className={styles.whyDesc}>{t[`${item.key}d`]}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+      {/* <section className={styles.testimonial}>
+        <div className={styles.testimonialContent}>
+          <h2>{t["home-testimonial-title"]}</h2>
+          <p></p>
+          <p><strong>{t["home-testimonial-DocuArena"]}</strong> : {t["home-testimonial-desc"]}</p>
+          <img src={testimonialImg} alt="DocuArena" className={styles.testimonialImage} />
+        </div>
+      </section> */}
+  <section className={styles.docuarena}>
         <div className={styles.docuarenaGrid}>
           <div className={styles.docuarenaPanel}>
             {/* <p className={styles.sectionKicker}>{t["home-docuarena-title"]}</p> */}
@@ -489,33 +516,6 @@ export default function Home({ currentLang = "en" }) {
         </div>
       </section>  */}
       </section>
-{/* ═══════════════════════════════════════════
-          6. WHY NAMAA INFOLOGISTICS
-          ═══════════════════════════════════════════ */}
-      <section className={styles.why}>
-        <div className={styles.sectionHeader}>
-          <span className={styles.sectionKicker}>{t["hp-why-kicker"]}</span>
-          <h2 className={styles.sectionTitle}>{t["hp-why-title"]}</h2>
-        </div>
-        <div className={styles.whyGrid}>
-          {whyItems.map((item) => (
-            <div className={styles.whyCard} key={item.key}>
-              <span className={styles.whyIcon}>{item.icon}</span>
-              <h3 className={styles.whyTitle}>{t[`${item.key}t`]}</h3>
-              <p className={styles.whyDesc}>{t[`${item.key}d`]}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-      {/* <section className={styles.testimonial}>
-        <div className={styles.testimonialContent}>
-          <h2>{t["home-testimonial-title"]}</h2>
-          <p></p>
-          <p><strong>{t["home-testimonial-DocuArena"]}</strong> : {t["home-testimonial-desc"]}</p>
-          <img src={testimonialImg} alt="DocuArena" className={styles.testimonialImage} />
-        </div>
-      </section> */}
-
       <section className={styles.serveStyle}>
         <div className={styles.serveHeader}>
           <h2 className={styles.serveTitle}>{t["home-clients-title"]}</h2>
