@@ -1098,8 +1098,9 @@
 }
 /* ── Process Section ── */
 .processSection {
-  padding: 50px 24px;
-  background: linear-gradient(135deg, #f6f9ff 0%, #eef4fb 100%);
+  padding: 50px 24px; 
+  /* background: linear-gradient(135deg, #f6f9ff 0%, #eef4fb 100%); */
+   background: var(--paper);
 }
 
 .processContainer {
