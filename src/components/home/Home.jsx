@@ -221,6 +221,35 @@ export default function Home({ currentLang = "en" }) {
           </div>
         </div>
       </div> */}
+      <section className={styles.transform}>
+        <div className={styles.sectionHeader}>
+          <span className={styles.sectionKicker}>{t["hp-hero-title-1"]} {t["hp-hero-title-2"]} {t["hp-hero-title-3"]}</span>
+          <p className={styles.sectionSub}>{t["hp-hero-desc"]}</p>
+        </div>
+        <div className={styles.transformFlow}>
+          {[
+            { key: "hp-flow1", num: "01" },
+            { key: "hp-flow2", num: "02" },
+            { key: "hp-flow3", num: "03" },
+            { key: "hp-flow4", num: "04" },
+            { key: "hp-flow5", num: "05" },
+            { key: "hp-flow6", num: "06" },
+          ].map((step, i) => (
+            <div className={styles.transformStep} key={step.key}>
+              <div className={styles.transformNode}>
+                <span className={styles.transformNum}>{step.num}</span>
+                <span className={styles.transformLabel}>{t[step.key]}</span>
+              </div>
+              {i < 5 && <span className={styles.transformConnector} />}
+            </div>
+          ))}
+        </div>
+        <div className={styles.transformActions}>
+          <Link to="/contact" className={styles.docuarenaAction}>{t["hp-hero-cta1"]}</Link>
+          <Link to="/contact" className={styles.docuarenaAction}>{t["hp-hero-cta2"]}</Link>
+        </div>
+      </section>
+     
 
       <section className={styles.services}>
         <div className={styles.sectionHeader}>
