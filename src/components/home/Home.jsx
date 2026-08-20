@@ -10,15 +10,18 @@ import brochurePdf from "../../assets/Namaa-Brochure.pdf";
 import profilePdf from "../../assets/Namaa-InfoLogistics-Company-Profile-2024-1.pdf";
 import testimonialImg from "../../assets/WhatsApp-Image1.png";
 import digitImg from "../../assets/HOME/Digitization.jpg";
-// import digitImg from "../../assets/digit.jpg";
 import fixedImg from "../../assets/HOME/FAM.jpeg";
-// import fixedImg from "../../assets/fixedassets.jpg";
 // import prmImg from "../../assets/prm.jpg";
 import prmImg from "../../assets/HOME/prm.jpg";
-// import kodakImg from "../../assets/kodak.jpg";
 import kodakImg from "../../assets/HOME/KODAK.jpg";
 import service1 from "../../assets/service1.jpg";
-import service2 from "../../assets/service2.jpg";
+import blogs1 from "../../assets/blogs/blog1.jpg";
+import blogs2 from "../../assets/blogs/blogs2.jpg";
+import blogs3 from "../../assets/blogs/blogs3.jpg";
+import blogs4 from "../../assets/blogs/blogs4.jpg";
+import blogs5 from "../../assets/blogs/blogs5.jpg";
+import blogs6 from "../../assets/blogs/blogs9.jpg";
+import service2 from "../../assets/logo5.jpg";
 import service3 from "../../assets/service3.jpg";
 import service4 from "../../assets/service4.jpg";
 import logo1 from "../../assets/a5bar.png";
@@ -59,7 +62,7 @@ const whyItems = [
 const service = [
   { icon: service1, nameKey: "home-serv1", descKey: "home-serv1d" },
   { icon: service2, nameKey: "home-serv2", descKey: "home-serv2d" },
-  // { icon: service3, nameKey: "home-serv34", descKey: "home-serv3d" },
+  { icon: service3, nameKey: "home-serv34", descKey: "home-serv3d" },
   { icon: service3, nameKey: "home-serv3", descKey: "home-serv3d" },
   { icon: service4, nameKey: "home-serv4", descKey: "home-serv4d" },
 ];
@@ -250,6 +253,96 @@ export default function Home({ currentLang = "en" }) {
         </div>
       </section>
      
+
+      
+
+    <section className={styles.solutions}>
+        <div className={styles.sectionHeader}>
+          {/* <span className={styles.sectionKicker}>{t["hp-sol-kicker"]}</span> */}
+          <h2 className={styles.sectionTitle}>{t["hp-sol-title"]}</h2>
+          <p className={styles.sectionSub}>{t["hp-sol-sub"]}</p>
+        </div>
+        <div className={styles.solutionsIntro}>
+          {/* <p>{t["hp-chal-close"]}</p> */}
+        </div>
+        <div className={styles.solutionsGrid}>
+          <article className={styles.solutionCard}>
+            <div className={styles.solutionImageWrapper}>
+              <img className={styles.solutionImage} src={blogs1} alt={t["hp-sol1t"]} />
+              <div className={styles.solutionOverlay}>
+                <span className={styles.solutionNumber}>01</span>
+              </div>
+            </div>
+            <div className={styles.solutionContent}>
+              <h3 className={styles.solutionTitle}>{t["hp-sol1t"]}</h3>
+              <p className={styles.solutionDesc}>{t["hp-sol1d"]}</p>
+            </div>
+          </article>
+          <article className={styles.solutionCard}>
+            <div className={styles.solutionImageWrapper}>
+              <img className={styles.solutionImage} src={blogs2} alt={t["hp-sol2t"]} />
+              <div className={styles.solutionOverlay}>
+                <span className={styles.solutionNumber}>02</span>
+              </div>
+            </div>
+            <div className={styles.solutionContent}>
+              <h3 className={styles.solutionTitle}>{t["hp-sol2t"]}</h3>
+              <p className={styles.solutionDesc}>{t["hp-sol2d"]}</p>
+            </div>
+          </article>
+          <article className={styles.solutionCard}>
+            <div className={styles.solutionImageWrapper}>
+              <img className={styles.solutionImage} src={blogs3} alt={t["hp-sol3t"]} />
+              <div className={styles.solutionOverlay}>
+                <span className={styles.solutionNumber}>03</span>
+              </div>
+            </div>
+            <div className={styles.solutionContent}>
+              <h3 className={styles.solutionTitle}>{t["hp-sol3t"]}</h3>
+              <p className={styles.solutionDesc}>{t["hp-sol3d"]}</p>
+            </div>
+          </article>
+          <article className={styles.solutionCard}>
+            <div className={styles.solutionImageWrapper}>
+              <img className={styles.solutionImage} src={blogs4} alt={t["hp-sol4t"]} />
+              <div className={styles.solutionOverlay}>
+                <span className={styles.solutionNumber}>04</span>
+              </div>
+            </div>
+            <div className={styles.solutionContent}>
+              <h3 className={styles.solutionTitle}>{t["hp-sol4t"]}</h3>
+              <p className={styles.solutionDesc}>{t["hp-sol4d"]}</p>
+            </div>
+          </article>
+          <article className={styles.solutionCard}>
+            <div className={styles.solutionImageWrapper}>
+              <img className={styles.solutionImage} src={blogs5} alt={t["hp-sol5t"]} />
+              <div className={styles.solutionOverlay}>
+                <span className={styles.solutionNumber}>05</span>
+              </div>
+            </div>
+            <div className={styles.solutionContent}>
+              <h3 className={styles.solutionTitle}>{t["hp-sol5t"]}</h3>
+              <p className={styles.solutionDesc}>{t["hp-sol5d"]}</p>
+            </div>
+          </article>
+          <article className={styles.solutionCard}>
+            <div className={styles.solutionImageWrapper}>
+              <img className={styles.solutionImage} src={blogs6} alt={t["hp-sol6t"]} />
+              <div className={styles.solutionOverlay}>
+                <span className={styles.solutionNumber}>06</span>
+              </div>
+            </div>
+            <div className={styles.solutionContent}>
+              <h3 className={styles.solutionTitle}>{t["hp-sol6t"]}</h3>
+              <p className={styles.solutionDesc}>{t["hp-sol6d"]}</p>
+            </div>
+          </article>
+        </div>
+        <div className={styles.solutionsActions}>
+          <Link to="/portfolio" className={styles.docuarenaAction}>{t["hp-sol-cta"]}</Link>
+        </div>
+      </section>
 
       <section className={styles.services}>
         <div className={styles.sectionHeader}>

@@ -228,6 +228,161 @@
   margin-top: 100px;
 }
 
+/* ── Solutions Overview ── */
+.solutions {
+  padding: 80px 24px;
+  background: rgb(245, 246, 247);
+}
+
+.solutionsIntro {
+  max-width: 900px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.solutionsIntro p {
+  margin: 0;
+  color: var(--mid);
+  font-size: var(--fs-body);
+  line-height: 1.75;
+}
+
+.solutionsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.solutionCard {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.solutionCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 56px rgba(15, 45, 90, 0.15);
+}
+
+.solutionImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.solutionImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.solutionCard:hover .solutionImage {
+  transform: scale(1.05);
+}
+
+.solutionOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(3, 39, 88, 0.1) 0%, rgba(3, 39, 88, 0.6) 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.solutionNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--blue);
+  font-size: var(--fs-card-title);
+  font-weight: var(--fw-hero);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.solutionContent {
+  padding: 28px 24px;
+}
+
+.solutionTitle {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-size: var(--fs-card-title);
+  font-weight: var(--fw-card-title);
+  line-height: 1.35;
+}
+
+.solutionDesc {
+  margin: 0;
+  color: var(--mid);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-small);
+  line-height: 1.7;
+}
+
+.solutionsActions {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+/* ── Trusted By ── */
+.trustedBy {
+  padding: 80px 24px;
+  background: var(--paper);
+}
+
+.trustedGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trustedCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  padding: 20px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.trustedCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(15, 45, 90, 0.08);
+}
+
+.trustedLogo {
+  display: block;
+  max-width: 80%;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(30%);
+  transition: filter 0.25s ease, opacity 0.25s ease;
+}
+
+.trustedCard:hover .trustedLogo {
+  filter: grayscale(0%);
+}
+
 /* ── Section shared ── */
 .sectionHeader {
   max-width: 760px;
@@ -256,7 +411,8 @@
 /* ── Services ── */
 .services {
   padding: 50px 24px;
-  background: var(--paper);
+  /* background: var(--paper); */
+  background: white;
 }
 
 .servicesGrid {
@@ -272,6 +428,7 @@
   padding: 32px 28px;
   border-radius: 24px;
   background: white;
+  /* background: #f2f4f5; */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -301,7 +458,8 @@
 
 .serviceDesc {
   margin: 0;
-  color: var(--mid);
+  /* color: var(--mid); */
+  color: var(--ink);
   font-size: var(--fs-small);
   line-height: 1.7;
 }
@@ -1131,6 +1289,13 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .solutionsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trustedGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
   .aboutSplit,
   .docuarenaGrid {
@@ -1320,13 +1485,33 @@ gap: 20px;
   .clients,
   .serveStyle,
   .cta,
-  .transform {
+  .transform,
+  .solutions,
+  .trustedBy {
     padding-top: 52px;
     padding-bottom: 52px;
   }
 
   .servicesGrid {
     grid-template-columns: 1fr;
+  }
+
+  .solutionsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .trustedGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .trustedCard {
+    height: 100px;
+    padding: 16px;
+  }
+
+  .trustedLogo {
+    max-height: 60px;
   }
 
   .aboutCard {
