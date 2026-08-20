@@ -46,6 +46,16 @@ const serviceItems = [
   { icon: prmImg, nameKey: "home-serv3", descKey: "home-serv3d" },
   { icon: fixedImg, nameKey: "home-serv4", descKey: "home-serv4d" },
 ];
+const whyItems = [
+  { key: "hp-why1", icon: "🏆" },
+  { key: "hp-why2", icon: "⚙️" },
+  { key: "hp-why3", icon: "🔄" },
+  { key: "hp-why4", icon: "🎯" },
+  { key: "hp-why5", icon: "🤝" },
+  { key: "hp-why6", icon: "🏢" },
+  { key: "hp-why7", icon: "🔐" },
+  { key: "hp-why8", icon: "✅" },
+];
 const service = [
   { icon: service1, nameKey: "home-serv1", descKey: "home-serv1d" },
   { icon: service2, nameKey: "home-serv2", descKey: "home-serv2d" },
@@ -215,7 +225,7 @@ export default function Home({ currentLang = "en" }) {
       <section className={styles.services}>
         <div className={styles.sectionHeader}>
           <h1 className={styles.sectionTitle}>{t["home-serv-title"]}</h1>
-          <p className={styles.sectionSub}>{t["home-serv-sub"]}</p>
+          {/* <p className={styles.sectionSub}>{t["home-serv-sub1"]}</p> */}
         </div>
         <div className={styles.servicesGrid}>
           {serviceItems.map((service) => (
@@ -267,7 +277,22 @@ export default function Home({ currentLang = "en" }) {
           </div>
         </div>
       </section>
-
+      <section className={styles.process}>
+        <div className={styles.sectionHeader}>
+          <span className={styles.sectionKicker}>{t["hp-help-kicker"]}</span>
+          <h2 className={styles.sectionTitle}>{t["hp-help-title"]}</h2>
+          <p className={styles.sectionSub}>{t["hp-help-sub"]}</p>
+        </div>
+        <div className={styles.processGrid}>
+          {[1, 2, 3, 4, 5].map((i) => (
+            <div className={styles.processCard} key={i}>
+              <div className={styles.processNum}>{String(i).padStart(2, "0")}</div>
+              <h3 className={styles.processStep}>{t[`hp-help${i}t`]}</h3>
+              <p className={styles.processStepDesc}>{t[`hp-help${i}d`]}</p>
+            </div>
+          ))}
+        </div>
+      </section>
       <section className={styles.docuarena}>
         <div className={styles.docuarenaGrid}>
           <div className={styles.docuarenaPanel}>
@@ -342,7 +367,24 @@ export default function Home({ currentLang = "en" }) {
         </div>
       </section>  */}
       </section>
-
+{/* ═══════════════════════════════════════════
+          6. WHY NAMAA INFOLOGISTICS
+          ═══════════════════════════════════════════ */}
+      <section className={styles.why}>
+        <div className={styles.sectionHeader}>
+          <span className={styles.sectionKicker}>{t["hp-why-kicker"]}</span>
+          <h2 className={styles.sectionTitle}>{t["hp-why-title"]}</h2>
+        </div>
+        <div className={styles.whyGrid}>
+          {whyItems.map((item) => (
+            <div className={styles.whyCard} key={item.key}>
+              <span className={styles.whyIcon}>{item.icon}</span>
+              <h3 className={styles.whyTitle}>{t[`${item.key}t`]}</h3>
+              <p className={styles.whyDesc}>{t[`${item.key}d`]}</p>
+            </div>
+          ))}
+        </div>
+      </section>
       {/* <section className={styles.testimonial}>
         <div className={styles.testimonialContent}>
           <h2>{t["home-testimonial-title"]}</h2>
@@ -422,6 +464,21 @@ export default function Home({ currentLang = "en" }) {
       </section>
 
 
+{/* 8. CUSTOMER SUCCESS STORIES */}
+      <section className={styles.testimonials}>
+        <div className={styles.sectionHeader}>
+          <span className={styles.sectionKicker}>{t["hp-test-kicker"]}</span>
+          <h2 className={styles.sectionTitle}>{t["hp-test-title"]}</h2>
+        </div>
+        <div className={styles.testimonialCard}>
+          <div className={styles.testimonialQuoteIcon}>"</div>
+          <blockquote className={styles.testimonialQuote}>{t["hp-test-quote"]}</blockquote>
+          <div className={styles.testimonialAuthor}>
+            <span className={styles.testimonialName}>{t["hp-test-author"]}</span>
+            <span className={styles.testimonialOrg}>{t["hp-test-org"]}</span>
+          </div>
+        </div>
+      </section>
 
       <section className={styles.cta}>
         <div className={styles.ctaContent}>

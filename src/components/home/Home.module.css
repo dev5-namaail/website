@@ -422,6 +422,60 @@
   line-height: 1.65;
 }
 
+/* ══════════════════════════════════════
+   8. TESTIMONIALS
+   ══════════════════════════════════════ */
+.testimonials {
+  padding: 80px 24px;
+  background: white;
+}
+
+.testimonialCard {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 48px;
+  border-radius: 24px;
+  background: var(--paper);
+  text-align: center;
+  position: relative;
+}
+
+.testimonialQuoteIcon {
+  font-size: 80px;
+  font-weight: 900;
+  color: var(--blue);
+  opacity: 0.15;
+  line-height: 1;
+  margin-bottom: -20px;
+}
+
+.testimonialQuote {
+  margin: 0 0 32px;
+  color: var(--ink);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.testimonialAuthor {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.testimonialName {
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.testimonialOrg {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 600;
+}
+
 /* ── Testimonial ── */
 .testimonial {
   padding: 50px 24px;
@@ -516,8 +570,120 @@
   transition: opacity 0.25s ease;
 }
 
+/* ══════════════════════════════════════
+   5. HOW WE HELP (Process)
+   ══════════════════════════════════════ */
+.process {
+  padding: 80px 24px;
+  background: white;
+}
 
-{/* Counters   */}
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.processCard {
+  position: relative;
+  padding: 32px 24px;
+  border-radius: 20px;
+  background: var(--paper);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.processCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(15, 45, 90, 0.1);
+}
+
+.processNum {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: white;
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.processStep {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.processStepDesc {
+  margin: 0;
+  color: var(--mid);
+  font-size: var(--fs-small);
+  line-height: 1.65;
+}
+/* ══════════════════════════════════════
+   6. WHY NAMAA INFOLOGISTICS
+   ══════════════════════════════════════ */
+.why {
+  padding: 80px 24px;
+  background: var(--paper);
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.whyCard {
+  padding: 28px 24px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whyCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(15, 45, 90, 0.1);
+}
+
+.whyIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(15, 95, 255, 0.08);
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.whyTitle {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.whyDesc {
+  margin: 0;
+  color: var(--mid);
+  font-size: var(--fs-small);
+  line-height: 1.65;
+}
+/* {Counters  } */
  .counters {
   padding: 96px 0;
   background: linear-gradient(135deg, #0b1c33 0%, #1e3a5f 100%);
