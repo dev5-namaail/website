@@ -86,7 +86,7 @@ function Layout({ lang = 'en', setLang }) {
         <Outlet />
       </main>
       <Footer/>
-      <Chatbot lang={lang} />
+      {/* <Chatbot lang={lang} /> */}
     </div>
   );
 }

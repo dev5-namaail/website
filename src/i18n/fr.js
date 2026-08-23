@@ -335,9 +335,9 @@ const T = {
     // Témoignages
     'hp-test-kicker': 'Histoires de Réussite Client',
     'hp-test-title': 'Ce Que Disent Nos Clients',
-    'hp-test-quote': 'DocuArena nous donne une visibilité totale sur chaque document de notre entrepôt. Les récupérations qui prenaient des heures ne prennent plus que des minutes — et les audits sont enfin sans stress.',
-    'hp-test-author': 'Responsable Archives & Information',
-    'hp-test-org': 'Client Entreprise',
+"hp-test-quote": "Le processus de mise en œuvre s'est déroulé sans accroc ; l'équipe a fourni un plan de mise en œuvre clair et un soutien continu efficace.",
+"hp-test-author": "Responsable de l'EPMO d'ARCORP",
+    'hp-test-org': 'Eng:Mai Osama',
     // CTA final
     'hp-final-title': 'Prêt à Prendre le Contrôle de Vos Informations ?',
     'hp-final-desc': 'Que vous gériez des millions de documents physiques, transformiez des processus documentaires intensifs ou construisiez une opération numérique plus connectée, NAMAA INFOLOGISTCS peut vous aider à évaluer vos besoins et à définir la bonne voie à suivre.',

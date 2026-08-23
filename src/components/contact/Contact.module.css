@@ -117,7 +117,8 @@
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-  background: linear-gradient(135deg, var(--blue), #0f7cff);
+  /* background: linear-gradient(135deg, var(--blue), #0f7cff); */
+  background: var(--ink);
   cursor: pointer;
   transition: transform 0.22s ease, box-shadow 0.22s ease;
   width: fit-content;
@@ -152,7 +153,7 @@
   padding: 32px;
   border: 1px solid rgba(15, 95, 255, 0.1);
   border-radius: 26px;
-  background: rgba(255, 255, 255, 0.86);
+  background: rgba(255, 255, 255, 0.86);  
 }
 
 .info h3 {

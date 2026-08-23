@@ -206,10 +206,10 @@ export default function Home({ currentLang = "en" }) {
           </div>
         </div>
       </div>
-  <section className={styles.services}>
+  {/* <section className={styles.services}>
         <div className={styles.sectionHeader}>
           <h1 className={styles.sectionTitle}>{t["home-serv-title"]}</h1>
-          {/* <p className={styles.sectionSub}>{t["home-serv-sub1"]}</p> */}
+          <p className={styles.sectionSub}>{t["home-serv-sub1"]}</p>
         </div>
         <div className={styles.servicesGrid}>
           {serviceItems.map((service) => (
@@ -220,64 +220,21 @@ export default function Home({ currentLang = "en" }) {
             </article>
           ))}
         </div>
-      </section>
-      {/* <div className={styles.heroSuccess}>
-        <div>
-          <img className={styles.successImage} src={successImg} alt="" />
-        </div>
-        <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>{t["home-hero-title"]}</h1>
-          <p className={styles.heroSub}>{t["home-hero-sub"]}</p>
-          <div className={styles.heroActions}>
-            <Link to="/DocumentRetrieval" className={styles.heroCta}>
-              {t["home-hero-cta"]}
-            </Link>
-            <Link to="/contact" className={styles.heroCtaSecondary}>
-              {t["home-cta-btn"]}
-            </Link>
-          </div>
-        </div>
-      </div> */}
-      <section className={styles.transform}>
-        <div className={styles.sectionHeader}>
-          <span className={styles.sectionKicker}>{t["hp-hero-title-1"]} {t["hp-hero-title-2"]} {t["hp-hero-title-3"]}</span>
-          <p className={styles.sectionSub}>{t["hp-hero-desc"]}</p>
-        </div>
-        <div className={styles.transformFlow}>
-          {[
-            { key: "hp-flow1", num: "01" },
-            { key: "hp-flow2", num: "02" },
-            { key: "hp-flow3", num: "03" },
-            { key: "hp-flow4", num: "04" },
-            { key: "hp-flow5", num: "05" },
-            { key: "hp-flow6", num: "06" },
-          ].map((step, i) => (
-            <div className={styles.transformStep} key={step.key}>
-              <div className={styles.transformNode}>
-                <span className={styles.transformNum}>{step.num}</span>
-                <span className={styles.transformLabel}>{t[step.key]}</span>
-              </div>
-              {i < 5 && <span className={styles.transformConnector} />}
-            </div>
-          ))}
-        </div>
-        <div className={styles.transformActions}>
-          <Link to="/contact" className={styles.docuarenaAction}>{t["hp-hero-cta1"]}</Link>
-          <Link to="/contact" className={styles.docuarenaAction}>{t["hp-hero-cta2"]}</Link>
-        </div>
-      </section>
-     
+      </section> */}
 
-      
 
-    <section className={styles.solutions}>
-        <div className={styles.sectionHeader}>
-          {/* <span className={styles.sectionKicker}>{t["hp-sol-kicker"]}</span> */}
+       <section className={styles.solutions}>
+        {/* <div className={styles.sectionHeader}>
+          <h2 className={styles.sectionTitle}>{t["home-serv-title"]}</h2>
+        </div> */}
+       {/* <div className={styles.sectionHeader}>
+          <span className={styles.sectionKicker}>{t["hp-sol-kicker"]}</span>
           <h2 className={styles.sectionTitle}>{t["hp-sol-title"]}</h2>
           <p className={styles.sectionSub}>{t["hp-sol-sub"]}</p>
-        </div>
+        </div> */}
         <div className={styles.solutionsIntro}>
-          {/* <p>{t["hp-chal-close"]}</p> */}
+                    <h2 className={styles.sectionTitle}>{t["home-serv-title"]}</h2>
+          <p>{t["hp-chal-close"]}</p>
         </div>
         <div className={styles.solutionsGrid}>
           <article className={styles.solutionCard}>
@@ -356,11 +313,149 @@ export default function Home({ currentLang = "en" }) {
         <div className={styles.solutionsActions}>
           <Link to="/portfolio" className={styles.docuarenaAction}>{t["hp-sol-cta"]}</Link>
         </div>
+
+        
       </section>
+      {/* <div className={styles.heroSuccess}>
+        <div>
+          <img className={styles.successImage} src={successImg} alt="" />
+        </div>
+        <div className={styles.heroContent}>
+          <h1 className={styles.heroTitle}>{t["home-hero-title"]}</h1>
+          <p className={styles.heroSub}>{t["home-hero-sub"]}</p>
+          <div className={styles.heroActions}>
+            <Link to="/DocumentRetrieval" className={styles.heroCta}>
+              {t["home-hero-cta"]}
+            </Link>
+            <Link to="/contact" className={styles.heroCtaSecondary}>
+              {t["home-cta-btn"]}
+            </Link>
+          </div>
+        </div>
+      </div> */}
+      <section className={styles.transform}>
+        <div className={styles.sectionHeader}>
+          <span className={styles.sectionKicker}>{t["hp-hero-title-1"]} {t["hp-hero-title-2"]} {t["hp-hero-title-3"]}</span>
+          <p className={styles.sectionSub}>{t["hp-hero-desc"]}</p>
+        </div>
+        <div className={styles.transformFlow}>
+          {[
+            { key: "hp-flow1", num: "01" },
+            { key: "hp-flow2", num: "02" },
+            { key: "hp-flow3", num: "03" },
+            { key: "hp-flow4", num: "04" },
+            { key: "hp-flow5", num: "05" },
+            { key: "hp-flow6", num: "06" },
+          ].map((step, i) => (
+            <div className={styles.transformStep} key={step.key}>
+              <div className={styles.transformNode}>
+                <span className={styles.transformNum}>{step.num}</span>
+                <span className={styles.transformLabel}>{t[step.key]}</span>
+              </div>
+              {i < 5 && <span className={styles.transformConnector} />}
+            </div>
+          ))}
+        </div>
+        <div className={styles.transformActions}>
+          <Link to="/contact" className={styles.docuarenaAction}>{t["hp-hero-cta1"]}</Link>
+          <Link to="/contact" className={styles.docuarenaAction}>{t["hp-hero-cta2"]}</Link>
+        </div>
+      </section>
+     
+
+      
+
+    {/* <section className={styles.solutions}>
+        <div className={styles.sectionHeader}>
+          <span className={styles.sectionKicker}>{t["hp-sol-kicker"]}</span>
+          <h2 className={styles.sectionTitle}>{t["hp-sol-title"]}</h2>
+          <p className={styles.sectionSub}>{t["hp-sol-sub"]}</p>
+        </div>
+        <div className={styles.solutionsIntro}>
+          <p>{t["hp-chal-close"]}</p>
+        </div>
+        <div className={styles.solutionsGrid}>
+          <article className={styles.solutionCard}>
+            <div className={styles.solutionImageWrapper}>
+              <img className={styles.solutionImage} src={blogs1} alt={t["hp-sol1t"]} />
+              <div className={styles.solutionOverlay}>
+                <span className={styles.solutionNumber}>01</span>
+              </div>
+            </div>
+            <div className={styles.solutionContent}>
+              <h3 className={styles.solutionTitle}>{t["hp-sol1t"]}</h3>
+              <p className={styles.solutionDesc}>{t["hp-sol1d"]}</p>
+            </div>
+          </article>
+          <article className={styles.solutionCard}>
+            <div className={styles.solutionImageWrapper}>
+              <img className={styles.solutionImage} src={blogs2} alt={t["hp-sol2t"]} />
+              <div className={styles.solutionOverlay}>
+                <span className={styles.solutionNumber}>02</span>
+              </div>
+            </div>
+            <div className={styles.solutionContent}>
+              <h3 className={styles.solutionTitle}>{t["hp-sol2t"]}</h3>
+              <p className={styles.solutionDesc}>{t["hp-sol2d"]}</p>
+            </div>
+          </article>
+          <article className={styles.solutionCard}>
+            <div className={styles.solutionImageWrapper}>
+              <img className={styles.solutionImage} src={blogs3} alt={t["hp-sol3t"]} />
+              <div className={styles.solutionOverlay}>
+                <span className={styles.solutionNumber}>03</span>
+              </div>
+            </div>
+            <div className={styles.solutionContent}>
+              <h3 className={styles.solutionTitle}>{t["hp-sol3t"]}</h3>
+              <p className={styles.solutionDesc}>{t["hp-sol3d"]}</p>
+            </div>
+          </article>
+          <article className={styles.solutionCard}>
+            <div className={styles.solutionImageWrapper}>
+              <img className={styles.solutionImage} src={blogs4} alt={t["hp-sol4t"]} />
+              <div className={styles.solutionOverlay}>
+                <span className={styles.solutionNumber}>04</span>
+              </div>
+            </div>
+            <div className={styles.solutionContent}>
+              <h3 className={styles.solutionTitle}>{t["hp-sol4t"]}</h3>
+              <p className={styles.solutionDesc}>{t["hp-sol4d"]}</p>
+            </div>
+          </article>
+          <article className={styles.solutionCard}>
+            <div className={styles.solutionImageWrapper}>
+              <img className={styles.solutionImage} src={blogs5} alt={t["hp-sol5t"]} />
+              <div className={styles.solutionOverlay}>
+                <span className={styles.solutionNumber}>05</span>
+              </div>
+            </div>
+            <div className={styles.solutionContent}>
+              <h3 className={styles.solutionTitle}>{t["hp-sol5t"]}</h3>
+              <p className={styles.solutionDesc}>{t["hp-sol5d"]}</p>
+            </div>
+          </article>
+          <article className={styles.solutionCard}>
+            <div className={styles.solutionImageWrapper}>
+              <img className={styles.solutionImage} src={blogs6} alt={t["hp-sol6t"]} />
+              <div className={styles.solutionOverlay}>
+                <span className={styles.solutionNumber}>06</span>
+              </div>
+            </div>
+            <div className={styles.solutionContent}>
+              <h3 className={styles.solutionTitle}>{t["hp-sol6t"]}</h3>
+              <p className={styles.solutionDesc}>{t["hp-sol6d"]}</p>
+            </div>
+          </article>
+        </div>
+        <div className={styles.solutionsActions}>
+          <Link to="/portfolio" className={styles.docuarenaAction}>{t["hp-sol-cta"]}</Link>
+        </div>
+      </section> */}
 
     
 
-
+{/* 
       <section className={styles.about}>
         <div className={styles.aboutSplit}>
           <div className={styles.aboutCopy}>
@@ -384,7 +479,7 @@ export default function Home({ currentLang = "en" }) {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
 
@@ -598,8 +693,12 @@ export default function Home({ currentLang = "en" }) {
           <div className={styles.testimonialAuthor}>
             <span className={styles.testimonialName}>{t["hp-test-author"]}</span>
             <span className={styles.testimonialOrg}>{t["hp-test-org"]}</span>
+            
           </div>
         </div>
+
+
+
       </section>
 
       <section className={styles.cta}>

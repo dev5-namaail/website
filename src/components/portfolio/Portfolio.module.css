@@ -119,10 +119,15 @@
 }
 
 .cardDesc {
-  font-size: var(--fs-small);
-  color: var(--mid);
+ font-size: var(--fs-body);
+   color: var(--mid);
   line-height: 1.7;
   margin: 0;
+
+
+
+   
+
 }
 
 .cardFooter {
