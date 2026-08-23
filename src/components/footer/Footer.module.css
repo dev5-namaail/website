@@ -195,7 +195,7 @@
   align-items: center;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 20px;
+  /* border-radius: 20px; */
   padding: 32px;
   backdrop-filter: blur(10px);
 }

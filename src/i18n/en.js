@@ -337,9 +337,11 @@ const T = {
     // Testimonials
     'hp-test-kicker': 'Customer Success Stories',
     'hp-test-title': 'What Our Clients Say',
-    'hp-test-quote': 'DocuArena gives us complete visibility over every record in our warehouse. Retrievals that once took hours now take minutes — and audits are finally stress-free.',
-    'hp-test-author': 'Records & Information Manager',
-    'hp-test-org': 'Enterprise Client',
+    // 'hp-test-quote': 'DocuArena gives us complete visibility over every record in our warehouse. Retrievals that once took hours now take minutes — and audits are finally stress-free.',
+    'hp-test-quote': 'The implementation process was smooth ; the team has delivered a clear implementation plan and successful ongoing support.',
+    'hp-test-author': 'Head of EPMO ARCORP',
+    'hp-test-org': 'Eng:Mai Osama',
+    // 'hp-test-client1':'The implementation process was smmooth ; the team has delivered a clear implementaion plan and successful ongoing support. Mai Osama, Head of EPMO ARCORP',
     // Final CTA
     'hp-final-title': 'Ready to Take Control of Your Information?',
     'hp-final-desc': 'Whether you\u2019re managing millions of physical records, transforming document-intensive processes, or building a more connected digital operation, NAMAA INFOLOGISTCS can help you assess your needs and define the right path forward.',
