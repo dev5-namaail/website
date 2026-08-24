@@ -1,4 +1,5 @@
 import heroVideo from "../../assets/Namaa-PRM-ERM-web-homepage-1-1.mp4";
+import stepsVideo from "../../assets/WhatsApp Video 2026-08-23 at 5.11.00 PM.mp4";
 import { T } from "../../i18n/translations";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -117,18 +118,48 @@ function useCountUp(end, duration = 2000) {
 
 function DownloadButton({ href, children }) {
   return (
-    <a className={styles.downloadButton} href={href} target="_blank" rel="noreferrer">
+    <a
+      className={styles.downloadButton}
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+    >
       <span>{children}</span>
       <span className={styles.downloadIcon}>⇩</span>
     </a>
   );
 }
 const counters = [
-  { value: "hp-count1v", suffix: "hp-count1s", label: "hp-count1l", decimal: false },
-  { value: "hp-count2v", suffix: "hp-count2s", label: "hp-count2l", decimal: false },
-  { value: "hp-count3v", suffix: "hp-count3s", label: "hp-count3l", decimal: false },
-  { value: "hp-count4v", suffix: "hp-count4s", label: "hp-count4l", decimal: true },
-  { value: "hp-count5v", suffix: "hp-count5s", label: "hp-count5l", decimal: false },
+  {
+    value: "hp-count1v",
+    suffix: "hp-count1s",
+    label: "hp-count1l",
+    decimal: false,
+  },
+  {
+    value: "hp-count2v",
+    suffix: "hp-count2s",
+    label: "hp-count2l",
+    decimal: false,
+  },
+  {
+    value: "hp-count3v",
+    suffix: "hp-count3s",
+    label: "hp-count3l",
+    decimal: false,
+  },
+  {
+    value: "hp-count4v",
+    suffix: "hp-count4s",
+    label: "hp-count4l",
+    decimal: true,
+  },
+  {
+    value: "hp-count5v",
+    suffix: "hp-count5s",
+    label: "hp-count5l",
+    decimal: false,
+  },
 ];
 
 export default function Home({ currentLang = "en" }) {
@@ -140,7 +171,6 @@ export default function Home({ currentLang = "en" }) {
   const [ref5, count5] = useCountUp(20);
   const [ref6, count6] = useCountUp(95);
   const [ref7, count7] = useCountUp(99.9);
-
 
   function useCountUp(end, duration = 2000) {
     const [count, setCount] = useState(0);
@@ -189,7 +219,14 @@ export default function Home({ currentLang = "en" }) {
   return (
     <div className={styles.page} dir={t.dir} lang={currentLang}>
       <div className={styles.heroSlide}>
-        <video className={styles.heroVideo} src={heroVideo} autoPlay muted loop playsInline />
+        <video
+          className={styles.heroVideo}
+          src={heroVideo}
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
         {/* <img className={styles.heroMobileFallback} src={videoImg} alt="" /> */}
         <div className={styles.heroOverlay} />
         <div className={styles.heroMobileContent}>
@@ -206,7 +243,7 @@ export default function Home({ currentLang = "en" }) {
           </div>
         </div>
       </div>
-  {/* <section className={styles.services}>
+      {/* <section className={styles.services}>
         <div className={styles.sectionHeader}>
           <h1 className={styles.sectionTitle}>{t["home-serv-title"]}</h1>
           <p className={styles.sectionSub}>{t["home-serv-sub1"]}</p>
@@ -222,24 +259,27 @@ export default function Home({ currentLang = "en" }) {
         </div>
       </section> */}
 
-
-       <section className={styles.solutions}>
+      <section className={styles.solutions}>
         {/* <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>{t["home-serv-title"]}</h2>
         </div> */}
-       {/* <div className={styles.sectionHeader}>
+        {/* <div className={styles.sectionHeader}>
           <span className={styles.sectionKicker}>{t["hp-sol-kicker"]}</span>
           <h2 className={styles.sectionTitle}>{t["hp-sol-title"]}</h2>
           <p className={styles.sectionSub}>{t["hp-sol-sub"]}</p>
         </div> */}
         <div className={styles.solutionsIntro}>
-                    <h2 className={styles.sectionTitle}>{t["home-serv-title"]}</h2>
+          <h2 className={styles.sectionTitle}>{t["home-serv-title"]}</h2>
           <p>{t["hp-chal-close"]}</p>
         </div>
         <div className={styles.solutionsGrid}>
           <article className={styles.solutionCard}>
             <div className={styles.solutionImageWrapper}>
-              <img className={styles.solutionImage} src={blogs1} alt={t["hp-sol1t"]} />
+              <img
+                className={styles.solutionImage}
+                src={blogs1}
+                alt={t["hp-sol1t"]}
+              />
               <div className={styles.solutionOverlay}>
                 <span className={styles.solutionNumber}>01</span>
               </div>
@@ -251,7 +291,11 @@ export default function Home({ currentLang = "en" }) {
           </article>
           <article className={styles.solutionCard}>
             <div className={styles.solutionImageWrapper}>
-              <img className={styles.solutionImage} src={blogs2} alt={t["hp-sol2t"]} />
+              <img
+                className={styles.solutionImage}
+                src={blogs2}
+                alt={t["hp-sol2t"]}
+              />
               <div className={styles.solutionOverlay}>
                 <span className={styles.solutionNumber}>02</span>
               </div>
@@ -263,7 +307,11 @@ export default function Home({ currentLang = "en" }) {
           </article>
           <article className={styles.solutionCard}>
             <div className={styles.solutionImageWrapper}>
-              <img className={styles.solutionImage} src={blogs3} alt={t["hp-sol3t"]} />
+              <img
+                className={styles.solutionImage}
+                src={blogs3}
+                alt={t["hp-sol3t"]}
+              />
               <div className={styles.solutionOverlay}>
                 <span className={styles.solutionNumber}>03</span>
               </div>
@@ -275,7 +323,11 @@ export default function Home({ currentLang = "en" }) {
           </article>
           <article className={styles.solutionCard}>
             <div className={styles.solutionImageWrapper}>
-              <img className={styles.solutionImage} src={blogs4} alt={t["hp-sol4t"]} />
+              <img
+                className={styles.solutionImage}
+                src={blogs4}
+                alt={t["hp-sol4t"]}
+              />
               <div className={styles.solutionOverlay}>
                 <span className={styles.solutionNumber}>04</span>
               </div>
@@ -287,7 +339,11 @@ export default function Home({ currentLang = "en" }) {
           </article>
           <article className={styles.solutionCard}>
             <div className={styles.solutionImageWrapper}>
-              <img className={styles.solutionImage} src={blogs5} alt={t["hp-sol5t"]} />
+              <img
+                className={styles.solutionImage}
+                src={blogs5}
+                alt={t["hp-sol5t"]}
+              />
               <div className={styles.solutionOverlay}>
                 <span className={styles.solutionNumber}>05</span>
               </div>
@@ -299,7 +355,11 @@ export default function Home({ currentLang = "en" }) {
           </article>
           <article className={styles.solutionCard}>
             <div className={styles.solutionImageWrapper}>
-              <img className={styles.solutionImage} src={blogs6} alt={t["hp-sol6t"]} />
+              <img
+                className={styles.solutionImage}
+                src={blogs6}
+                alt={t["hp-sol6t"]}
+              />
               <div className={styles.solutionOverlay}>
                 <span className={styles.solutionNumber}>06</span>
               </div>
@@ -311,10 +371,10 @@ export default function Home({ currentLang = "en" }) {
           </article>
         </div>
         <div className={styles.solutionsActions}>
-          <Link to="/portfolio" className={styles.docuarenaAction}>{t["hp-sol-cta"]}</Link>
+          <Link to="/portfolio" className={styles.docuarenaAction}>
+            {t["hp-sol-cta"]}
+          </Link>
         </div>
-
-        
       </section>
       {/* <div className={styles.heroSuccess}>
         <div>
@@ -335,7 +395,9 @@ export default function Home({ currentLang = "en" }) {
       </div> */}
       <section className={styles.transform}>
         <div className={styles.sectionHeader}>
-          <span className={styles.sectionKicker}>{t["hp-hero-title-1"]} {t["hp-hero-title-2"]} {t["hp-hero-title-3"]}</span>
+          <span className={styles.sectionKicker}>
+            {t["hp-hero-title-1"]} {t["hp-hero-title-2"]} {t["hp-hero-title-3"]}
+          </span>
           <p className={styles.sectionSub}>{t["hp-hero-desc"]}</p>
         </div>
         <div className={styles.transformFlow}>
@@ -356,16 +418,19 @@ export default function Home({ currentLang = "en" }) {
             </div>
           ))}
         </div>
+
         <div className={styles.transformActions}>
-          <Link to="/contact" className={styles.docuarenaAction}>{t["hp-hero-cta1"]}</Link>
-          <Link to="/contact" className={styles.docuarenaAction}>{t["hp-hero-cta2"]}</Link>
+          <Link to="/contact" className={styles.docuarenaAction}>
+            {t["hp-hero-cta1"]}
+          </Link>
+          <Link to="/contact" className={styles.docuarenaAction}>
+            {t["hp-hero-cta2"]}
+          </Link>
         </div>
       </section>
-     
+    
 
-      
-
-    {/* <section className={styles.solutions}>
+      {/* <section className={styles.solutions}>
         <div className={styles.sectionHeader}>
           <span className={styles.sectionKicker}>{t["hp-sol-kicker"]}</span>
           <h2 className={styles.sectionTitle}>{t["hp-sol-title"]}</h2>
@@ -453,9 +518,7 @@ export default function Home({ currentLang = "en" }) {
         </div>
       </section> */}
 
-    
-
-{/* 
+      {/* 
       <section className={styles.about}>
         <div className={styles.aboutSplit}>
           <div className={styles.aboutCopy}>
@@ -481,19 +544,32 @@ export default function Home({ currentLang = "en" }) {
         </div>
       </section> */}
 
-
-
       <section className={styles.processSection}>
         <div className={styles.processContainer}>
           <div className={styles.processHeader}>
-            <span className={styles.processMainTitle}>{t["home-process-title"]}</span>
+            <span className={styles.processMainTitle}>
+              {t["home-process-title"]}
+            </span>
             {/* <h2 className={styles.processMainTitle}>{t["home-process-sub"]}</h2> */}
           </div>
           <div className={styles.processImageWrapper}>
-            <img className={styles.processImage} src={stepsImg} alt="Namaa 5-Step Process" />
+            {/* <img
+              className={styles.processImage}
+              src={stepsImg}
+              alt="Namaa 5-Step Process"
+            /> */}
+               <video
+            className={styles.stepsVideo}
+            src={stepsVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
           </div>
         </div>
       </section>
+       
       <section className={styles.process}>
         <div className={styles.sectionHeader}>
           <span className={styles.sectionKicker}>{t["hp-help-kicker"]}</span>
@@ -503,15 +579,17 @@ export default function Home({ currentLang = "en" }) {
         <div className={styles.processGrid}>
           {[1, 2, 3, 4, 5].map((i) => (
             <div className={styles.processCard} key={i}>
-              <div className={styles.processNum}>{String(i).padStart(2, "0")}</div>
+              <div className={styles.processNum}>
+                {String(i).padStart(2, "0")}
+              </div>
               <h3 className={styles.processStep}>{t[`hp-help${i}t`]}</h3>
               <p className={styles.processStepDesc}>{t[`hp-help${i}d`]}</p>
             </div>
           ))}
         </div>
       </section>
-    
-{/* ═══════════════════════════════════════════
+
+      {/* ═══════════════════════════════════════════
           6. WHY NAMAA INFOLOGISTICS
           ═══════════════════════════════════════════ */}
       <section className={styles.why}>
@@ -537,7 +615,7 @@ export default function Home({ currentLang = "en" }) {
           <img src={testimonialImg} alt="DocuArena" className={styles.testimonialImage} />
         </div>
       </section> */}
-  <section className={styles.docuarena}>
+      <section className={styles.docuarena}>
         <div className={styles.docuarenaGrid}>
           <div className={styles.docuarenaPanel}>
             {/* <p className={styles.sectionKicker}>{t["home-docuarena-title"]}</p> */}
@@ -559,8 +637,12 @@ export default function Home({ currentLang = "en" }) {
               <p className={styles.statDesc}>{t["home-stat1desc"]}</p>
             </div> */}
             <div className={styles.docuarenaCard}>
-              <span className={styles.docuarenaNumber} ref={ref2}>{count2}+</span>
-              <span className={styles.docuarenaLabel}>{t["home-stat2lbl"]}</span>
+              <span className={styles.docuarenaNumber} ref={ref2}>
+                {count2}+
+              </span>
+              <span className={styles.docuarenaLabel}>
+                {t["home-stat2lbl"]}
+              </span>
               {/* <p className={styles.statDesc}>{t["home-stat2desc"]}</p> */}
             </div>
             {/* <div className={styles.docuarenaCard}>
@@ -569,35 +651,46 @@ export default function Home({ currentLang = "en" }) {
               <p className={styles.statDesc}>{t["home-stat3desc"]}</p>
             </div> */}
             <div className={styles.docuarenaCard}>
-              <span className={styles.docuarenaNumber} ref={ref4}>{count4}M+</span>
-              <span className={styles.docuarenaLabel}>{t["home-stat4lbl"]}</span>
+              <span className={styles.docuarenaNumber} ref={ref4}>
+                {count4}M+
+              </span>
+              <span className={styles.docuarenaLabel}>
+                {t["home-stat4lbl"]}
+              </span>
               {/* <p className={styles.statDesc}>{t["home-stat3desc"]}</p> */}
             </div>
             <div className={styles.docuarenaCard}>
-              <span className={styles.docuarenaNumber} ref={ref5}>{count5}
-                +</span>
-              <span className={styles.docuarenaLabel}>{t["home-stat5lbl"]}</span>
+              <span className={styles.docuarenaNumber} ref={ref5}>
+                {count5}+
+              </span>
+              <span className={styles.docuarenaLabel}>
+                {t["home-stat5lbl"]}
+              </span>
               {/* <p className={styles.statDesc}>{t["home-stat3desc"]}</p> */}
             </div>
             <div className={styles.docuarenaCard}>
-              <span className={styles.docuarenaNumber} ref={ref6}>{count6}
-                +</span>
-              <span className={styles.docuarenaLabel}>{t["home-stat6lbl"]}</span>
+              <span className={styles.docuarenaNumber} ref={ref6}>
+                {count6}+
+              </span>
+              <span className={styles.docuarenaLabel}>
+                {t["home-stat6lbl"]}
+              </span>
               {/* <p className={styles.statDesc}>{t["home-stat3desc"]}</p> */}
-
             </div>
             <div className={styles.docuarenaCard}>
-              <span className={styles.docuarenaNumber} ref={ref7}>{count7}%
-                +</span>
-              <span className={styles.docuarenaLabel}>{t["home-stat7lbl"]}</span>
+              <span className={styles.docuarenaNumber} ref={ref7}>
+                {count7}% +
+              </span>
+              <span className={styles.docuarenaLabel}>
+                {t["home-stat7lbl"]}
+              </span>
               {/* <p className={styles.statDesc}>{t["home-stat3desc"]}</p>  */}
-
             </div>
           </div>
-          </div>
+        </div>
 
-          {/* ── 11. COUNTERS ── */}
-          {/* <section className={styles.counters}>
+        {/* ── 11. COUNTERS ── */}
+        {/* <section className={styles.counters}>
         <div className={styles.container}>
           <div className={styles.sectionHead}>
             <span className={styles.kicker}>{t["hp-count-kicker"]}</span>
@@ -647,13 +740,9 @@ export default function Home({ currentLang = "en" }) {
         </div>
       </section> */}
 
-
-
       <section className={styles.clients}>
         <div className={styles.sectionHeader}>
-          <h2 className={styles.sectionTitle}>
-            {t["home-serve-title"]}
-          </h2>
+          <h2 className={styles.sectionTitle}>{t["home-serve-title"]}</h2>
         </div>
         <Swiper
           modules={[Autoplay, Pagination]}
@@ -673,15 +762,18 @@ export default function Home({ currentLang = "en" }) {
           {clientItems.map((client) => (
             <SwiperSlide key={client.nameKey}>
               <div className={styles.clientCard}>
-                <img className={styles.clientIcon} src={client.icon} alt={t[client.nameKey]} />
+                <img
+                  className={styles.clientIcon}
+                  src={client.icon}
+                  alt={t[client.nameKey]}
+                />
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </section>
 
-
-{/* 8. CUSTOMER SUCCESS STORIES */}
+      {/* 8. CUSTOMER SUCCESS STORIES */}
       <section className={styles.testimonials}>
         <div className={styles.sectionHeader}>
           <span className={styles.sectionKicker}>{t["hp-test-kicker"]}</span>
@@ -689,16 +781,16 @@ export default function Home({ currentLang = "en" }) {
         </div>
         <div className={styles.testimonialCard}>
           <div className={styles.testimonialQuoteIcon}>"</div>
-          <blockquote className={styles.testimonialQuote}>{t["hp-test-quote"]}</blockquote>
+          <blockquote className={styles.testimonialQuote}>
+            {t["hp-test-quote"]}
+          </blockquote>
           <div className={styles.testimonialAuthor}>
-            <span className={styles.testimonialName}>{t["hp-test-author"]}</span>
+            <span className={styles.testimonialName}>
+              {t["hp-test-author"]}
+            </span>
             <span className={styles.testimonialOrg}>{t["hp-test-org"]}</span>
-            
           </div>
         </div>
-
-
-
       </section>
 
       <section className={styles.cta}>
@@ -706,8 +798,12 @@ export default function Home({ currentLang = "en" }) {
           <h2 className={styles.ctaTitle}>{t["home-cta-title"]}</h2>
           <p className={styles.ctaSub}>{t["home-serv-sub"]}</p>
           <div className={styles.ctaActions}>
-            <Link to="/contact" className={styles.ctaBtn}>{t["hp-hero-cta2"]}</Link>
-            <Link to="/DocumentRetrieval" className={styles.ctaBtnOutline}>{t["hp-hero-cta1"]}</Link>
+            <Link to="/contact" className={styles.ctaBtn}>
+              {t["hp-hero-cta2"]}
+            </Link>
+            <Link to="/DocumentRetrieval" className={styles.ctaBtnOutline}>
+              {t["hp-hero-cta1"]}
+            </Link>
           </div>
         </div>
       </section>
