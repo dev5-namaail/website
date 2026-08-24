@@ -611,7 +611,7 @@ export default function Home({ currentLang = "en" }) {
         </div>
       </section>  */}
       </section>
-      <section className={styles.serveStyle}>
+      {/* <section className={styles.serveStyle}>
         <div className={styles.serveHeader}>
           <h2 className={styles.serveTitle}>{t["home-clients-title"]}</h2>
         </div>
@@ -645,7 +645,7 @@ export default function Home({ currentLang = "en" }) {
             ))}
           </Swiper>
         </div>
-      </section>
+      </section> */}
 
 
 
