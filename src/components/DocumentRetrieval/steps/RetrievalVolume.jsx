@@ -6,9 +6,9 @@ const ENV_OPTIONS = [
   { value: '', labelKey: 'sel-choose', name: 'choose' },
   { value: '1.0', labelKey: 'stor1', name: 'fully_digital' },
   { value: '1.1', labelKey: 'stor2', name: 'hybrid_mostly_digital' },
-  { value: '1.3', labelKey: 'stor3', name: 'hybrid_mostly_physical' },
-  { value: '1.6', labelKey: 'stor4', name: 'predominantly_physical' },
-  { value: '2.0', labelKey: 'stor5', name: 'physical_only' },
+  { value: '1.3', labelKey: 'stor3', name: 'hybrid_mostly_paper' },
+  { value: '1.6', labelKey: 'stor4', name: 'predominantly_paper' },
+  { value: '2.0', labelKey: 'stor5', name: 'paper_only' },
 ];
 
 // eslint-disable-next-line react/prop-types

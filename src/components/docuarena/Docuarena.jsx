@@ -107,7 +107,7 @@ function Docuarena({ currentLang = "en" }) {
         </div>
       </section>
 
-      {/* ── PHYSICAL RECORDS STILL MATTER ── */}
+      {/* ── paper RECORDS STILL MATTER ── */}
       <section className={styles.matter}>
         <div className={styles.container}>
           <div className={styles.matterGrid}>

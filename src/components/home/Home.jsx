@@ -12,7 +12,6 @@ import profilePdf from "../../assets/Namaa-InfoLogistics-Company-Profile-2024-1.
 import testimonialImg from "../../assets/WhatsApp-Image1.png";
 import digitImg from "../../assets/HOME/Digitization.jpg";
 import fixedImg from "../../assets/HOME/FAM.jpeg";
-// import prmImg from "../../assets/prm.jpg";
 import prmImg from "../../assets/HOME/prm.jpg";
 import kodakImg from "../../assets/HOME/KODAK.jpg";
 import service1 from "../../assets/service1.jpg";
@@ -43,6 +42,7 @@ import successImg from "../../assets/HOME/SUCCESS.jpg";
 import videoImg from "../../assets/HOME/video.jpg";
 import stepsImg from "../../assets/HOME/stepss.jfif";
 import { useEffect, useRef, useState } from "react";
+import { LuTrophy, LuSettings2, LuRefreshCw, LuTarget, LuHandshake, LuBuilding2, LuShieldCheck, LuCircleCheckBig } from "react-icons/lu";
 
 const serviceItems = [
   { icon: kodakImg, nameKey: "home-serv1", descKey: "home-serv1d" },
@@ -51,16 +51,17 @@ const serviceItems = [
   { icon: fixedImg, nameKey: "home-serv4", descKey: "home-serv4d" },
 ];
 const whyItems = [
-  { key: "hp-why1", icon: "🏆" },
-  { key: "hp-why2", icon: "⚙️" },
-  { key: "hp-why3", icon: "🔄" },
-  { key: "hp-why4", icon: "🎯" },
-  { key: "hp-why5", icon: "🤝" },
-  { key: "hp-why6", icon: "🏢" },
-  { key: "hp-why7", icon: "🔐" },
-  { key: "hp-why8", icon: "✅" },
+  { key: "hp-why1", icon: <LuTrophy strokeWidth={1.8} />, color: "whyBlue" },
+  { key: "hp-why2", icon: <LuSettings2 strokeWidth={1.8} />, color: "whyViolet" },
+  { key: "hp-why3", icon: <LuRefreshCw strokeWidth={1.8} />, color: "whyTeal" },
+  { key: "hp-why4", icon: <LuTarget strokeWidth={1.8} />, color: "whyRose" },
+  { key: "hp-why5", icon: <LuHandshake strokeWidth={1.8} />, color: "whyAmber" },
+  { key: "hp-why6", icon: <LuBuilding2 strokeWidth={1.8} />, color: "whyIndigo" },
+  { key: "hp-why7", icon: <LuShieldCheck strokeWidth={1.8} />, color: "whyEmerald" },
+  { key: "hp-why8", icon: <LuCircleCheckBig strokeWidth={1.8} />, color: "whyOrange" },
 ];
 const service = [
+  
   { icon: service1, nameKey: "home-serv1", descKey: "home-serv1d" },
   { icon: service2, nameKey: "home-serv2", descKey: "home-serv2d" },
   { icon: service3, nameKey: "home-serv34", descKey: "home-serv3d" },
@@ -599,8 +600,10 @@ export default function Home({ currentLang = "en" }) {
         </div>
         <div className={styles.whyGrid}>
           {whyItems.map((item) => (
-            <div className={styles.whyCard} key={item.key}>
-              <span className={styles.whyIcon}>{item.icon}</span>
+            <div className={`${styles.whyCard} ${styles[item.color]}`} key={item.key}>
+              <div className={styles.whyIconWrap}>
+                <span className={styles.whyIcon}>{item.icon}</span>
+              </div>
               <h3 className={styles.whyTitle}>{t[`${item.key}t`]}</h3>
               <p className={styles.whyDesc}>{t[`${item.key}d`]}</p>
             </div>

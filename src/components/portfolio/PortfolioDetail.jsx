@@ -36,7 +36,7 @@ export default function PortfolioDetail({ currentLang = 'en' }) {
       <div className={styles.backNav}>
    <Link to="/portfolio" className={styles.backLink}>
                 <span className={styles.backArrow}>&larr;</span>
-                {t['portfolio-back'] || 'Back to portfolio'}
+                {t['portfolio-back'] || 'Back to services'}
               </Link>      </div>
 
       <article className={styles.container}>
