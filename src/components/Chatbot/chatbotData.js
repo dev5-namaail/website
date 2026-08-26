@@ -30,7 +30,7 @@ const KB = {
           "specialty", "area of expertise", "deals with", "deal with",
         ],
         response:
-          "Namaa InfoLogistics delivers end-to-end information and document management solutions:\n- Kodak Alaris scanning & imaging\n- Digitization of physical archives\n- PRM: Physical Records Management (DocuArena)\n- FAM: Fixed Asset Management\n- ECM & Mail Management (Tarasol)\n\nSee all of them here: [[Our Portfolio|/portfolio]]. Ask me about any one for details.",
+          "Namaa InfoLogistics delivers end-to-end information and document management solutions:\n- Kodak Alaris scanning & imaging\n- Digitization of paper archives\n- PRM: paper Records Management (DocuArena)\n- FAM: Fixed Asset Management\n- ECM & Mail Management (Tarasol)\n\nSee all of them here: [[Our Portfolio|/portfolio]]. Ask me about any one for details.",
       },
       {
         id: "kodak",
@@ -42,13 +42,13 @@ const KB = {
         id: "digitization",
         keywords: ["digitization", "digitisation", "scan", "scanning", "digitalization", "convert", "paper to digital", "electronic archive", "digital archive"],
         response:
-          "Our digitization services convert paper archives into indexed, searchable digital assets using advanced capture and QC workflows. That saves physical storage space while improving access and compliance.",
+          "Our digitization services convert paper archives into indexed, searchable digital assets using advanced capture and QC workflows. That saves paper storage space while improving access and compliance.",
       },
       {
         id: "prm",
-        keywords: ["prm", "physical records", "docuarena", "records management", "record management", "archive management", "box", "boxes", "warehouse", "records"],
+        keywords: ["prm", "paper records", "docuarena", "records management", "record management", "archive management", "box", "boxes", "warehouse", "records"],
         response:
-          "DocuArena is our flagship Physical Records Management platform. It enforces correct retrieval, tracks every document movement via barcode, and eliminates misfiling with verified re-filing. Each retrieval is governed by a work order, and each re-file is checked.",
+          "DocuArena is our flagship paper Records Management platform. It enforces correct retrieval, tracks every document movement via barcode, and eliminates misfiling with verified re-filing. Each retrieval is governed by a work order, and each re-file is checked.",
       },
       {
         id: "fam",
@@ -96,7 +96,7 @@ const KB = {
         id: "portfolio",
         keywords: ["portfolio", "projects", "case studies", "clients", "customers", "solutions page", "showcase", "examples"],
         response:
-          "Our Portfolio page showcases our full range of solutions: ECM, Fixed Asset Management, Physical Records Management, Digitization, Kodak Alaris, and Mail Management. Open it here: [[Portfolio|/portfolio]].",
+          "Our Portfolio page showcases our full range of solutions: ECM, Fixed Asset Management, paper Records Management, Digitization, Kodak Alaris, and Mail Management. Open it here: [[Portfolio|/portfolio]].",
       },
       {
         id: "blog",
@@ -250,7 +250,7 @@ const KB = {
           "que vendez vous", "specialites", "que fabriquez vous",
         ],
         response:
-          "Namaa InfoLogistics fournit des solutions complètes de gestion des documents et de l'information :\n- Solutions de numérisation et d'imagerie Kodak Alaris\n- Numérisation des archives physiques\n- PRM : Gestion des documents physiques (DocuArena)\n- FAM : Gestion des actifs fixes\n- ECM et Gestion du courrier (Tarasol)\n\nDécouvrez-les ici : [[Notre Portfolio|/portfolio]]. Demandez-moi des détails sur l'un d'entre eux.",
+          "Namaa InfoLogistics fournit des solutions complètes de gestion des documents et de l'information :\n- Solutions de numérisation et d'imagerie Kodak Alaris\n- Numérisation des archives papier\n- PRM : Gestion des documents papier (DocuArena)\n- FAM : Gestion des actifs fixes\n- ECM et Gestion du courrier (Tarasol)\n\nDécouvrez-les ici : [[Notre Portfolio|/portfolio]]. Demandez-moi des détails sur l'un d'entre eux.",
       },
       {
         id: "kodak",
@@ -266,9 +266,9 @@ const KB = {
       },
       {
         id: "prm",
-        keywords: ["prm", "gestion des documents physiques", "docuarena", "records", "gestion des archives", "classement", "reclassement", "boites", "dossiers", "entrepot", "archives"],
+        keywords: ["prm", "gestion des documents papier", "docuarena", "records", "gestion des archives", "classement", "reclassement", "boites", "dossiers", "entrepot", "archives"],
         response:
-          "DocuArena est notre plateforme phare de gestion des documents physiques. Elle impose la récupération correcte, suit chaque mouvement de document par code-barres et élimine le mauvais classement grâce à un re-classement vérifié. Chaque récupération est régie par un bon de travail et chaque re-classement est contrôlé.",
+          "DocuArena est notre plateforme phare de gestion des documents papier. Elle impose la récupération correcte, suit chaque mouvement de document par code-barres et élimine le mauvais classement grâce à un re-classement vérifié. Chaque récupération est régie par un bon de travail et chaque re-classement est contrôlé.",
       },
       {
         id: "fam",
@@ -316,7 +316,7 @@ const KB = {
         id: "portfolio",
         keywords: ["portfolio", "projets", "etudes de cas", "clients", "page solutions", "realisations", "exemples"],
         response:
-          "Notre page Portfolio présente toute notre gamme de solutions : ECM, Gestion des actifs fixes, Gestion des documents physiques, Numérisation, Kodak Alaris et Gestion du courrier. Ouvrez-la ici : [[Portfolio|/portfolio]].",
+          "Notre page Portfolio présente toute notre gamme de solutions : ECM, Gestion des actifs fixes, Gestion des documents papier, Numérisation, Kodak Alaris et Gestion du courrier. Ouvrez-la ici : [[Portfolio|/portfolio]].",
       },
       {
         id: "blog",
@@ -463,22 +463,22 @@ const KB = {
       {
         id: "services",
         keywords: ["خدمات", "خدمة", "ماذا تقدم", "ما هي خدماتكم", "حلول", "منتجات", "ماذا تفعلون", "اعمالكم", "الانشطة", "الأنشطة", "ماذا تعرضون", "نشاط", "نشاطكم", "نشاط الشركة", "نشاط الشركه", "نشاط شركتكم", "مجال العمل", "مجال عمل", "مجال عملكم", "شغلكم", "بتشتغلوا", "بتعملوا", "بتتعاملوا", "مجال تخصصكم", "في ايه"],
-        response: "تقدم نماء لتقنية المعلومات حلولاً متكاملة لإدارة المستندات والمعلومات:\n- حلول المسح الضوئي والتصوير من Kodak Alaris\n- رقمنة الأرشيفات الورقية\n- PRM: إدارة المستندات الفعلية (DocuArena)\n- FAM: إدارة الأصول الثابتة\n- ECM وإدارة المراسلات (Tarasol)\n\nشاهدها كلها هنا: [[معرض الأعمال|/portfolio]]. اسألني عن أي منها للتفاصيل.",
+        response: "تقدم نماء لتقنية المعلومات حلولاً متكاملة لإدارة المستندات والمعلومات:\n- حلول المسح الضوئي والتصوير من Kodak Alaris\n- رقمنة الأرشيفات الورقية\n- PRM: إدارة المستندات الورقية (DocuArena)\n- FAM: إدارة الأصول الثابتة\n- ECM وإدارة المراسلات (Tarasol)\n\nشاهدها كلها هنا: [[معرض الأعمال|/portfolio]]. اسألني عن أي منها للتفاصيل.",
       },
       {
         id: "kodak",
         keywords: ["كوداك", "kodak", "alaris", "الماسح", "الماسحات", "المسح", "التصوير", "أجهزة", "الأجهزة"],
-        response: "نحن شريك رسمي لـ Kodak Alaris. نقدم حلول التقاط وتصوير من الطراز العالمي — ماسحات ضوئية وبرمجيات وخدمات — تسرّع رقمنة مستنداتك وتتكامل مع منصة ECM الخاصة بك. شاهد المزيد: [[Kodak Alaris|/portfolio]].",
+        response: "نحن شريك رسمي لـ Kodak Alaris. نقدم حلول المسح الضوئي وتصوير من الطراز العالمي — ماسحات ضوئية وبرمجيات وخدمات — تسرّع رقمنة مستنداتك وتتكامل مع منصة ECM الخاصة بك. شاهد المزيد: [[Kodak Alaris|/portfolio]].",
       },
       {
         id: "digitization",
         keywords: ["رقمنة", "رقمنه", "الرقمنة", "المسح الضوئي", "مسح", "تحويل", "الأرشيف الإلكتروني", "أرشيف رقمي", "ورق", "أرشفة"],
-        response: "تحول خدمات الرقمنة لدينا أرشيفك الورقي إلى أصول رقمية مفهرسة وقابلة للبحث عبر سير عمل متقدم للالتقاط ومراقبة الجودة. توفر مساحات التخزين المادية مع تحسين الوصول والامتثال.",
+        response: "تحول خدمات الرقمنة لدينا أرشيفك الورقي إلى أصول رقمية مفهرسة وقابلة للبحث عبر سير عمل متقدم للمسح الضوئي ومراقبة الجودة. توفر مساحات التخزين الورقية مع تحسين الوصول والامتثال.",
       },
       {
         id: "prm",
-        keywords: ["prm", "إدارة المستندات الفعلية", "docuarena", "إدارة السجلات", "إدارة الأرشيف", "التصنيف", "إعادة التصنيف", "صناديق", "ملفات", "المستودع", "الأرشيف"],
-        response: "DocuArena هي منصتنا الرئيسية لإدارة المستندات الفعلية. تفرض الاسترجاع الصحيح، تتبع كل حركة مستند عبر الباركود، وتقضي على سوء التصنيف عبر إعادة تصنيف مُتحقق منها. كل استرجاع يخضع لأمر عمل وكل إعادة تصنيف تُفحص.",
+        keywords: ["prm", "إدارة المستندات الورقية", "docuarena", "إدارة السجلات", "إدارة الأرشيف", "التصنيف", "إعادة التصنيف", "صناديق", "ملفات", "المستودع", "الأرشيف"],
+        response: "DocuArena هي منصتنا الرئيسية لإدارة المستندات الورقية. تفرض الاسترجاع الصحيح، تتبع كل حركة مستند عبر الباركود، وتقضي على سوء التصنيف عبر إعادة تصنيف مُتحقق منها. كل استرجاع يخضع لأمر عمل وكل إعادة تصنيف تُفحص.",
       },
       {
         id: "fam",
@@ -488,11 +488,11 @@ const KB = {
       {
         id: "ecm",
         keywords: ["ecm", "إدارة المحتوى", "أركميت", "arcmate", "arcmate9", "nvssoft", "إدارة المحتوى المؤسسي", "نظام إدارة المستندات", "نظام إدارة الوثائق"],
-        response: "يوفر ArcMate9 (ECM من NvsSoft) إطاراً لالتقاط المحتوى وتخزينه وإدارته وتسليمه على مدار دورة حياة مؤسستك. يدعم الامتثال والبحث وإدارة دورة الحياة — رفع الإنتاجية وخفض التكاليف.",
+        response: "يوفر ArcMate9 (ECM من NvsSoft) إطاراً المسح الضوئي المحتوى وتخزينه وإدارته وتسليمه على مدار دورة حياة مؤسستك. يدعم الامتثال والبحث وإدارة دورة الحياة — رفع الإنتاجية وخفض التكاليف.",
       },
       {
         id: "cms",
-        keywords: ["cms", "إدارة المراسلات", "تاراسول", "tarasol", "المراسلات", "سير العمل", "المهام", "البريد الداخلي", "الوارد"],
+        keywords: ["cms", "إدارة المراسلات", "تراسل", "tarasol", "المراسلات", "سير العمل", "المهام", "البريد الداخلي", "الوارد"],
         response: "يخلق نظام إدارة المراسلات (Tarasol) بيئة بلا ورق بنماذج قابلة للتخصيص وسير عمل وإدارة مهام وجدولة اجتماعات وتقارير تحليلية متقدمة — تبسيطاً للمراسلات الداخلية والخارجية.",
       },
       {
@@ -518,7 +518,7 @@ const KB = {
       {
         id: "portfolio",
         keywords: ["معرض", "مشاريع", "دراسات", "عملاء", "صفحة الحلول", "أمثلة", "أعمالنا"],
-        response: "تعرض صفحة معرض الأعمال جميع حلولنا: ECM، إدارة الأصول الثابتة، إدارة المستندات الفعلية، الرقمنة، Kodak Alaris، وإدارة المراسلات. افتحها هنا: [[معرض الأعمال|/portfolio]].",
+        response: "تعرض صفحة معرض الأعمال جميع حلولنا: ECM، إدارة الأصول الثابتة، إدارة المستندات الورقية الرقمنة، Kodak Alaris، وإدارة المراسلات. افتحها هنا: [[معرض الأعمال|/portfolio]].",
       },
       {
         id: "blog",
@@ -593,7 +593,7 @@ const KB = {
       {
         id: "hosting",
         keywords: ["سحاب", "cloud", "على خوادمنا", "استضافة", "الاستضافة", "فين بياناتي", "سيرفر", "server", "برمجيات كخدمة", "saas", "بياناتنا فين"],
-        response: "ندعم الخيارين: النشر على خوادمكم داخل بيئتكم، أو الاستضافة السحابية الخاصة. في الحالتين تبقى بياناتكم تحت سيطرتكم، مع ضوابط وصول صارمة ومعايير تدقيق.",
+        response: "ندعم الخيارين: النشر على خوادمكم داخل بيئتكم، أو الاستضافة السحابية الخاصة. في الحالتين تبقى بياناتكم تحت تحكم مع ضوابط وصول صارمة ومعايير تدقيق.",
       },
       {
         id: "get-started",

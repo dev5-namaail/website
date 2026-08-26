@@ -1,13 +1,13 @@
 const C = {
   en: {
     // Hero
-    heroBadge: "Physical Records Management",
-    heroTitle: "Take Complete Control of Your Physical Records",
-    heroSub: "Enterprise Physical Records & Warehouse Management",
+    heroBadge: "paper Records Management",
+    heroTitle: "Take complete control of your paper documents",
+    heroSub: "Enterprise paper Records & Warehouse Management",
     // heroPain: "Lost files. Slow retrievals. No proof of custody. Rising warehouse costs.",
-    heroDesc:"DocuArena is a purpose-built Physical Records Management (PRM) platform that gives your organization complete visibility and control over every physical record—from receiving to secure destruction.",
+    heroDesc:"DocuArena is a purpose-built paper Records Management (PRM) platform that gives your organization complete visibility and control over every paper record—from receiving to secure destruction.",
     // heroDesc2:
-      // "Built specifically for organizations managing physical archives, DocuArena transforms manual warehouse operations into intelligent, barcode-driven workflows that improve operational efficiency, strengthen compliance, and reduce costs.",
+      // "Built specifically for organizations managing paper archives, DocuArena transforms manual warehouse operations into intelligent, barcode-driven workflows that improve operational efficiency, strengthen compliance, and reduce costs.",
     heroCta: "Book a Live Demo",
     heroCtaAlt: "Calculate Your Savings",
     // Enterprise Ready
@@ -19,12 +19,12 @@ const C = {
       "Multi-Language (English • العربية • Français)",
       "REST API Integration",
       "Enterprise Scalability",
-      "Secure Physical Records Lifecycle Management",
+      "Secure paper Records Lifecycle Management",
     ],
     // Challenges
     // challengesKicker: "The Reality of Manual Records Management",
     challengesTitle: "Are These Challenges Familiar?",
-    challengesSub: "Managing physical records shouldn't mean managing uncertainty.",
+    challengesSub: "Managing paper records shouldn't mean managing uncertainty.",
     challenges: [
       "Files disappear and nobody knows where they went.",
       "Retrieval requests take hours — or even days.",
@@ -36,13 +36,13 @@ const C = {
       "Management lacks real-time operational visibility.",
     ],
     challengesClose: "If any of these sound familiar, you're not alone. They're exactly the challenges DocuArena was built to solve.",
-    // Physical records still matter
-    // matterKicker: "Why Physical Records Still Matter",
-    matterTitle: "Physical Records Still Matter",
+    // paper records still matter
+    // matterKicker: "Why paper Records Still Matter",
+    matterTitle: "paper Records Still Matter",
     matterP1:
-      "Digital transformation has changed how organizations manage information — but it has not eliminated physical records.",
+      "Digital transformation has changed how organizations manage information — but it has not eliminated paper records.",
     matterP2:
-      "Original contracts, legal files, financial records, healthcare documents, engineering drawings, and government archives still require secure physical storage and controlled handling.",
+      "Original contracts, legal files, financial records, healthcare documents, engineering drawings, and government archives still require secure paper storage and controlled handling.",
     matterP3:
       "Yet many organizations continue managing these critical assets using spreadsheets, paper logs, and manual processes. The result is predictable:",
     matter: [
@@ -53,7 +53,7 @@ const C = {
       "Rising warehouse costs",
       "Limited visibility",
     ],
-    matterClose: "DocuArena was purpose-built to solve these challenges through intelligent, barcode-driven Physical Records Management.",
+    matterClose: "DocuArena was specifically built to solve these challenges through intelligent, barcode-based paper document management.",
     // One platform
     // platformKicker: "One Platform.",
     platformTitle: "One Platform",
@@ -72,7 +72,7 @@ const C = {
     // Lifecycle
     // lifecycleKicker: "The Document Lifecycle",
     lifecycleTitle: "From Receiving to Secure Destruction",
-    lifecycleSub: "Every physical record follows a fully controlled lifecycle.",
+    lifecycleSub: "Every paper record follows a fully controlled lifecycle.",
     lifecycle: [
       { title: "Receiving", desc: "Records are received, registered, and validated." },
       { title: "Barcode Assignment", desc: "Every box, file, and document receives a unique identity." },
@@ -103,7 +103,7 @@ const C = {
     mobileHeroTitle: "DocuArena Mobile",
     mobileHeroSub: "Every Operation in Your Pocket",
     mobileHeroDesc:
-      "Warehouse staff and field teams stay connected to the central platform from anywhere. Scan, execute, verify, and update physical records in real time — no paperwork, no delays.",
+      "Warehouse staff and field teams stay connected to the central platform from anywhere. Scan, execute, verify, and update paper records in real time — no paperwork, no delays.",
     // mobileKicker: "Operations Anywhere",
     mobileTitle: "Operations Anywhere",
     mobileSub: "Warehouse operations should never stop because your team leaves the office, DocuArena Mobile Application enables warehouse staff of performing all the duties wherever and whenever they are, every action remains visible and registered.",
@@ -120,10 +120,10 @@ const C = {
     mobileCta: "Explore the Mobile Experience",
     // Cost calculator
     // costKicker: "The Hidden Cost of Manual Processes",
-    costTitle: "What Are Manual Processes Really Costing You?",
+    costTitle: "What Are Manual Processes Costing You?",
     costSub:
       "Every delayed retrieval. Every misplaced file. Every unnecessary warehouse visit. Every manual spreadsheet. Every compliance issue. They all have a measurable cost.",
-    costDesc: "Use our interactive Physical Records Management Cost Calculator to discover:",
+    costDesc: "Use our interactive paper Records Management Cost Calculator to discover:",
     cost: [
       "Current operational costs",
       "Warehouse efficiency",
@@ -139,9 +139,9 @@ const C = {
     diffTitle: "Why DocuArena Is Different",
     diffHead: ["Traditional Approach", "DocuArena"],
     diff: [
-      ["Spreadsheets and paper logs", "Enterprise Physical Records Management Platform"],
+      ["Spreadsheets and paper logs", "Enterprise paper Records Management Platform"],
       ["Manual record tracking", "Barcode-Verified Chain of Custody"],
-      // ["Generic Document Management Software", "Purpose-Built Physical Records Management"],
+      // ["Generic Document Management Software", "Purpose-Built paper Records Management"],
       // ["Manual retrieval requests", "Automated Work Order Management"],
       ["Limited warehouse visibility", "Real-Time Warehouse Operations"],
       ["Manual retention tracking", "Automated Retention Management"],
@@ -156,7 +156,7 @@ const C = {
     expertsP2:
       "Docuarena was designed by professionals with decades of practical experience in records management, warehouse operations, and enterprise information governance.",
     expertsP3:
-      "When you choose DocuArena, You're partnering with specialists who understand both the technology and the day-to-day realities of Physical Records Management.",
+      "When you choose DocuArena, You're partnering with specialists who understand both the technology and the day-to-day realities of paper Records Management.",
     // Training
     // trainingKicker: "Knowledge Transfer",
     trainingTitle: "Knowledge Transfer That Ensures Success",
@@ -187,27 +187,27 @@ const C = {
       { title: "Continuous Improvement", desc: "Provide ongoing support, enhancements, and future innovation." },
     ],
     // Final CTA
-    finalTitle: "Ready to Modernize Your Physical Records Operations?",
+finalTitle: "Ready to update your paper document management processes?",
     finalP1:
-      "Whether you manage a single archive room or multiple records centers across different locations, DocuArena provides the visibility, accountability, and operational excellence needed to govern every physical record throughout its lifecycle.",
+      "Whether you manage a single archive room or multiple records centers across different locations, DocuArena provides the visibility, accountability, and operational excellence needed to govern every paper record throughout its lifecycle.",
     finalP2: "Take the next step toward a more efficient, compliant, and intelligent records management operation.",
     finalP3: "Schedule Your Personalized Demonstration Today",
     finalCta1: "Book a Live Demo",
     finalCta2: "Calculate Your Savings",
     finalCta3: "Contact a Solution Specialist",
     // Footer callout
-    calloutLine: "Purpose-Built for Physical Records Management.",
+    calloutLine: "Purpose-Built for paper Records Management.",
     calloutLine2: "Designed for Enterprise Operations.",
     calloutLine3: "Built for Complete Control.",
   },
   fr: {
-    heroBadge: "Gestion des documents physiques",
-    heroTitle: "Reprenez le contrôle total de vos documents physiques",
+    heroBadge: "Gestion des documents papier",
+    heroTitle:     "Prenez le contrôle total de vos documents papier",
     heroSub: "Gestion documentaire et entrepôt de niveau entreprise",
     // heroPain: "Fichiers perdus. Récupérations lentes. Absence de preuve de garde. Coûts d'entrepôt croissants.",
-    heroDesc:"DocuArena est une plateforme de gestion des documents physiques (PRM) spécialement conçue pour offrir à votre organisation une visibilité et un contrôle complets sur chaque document physique, de sa réception à sa destruction sécurisée.",
+    heroDesc:"DocuArena est une plateforme de gestion des documents papier (PRM) spécialement conçue pour offrir à votre organisation une visibilité et un contrôle complets sur chaque document papier, de sa réception à sa destruction sécurisée.",
     // heroDesc2:
-      // "Conçue spécifiquement pour les organisations gérant des archives physiques, DocuArena transforme les opérations manuelles d'entrepôt en flux de travail intelligents pilotés par code-barres qui améliorent l'efficacité opérationnelle, renforcent la conformité et réduisent les coûts.",
+      // "Conçue spécifiquement pour les organisations gérant des archives papier, DocuArena transforme les opérations manuelles d'entrepôt en flux de travail intelligents pilotés par code-barres qui améliorent l'efficacité opérationnelle, renforcent la conformité et réduisent les coûts.",
     heroCta: "Réserver une démo en direct",
     heroCtaAlt: "Calculer vos économies",
     readyTitle: "Prêt pour l'entreprise",
@@ -218,11 +218,11 @@ const C = {
       "Multilingue (English • العربية • Français)",
       "Intégration API REST",
       "Évolutivité d'entreprise",
-      "Gestion sécurisée du cycle de vie des documents physiques",
+      "Gestion sécurisée du cycle de vie des documents papier",
     ],
     // challengesKicker: "La réalité de la gestion manuelle des documents",
     challengesTitle: "Ces défis vous semblent-ils familiers ?",
-    challengesSub: "Gérer des documents physiques ne devrait pas signifier gérer l'incertitude.",
+    challengesSub: "Gérer des documents papier ne devrait pas signifier gérer l'incertitude.",
     challenges: [
       "Des fichiers disparaissent sans que personne ne sache où ils sont.",
       "Les demandes de récupération prennent des heures — voire des jours.",
@@ -235,12 +235,12 @@ const C = {
     ],
     challengesClose:
       "Si l'un de ces points vous semble familier, vous n'êtes pas seul. Ce sont exactement les défis que DocuArena a été conçu pour résoudre.",
-    // matterKicker: "Pourquoi les documents physiques comptent toujours",
-    matterTitle: "Les documents physiques comptent toujours",
+    // matterKicker: "Pourquoi les documents papier comptent toujours",
+    matterTitle: "Les documents papier comptent toujours",
     matterP1:
-      "La transformation numérique a changé la façon dont les organisations gèrent l'information — mais elle n'a pas éliminé les documents physiques.",
+      "La transformation numérique a changé la façon dont les organisations gèrent l'information — mais elle n'a pas éliminé les documents papier.",
     matterP2:
-      "Contrats originaux, dossiers juridiques, documents financiers, dossiers de santé, plans d'ingénierie et archives gouvernementales exigent toujours un stockage physique sécurisé et une manipulation contrôlée.",
+      "Contrats originaux, dossiers juridiques, documents financiers, dossiers de santé, plans d'ingénierie et archives gouvernementales exigent toujours un stockage papier sécurisé et une manipulation contrôlée.",
     matterP3:
       "Pourtant, de nombreuses organisations continuent de gérer ces actifs critiques avec des feuilles de calcul, des registres papier et des processus manuels. Le résultat est prévisible :",
     matter: [
@@ -251,9 +251,7 @@ const C = {
       "Coûts d'entrepôt croissants",
       "Visibilité limitée",
     ],
-    matterClose:
-      "DocuArena a été conçu pour résoudre ces défis grâce à une gestion intelligente des documents physiques pilotée par code-barres.",
-    // platformKicker: "Une seule plateforme.",
+    matterClose : " DocuArena a été spécialement conçu pour relever ces défis grâce à une gestion intelligente des documents papier basée sur les codes-barres." ,    // platformKicker: "Une seule plateforme.",
     platformTitle: "Une seule plateforme",
     platform: [
       { q: "Impossible de trouver un fichier ?", a: "La recherche avancée localise toute boîte, tout fichier ou tout document en quelques secondes." },
@@ -269,7 +267,7 @@ const C = {
     platformClose: "Une seule plateforme d'entreprise. Un contrôle opérationnel complet.",
     // lifecycleKicker: "Le cycle de vie documentaire",
     lifecycleTitle: "De la réception à la destruction sécurisée",
-    lifecycleSub: "Chaque document physique suit un cycle de vie entièrement contrôlé.",
+    lifecycleSub: "Chaque document papier suit un cycle de vie entièrement contrôlé.",
     lifecycle: [
       { title: "Réception", desc: "Les documents sont reçus, enregistrés et validés." },
       { title: "Attribution du code-barres", desc: "Chaque boîte, fichier et document reçoit une identité unique." },
@@ -298,7 +296,7 @@ const C = {
     mobileHeroTitle: "DocuArena Mobile",
     mobileHeroSub: "Chaque opération dans votre poche",
     mobileHeroDesc:
-      "Le personnel d'entrepôt et les équipes terrain restent connectés à la plateforme centrale où qu'ils soient. Scannez, exécutez, vérifiez et mettez à jour les documents physiques en temps réel — sans paperasse, sans délai.",
+      "Le personnel d'entrepôt et les équipes terrain restent connectés à la plateforme centrale où qu'ils soient. Scannez, exécutez, vérifiez et mettez à jour les documents papier en temps réel — sans paperasse, sans délai.",
     // mobileKicker: "Opérations partout",
     mobileTitle: "Opérations partout",
     mobileSub: "Les opérations d'entrepôt ne doivent jamais s'arrêter parce que votre équipe quitte le bureau , L'application mobile DocuArena permet au personnel d'entrepôt d'effectuer toutes leurs tâches où et quand ils le souhaitent ; chaque action reste visible et enregistrée.",
@@ -317,7 +315,7 @@ const C = {
     costTitle: "Combien vous coûtent réellement les processus manuels ?",
     costSub:
       "Chaque récupération retardée. Chaque fichier égaré. Chaque visite inutile à l'entrepôt. Chaque feuille de calcul. Chaque problème de conformité. Tous ont un coût mesurable.",
-    costDesc: "Utilisez notre calculateur interactif de coûts de gestion des documents physiques pour découvrir :",
+    costDesc: "Utilisez notre calculateur interactif de coûts de gestion des documents papier pour découvrir :",
     cost: [
       "Les coûts opérationnels actuels",
       "L'efficacité de l'entrepôt",
@@ -332,9 +330,9 @@ const C = {
     diffTitle: "Pourquoi DocuArena est différent",
     diffHead: ["Approche traditionnelle", "DocuArena"],
     diff: [
-      ["Feuilles de calcul et registres papier", "Plateforme d'entreprise de gestion des documents physiques"],
+      ["Feuilles de calcul et registres papier", "Plateforme d'entreprise de gestion des documents papier"],
       ["Suivi manuel des documents", "Chaîne de garde vérifiée par code-barres"],
-      // ["Logiciel générique de gestion documentaire", "Gestion des documents physiques sur mesure"],
+      // ["Logiciel générique de gestion documentaire", "Gestion des documents papier sur mesure"],
       // ["Demandes de récupération manuelles", "Gestion automatisée des bons de travail"],
       ["Visibilité d'entrepôt limitée", "Opérations d'entrepôt en temps réel"],
       ["Conservation manuelle", "Gestion automatisée de la conservation"],
@@ -347,10 +345,10 @@ const C = {
     expertsTitle: "Créé par des experts en gestion des documents",
     // expertsP1: "DocuArena n'a pas été développé comme un logiciel générique.",
     expertsP2:"DocuArena a été conçu par des professionnels cumulant des décennies d'expérience pratique en gestion d'archives, en exploitation d'entrepôts et en gouvernance de l'information d'entreprise.",
-    expertsP3:"En choisissant DocuArena, vous collaborez avec des spécialistes qui maîtrisent à la fois la technologie et les réalités quotidiennes de la gestion des archives physiques.",
+    expertsP3:"En choisissant DocuArena, vous collaborez avec des spécialistes qui maîtrisent à la fois la technologie et les réalités quotidiennes de la gestion des archives papier.",
     // expertsP4: "Choisir DocuArena, ce n'est pas simplement acheter un logiciel.",
     // expertsP5:
-      // "C'est s'associer à des spécialistes qui comprennent à la fois la technologie et les réalités quotidiennes de la gestion des documents physiques.",
+      // "C'est s'associer à des spécialistes qui comprennent à la fois la technologie et les réalités quotidiennes de la gestion des documents papier.",
     // trainingKicker: "Transfert de connaissances",
     trainingTitle: "Un transfert de connaissances qui garantit le succès",
     trainingP1: "Des implémentations réussies reposent sur des utilisateurs compétents.",
@@ -378,24 +376,24 @@ const C = {
       { title: "Mise en service", desc: "Accompagner votre déploiement et la stabilisation opérationnelle." },
       { title: "Amélioration continue", desc: "Fournir support continu, améliorations et innovations futures." },
     ],
-    finalTitle: "Prêt à moderniser vos opérations de gestion documentaire ?",
+finalTitle: "Prêt à moderniser vos processus de gestion des documents papier ?",
     finalP1:
-      "Que vous gériez une seule salle d'archives ou plusieurs centres de documents sur différents sites, DocuArena offre la visibilité, la responsabilité et l'excellence opérationnelle nécessaires pour gouverner chaque document physique tout au long de son cycle de vie.",
+      "Que vous gériez une seule salle d'archives ou plusieurs centres de documents sur différents sites, DocuArena offre la visibilité, la responsabilité et l'excellence opérationnelle nécessaires pour gouverner chaque document papier tout au long de son cycle de vie.",
     finalP2: "Faites le prochain pas vers une gestion documentaire plus efficace, conforme et intelligente.",
     finalP3: "Planifiez votre démonstration personnalisée dès aujourd'hui",
     finalCta1: "Réserver une démo en direct",
     finalCta2: "Calculer vos économies",
     finalCta3: "Contacter un spécialiste",
-    calloutLine: "Conçu sur mesure pour la gestion des documents physiques.",
+    calloutLine: "Conçu sur mesure pour la gestion des documents papier.",
     calloutLine2: "Conçu pour les opérations d'entreprise.",
     calloutLine3: "Construit pour un contrôle complet.",
   },
   ar: {
-    heroBadge: "إدارة المستندات الفعلية",
-    heroTitle: "سيطر بشكل كامل على مستنداتك الفعلية",
+    heroBadge: "إدارة المستندات الورقية",
+    heroTitle: "تحكم بشكل كامل على مستنداتك الورقية",
     heroSub: "إدارة المستندات والمخازن على مستوى المؤسسات",
     // heroPain: "ملفات ضائعة. استرجاع بطيء. لا إثبات للحفظ. تكاليف مخازن متزايدة.",
-    heroDesc:"DocuArena هي منصة مصممة خصيصًا لإدارة السجلات المادية (PRM) تمنح مؤسستك رؤية كاملة وتحكمًا تامًا في كل سجل مادي - من الاستلام إلى التدمير الآمن.",
+    heroDesc:"DocuArena هي منصة مصممة خصيصًا لإدارة السجلات الورقيه (PRM) تمنح مؤسستك رؤية كاملة وتحكمًا تامًا في كل سجل ورقي - من الاستلام إلى التدمير الآمن.",
     // heroDesc2:
       // "مبنية خصيصاً للمؤسسات التي تدير أرشيفات فعلية، تحوّل DocuArena عمليات المخزن اليدوية إلى سير عمل ذكية تعتمد على الباركود، لتحسين الكفاءة التشغيلية وتقوية الالتزام وخفض التكاليف.",
     heroCta: "احجز عرضاً",
@@ -408,11 +406,11 @@ const C = {
       "متعددة اللغات (English • العربية • Français)",
       "تكامل API",
       "قابلية توسع مؤسسية",
-      "إدارة آمنة لدورة حياة المستندات الفعلية",
+      "إدارة آمنة لدورة حياة المستندات الورقية",
     ],
     // challengesKicker: "واقع إدارة المستندات اليدوية",
     challengesTitle: "هل هذه التحديات مألوفة لديكم؟",
-    challengesSub: "إدارة المستندات الفعلية لا يجب أن تعني إدارة حالة من عدم اليقين.",
+    challengesSub: "إدارة المستندات الورقية لا يجب أن تعني إدارة حالة من عدم اليقين.",
     challenges: [
       "ملفات تختفي ولا يعرف أحد أين ذهبت.",
       "طلبات الاسترجاع تستغرق ساعات — أو حتى أياماً.",
@@ -424,11 +422,11 @@ const C = {
       "الإدارة تفتقر إلى رؤية تشغيلية لحظية.",
     ],
     challengesClose: "إذا كان أي من هذه النقاط مألوفاً لديكم، فأنتم لستم وحدكم. هذه هي بالضبط التحديات التي بُني DocuArena لحلها.",
-    // matterKicker: "لماذا تظل المستندات الفعلية مهمة",
-    matterTitle: "المستندات الفعلية لا تزال مهمة",
-    matterP1: "غيّر التحول الرقمي طريقة إدارة المؤسسات للمعلومات — لكنه لم يلغِ المستندات الفعلية.",
+    // matterKicker: "لماذا تظل المستندات الورقية مهمة",
+    matterTitle: "المستندات الورقية لا تزال مهمة",
+    matterP1: "غيّر التحول الرقمي طريقة إدارة المؤسسات للمعلومات — لكنه لم يلغِ المستندات الورقية.",
     matterP2:
-      "العقود الأصلية والملفات القانونية والمستندات المالية والملفات الصحية والمخططات الهندسية والأرشيفات الحكومية لا تزال تتطلب تخزيناً فعلياً آمناً وتداولاً مُتحكماً فيه.",
+      "العقود الأصلية والملفات القانونية والمستندات المالية والملفات الصحية والمخططات الهندسية والأرشيفات الحكومية لا تزال تتطلب تخزيناً  آمناً وتداولاً مُتحكماً فيه.",
     matterP3:
       "ومع ذلك تواصل مؤسسات كثيرة إدارة هذه الأصول الحرجة عبر الجداول اليدوية والسجلات الورقية. والنتيجة متوقعة:",
     matter: [
@@ -439,7 +437,7 @@ const C = {
       "تكاليف مخازن متزايدة",
       "رؤية محدودة",
     ],
-    matterClose: "بُني DocuArena خصيصاً لحل هذه التحديات عبر إدارة ذكية للمستندات الفعلية تعتمد على الباركود.",
+    matterClose: "بُني DocuArena خصيصاً لحل هذه التحديات عبر إدارة ذكية للمستندات الورقية تعتمد على الباركود.",
     // platformKicker: "منصة واحدة.",
     platformTitle: "منصة واحدة",
     platform: [
@@ -456,7 +454,7 @@ const C = {
     platformClose: "منصة مؤسسية واحدة. تحكم تشغيلي كامل.",
     // lifecycleKicker: "دورة حياة المستند",
     lifecycleTitle: "من الاستلام حتى الإتلاف الآمن",
-    lifecycleSub: "كل مستند فعلي يتبع دورة حياة مُتحكماً فيها بالكامل.",
+    lifecycleSub: "كل مستند ورقي يتبع دورة حياة مُتحكماً فيها بالكامل.",
     lifecycle: [
       { title: "الاستلام", desc: "تُستلم المستندات وتُسجل وتُتحقق." },
       { title: "إسناد الباركود", desc: "كل صندوق وملف ومستند يحصل على هوية فريدة." },
@@ -501,10 +499,10 @@ const C = {
     mobileClose: "داخل المخزن أو في موقع العميل، تظل كل حركة مرئية ومُتحكماً فيها بالكامل.",
     mobileCta: "اكتشف التجربة المحمولة",
     // costKicker: "التكلفة الخفية للعمليات اليدوية",
-    costTitle: "كم تكلفك العمليات اليدوية فعلياً؟",
+    costTitle: "كم تكلفك العمليات اليدوية  ؟",
     costSub:
       "كل استرجاع متأخر. كل ملف في غير مكانه. كل زيارة مخزن غير ضرورية. كل جدول يدوي. كل مشكلة امتثال. جميعها لها تكلفة قابلة للقياس.",
-    costDesc: "استخدم حاسبة تكاليف إدارة المستندات الفعلية التفاعلية لدينا لاكتشاف:",
+    costDesc: "استخدم حاسبة تكاليف إدارة المستندات الورقية التفاعلية لدينا لاكتشاف:",
     cost: [
       "التكاليف التشغيلية الحالية",
       "كفاءة المخزن",
@@ -519,9 +517,9 @@ const C = {
     diffTitle: "لماذا يختلف DocuArena",
     diffHead: ["النهج التقليدي", "DocuArena"],
     diff: [
-      ["جداول وسجلات ورقية", "منصة مؤسسية لإدارة المستندات الفعلية"],
+      ["جداول وسجلات ورقية", "منصة مؤسسية لإدارة المستندات الورقية"],
       ["تتبع يدوي للمستندات", "سلسلة حفظ مُتحقق منها بالباركود"],
-      // ["برامج إدارة مستندات عامة", "إدارة مستندات فعلية مصممة خصيصاً"],
+      // ["برامج إدارة مستندات عامة", "إدارة مستندات ورقية مصممة خصيصاً"],
       // ["طلبات استرجاع يدوية", "إدارة آلية لأوامر العمل"],
       ["رؤية مخزن محدودة", "عمليات مخزن لحظية"],
       ["احتفاظ يدوي", "إدارة آلية للاحتفاظ"],
@@ -534,9 +532,9 @@ const C = {
     expertsTitle: "بناها خبراء إدارة المستندات",
     // expertsP1: "لم يُطوَّر DocuArena كبرنامج عام.",
     expertsP2:"صُمم DocuArena على يد متخصصين يتمتعون بعقود من الخبرة العملية في إدارة السجلات، وعمليات المستودعات، وحوكمة معلومات المؤسسات.",
-    expertsP3:"باختيارك DocuArena، فإنك تتعاون مع متخصصين يفهمون التكنولوجيا والواقع العملي لإدارة السجلات المادية.",
+    expertsP3:"باختيارك DocuArena، فإنك تتعاون مع متخصصين يفهمون التكنولوجيا والواقع العملي لإدارة السجلات الورقية.",
     // expertsP4: "عندما تختار DocuArena، فأنت لا تشتري برنامجاً فحسب.",
-    // expertsP5: "أنت تشراك مع متخصصين يفهمون التقنية وواقع العمل اليومي لإدارة المستندات الفعلية.",
+    // expertsP5: "أنت تشراك مع متخصصين يفهمون التقنية وواقع العمل اليومي لإدارة المستندات الورقية.",
     // trainingKicker: "نقل المعرفة",
     trainingTitle: "نقل معرفة يضمن النجاح",
     trainingP1: "التطبيقات الناجحة تعتمد على مستخدمين متمكنين.",
@@ -553,25 +551,25 @@ const C = {
     trainingCta: "تواصل مع فريقنا",
     // journeyKicker: "رحلتك مع DocuArena",
     journeyTitle: "رحلتك مع DocuArena",
-    journeySub: "علاقتنا تبدأ قبل التنفيذ بوقت طويل — وتستمر بعد التشغيل الفعلي.",
+    journeySub: "علاقتنا تبدأ قبل التنفيذ بوقت طويل — وتستمر بعد التشغيل .",
     journey: [
       { title: "الاكتشاف", desc: "فهم أهدافك التجارية والتحديات التشغيلية." },
       { title: "التقييم", desc: "تحليل عمليات المخزن الحالية وعمليات إدارة المستندات." },
       { title: "الإعداد", desc: "تهيئة DocuArena ليطابق نموذجك التشغيلي." },
       { title: "التنفيذ", desc: "نشر المنصة وتجهيز بيئتك التشغيلية." },
       { title: "التدريب", desc: "نقل المعرفة وإعداد فرقك للنجاح." },
-      { title: "التشغيل الفعلي", desc: "دعم انطلاق الإنتاج واستقرار العمليات." },
+      { title: "التشغيل", desc: "دعم انطلاق الإنتاج واستقرار العمليات." },
       { title: "التحسين المستمر", desc: "توفير دعم مستمر وتحسينات وابتكارات مستقبلية." },
     ],
-    finalTitle: "جاهز لتحديث عمليات إدارة مستنداتك الفعلية؟",
+    finalTitle: "جاهز لتحديث عمليات إدارة مستنداتك الورقية ؟",
     finalP1:
-      "سواء كنت تدير غرفة أرشيف واحدة أو مراكز مستندات متعددة عبر مواقع مختلفة، يوفر DocuArena الرؤية والمساءلة والتميز التشغيلي اللازم لحوكمة كل مستند فعلي طوال دورة حياته.",
+      "سواء كنت تدير غرفة أرشيف واحدة أو مراكز مستندات متعددة عبر مواقع مختلفة، يوفر DocuArena الرؤية والمساءلة والتميز التشغيلي اللازم لحوكمة كل مستند ورقي طوال دورة حياته.",
     finalP2: "اتخذ الخطوة التالية نحو إدارة مستندات أكثر كفاءة والزاماً وذكاءً.",
     finalP3: "احجز عرضك التوضيحي المخصص اليوم",
     finalCta1: "احجز عرضاً حياً",
     finalCta2: "احسب مدخراتك",
     finalCta3: "تواصل مع مختص",
-    calloutLine: "مصمم خصيصاً لإدارة المستندات الفعلية.",
+    calloutLine: "مصمم خصيصاً لإدارة المستندات الورقية.",
     calloutLine2: "مصمم لعمليات المؤسسات.",
     calloutLine3: "مبني للتحكم الكامل.",
   },

@@ -43,7 +43,7 @@ function Footer() {
           <div className={styles.navCol}>
             <h4 className={styles.colTitle}>Solutions</h4>
             <ul className={styles.navList}>
-              <li><a href="#physical-records">Physical Records Management</a></li>
+              <li><a href="#paper-records">paper Records Management</a></li>
               <li><a href="#intelligent-capture">Intelligent Capture</a></li>
               <li><a href="#digital-content">Digital Content Management</a></li>
               <li><a href="#asset-management">Asset Management</a></li>
