@@ -50,6 +50,8 @@ function Layout({ lang = 'en', setLang }) {
             <NavLink to="/contact" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink} onClick={closeAll}>{t['nav-contact']}</NavLink>
             {/* <NavLink to="/DocumentRetrieval" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink} onClick={closeAll}>{t['nav-retrieval']}</NavLink> */}
             <NavLink to="/Docuarena" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink} onClick={closeAll}>{t['nav-docuarena']}</NavLink>
+            <NavLink to="/AIOCR" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink} onClick={closeAll}>{t['nav-AIOCR']}</NavLink>
+
             <div
               className={styles.dropdown}
               onMouseEnter={isMobile ? undefined : () => setNewsOpen(true)}

@@ -2,7 +2,7 @@ const KB = {
   en: {
     greeting:
       "Hi! I'm the Namaa virtual assistant. I can answer questions about our services, DocuArena, the ROI calculator, pricing, our company, and more. Type 'help' to see everything I can do, or just ask me anything.",
-    quick: ["Help", "Services", "DocuArena", "ROI Calculator", "Pricing", "Contact"],
+    quick: ["Help", "Services", "DocuArena", "AIOCR", "ROI Calculator", "Pricing", "Contact"],
     fallback:
       "Sorry, I didn't quite catch that. Try asking 'help' to see what I can do, or ask about Services, DocuArena, Digitization, Pricing, or Company info. You can also reach our team directly: [[Contact us|/contact]].",
     intents: [
@@ -222,7 +222,7 @@ const KB = {
   fr: {
     greeting:
       "Bonjour ! Je suis l'assistant virtuel de Namaa. Je peux répondre à vos questions sur nos services, DocuArena, le calculateur de ROI, les tarifs, notre entreprise, et plus encore. Tapez 'aide' pour voir tout ce que je peux faire.",
-    quick: ["Aide", "Services", "DocuArena", "Calculateur ROI", "Tarifs", "Contact"],
+    quick: ["Aide", "Services", "DocuArena", "AIOCR", "Calculateur ROI", "Tarifs", "Contact"],
     fallback:
       "Désolé, je n'ai pas bien compris. Tapez 'aide' pour voir ce que je peux faire, ou demandez-moi des infos sur les Services, DocuArena, la Numérisation, les Tarifs ou l'Entreprise. Vous pouvez aussi contacter notre équipe : [[Contactez-nous|/contact]].",
     intents: [
@@ -441,10 +441,10 @@ const KB = {
 
   ar: {
     greeting:
-      "مرحباً! أنا المساعد الافتراضي لـ نماء . أستطيع الإجابة على أسئلتك حول خدماتنا، DocuArena، حاسبة العائد، الأسعار، شركتنا، والمزيد. اكتب 'مساعدة' لترى كل ما أستطيع فعله.",
-    quick: ["مساعدة", "الخدمات", "DocuArena", "حاسبة العائد", "الأسعار", "تواصل معنا"],
+      "مرحباً! أنا المساعد الافتراضي لـ نماء . أستطيع الإجابة على أسئلتك حول خدماتنا، DocuArena， AIOCR، حاسبة العائد، الأسعار، شركتنا، والمزيد. اكتب 'مساعدة' لترى كل ما أستطيع فعله.",
+    quick: ["مساعدة", "الخدمات","" ,"DocuArena", "AIOCR", "حاسبة العائد", "الأسعار", "تواصل معنا"],
     fallback:
-      "عذراً، لم أفهم جيداً. اكتب 'مساعدة' لترى ما أستطيع فعله، أو اسأل عن الخدمات، DocuArena، الرقمنة، الأسعار، أو معلومات الشركة. يمكنك أيضاً التواصل مع فريقنا مباشرة: [[تواصل معنا|/contact]].",
+      "عذراً، لم أفهم جيداً. اكتب 'مساعدة' لترى ما أستطيع فعله، أو اسأل عن الخدمات، DocuArena، AIOCR، الرقمنة، الأسعار، أو معلومات الشركة. يمكنك أيضاً التواصل مع فريقنا مباشرة: [[تواصل معنا|/contact]].",
     intents: [
       {
         id: "help",

@@ -7,6 +7,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Loading from "./components/loading/Loading";
 import DocumentRetrieval from "./components/DocumentRetrieval/DocumentRetrieval";
 import { T } from './i18n/translations';
+import AIOCR from "./components/AIOCR/AIOCR";
 
 const About = lazy(() => import("./components/about/About"));
 const Portfolio = lazy(() => import("./components/portfolio/Portfolio"));
@@ -46,6 +47,7 @@ function App() {
               <Route index element={<Home currentLang={lang} />} />
               <Route path="DocumentRetrieval" element={<DocumentRetrieval currentLang={lang}/>} />
               <Route path="Docuarena" element={<Docuarena currentLang={lang}/>} />
+              <Route path="AIOCR" element={<AIOCR currentLang={lang}/>} />
               <Route path="DocuarenaMobile" element={<DocuarenaMobile currentLang={lang}/>} />
               <Route path="about" element={<About currentLang={lang} />} />
               <Route path="portfolio" element={<Portfolio currentLang={lang} />} />

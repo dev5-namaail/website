@@ -9,6 +9,7 @@ const LINK_TOKEN = /\[\[([^\]|]+)\|([^\]]+)\]\]/g;
 
 const QUICK_ROUTES = {
   DocuArena: "/Docuarena",
+  AIOCR: "/AIOCR",
   "ROI Calculator": "/DocumentRetrieval",
   "Calculateur ROI": "/DocumentRetrieval",
   "حاسبة العائد": "/DocumentRetrieval",
